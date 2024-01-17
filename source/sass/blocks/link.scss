@@ -1,0 +1,37 @@
+//Кастомная стилизация ссылок
+.link {
+
+  &:hover {}
+
+  &:focus {}
+
+  &:active {}
+
+  &--underline {
+    text-decoration: underline;
+  }
+
+  &--dotted {
+    text-decoration: dotted;
+  }
+
+  &--dashed {
+    text-decoration: dashed;
+  }
+
+  &--double {
+    text-decoration: double;
+  }
+
+  &--overline {
+    text-decoration: overline;
+  }
+
+  &--wavy {
+    text-decoration: wavy;
+  }
+
+  &--solid {
+    text-decoration: solid;
+  }
+}

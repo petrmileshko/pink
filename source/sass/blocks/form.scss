@@ -1,0 +1,29 @@
+.form {}
+
+.form__container {}
+
+.form__group {}
+
+.form__group-legend {}
+
+.form__label {}
+
+.form__input {
+  &:hover {}
+
+  &:focus {}
+
+  &:active {}
+
+  &:disabled {}
+}
+
+.form__textarea {
+  &:hover {}
+
+  &:focus {}
+
+  &:active {}
+
+  &:disabled {}
+}

@@ -1,0 +1,33 @@
+.main-page {}
+
+.main-page__header {
+  @media (min-width: $min-desktop) {}
+}
+
+.main-page__title {
+  @include font_secondary($font-regular);
+  font-size: $font-large;
+
+  @media (min-width: $min-desktop) {}
+}
+
+.main-page__section {
+  @media (min-width: $min-desktop) {}
+}
+
+.main-page__article {
+  @media (min-width: $min-desktop) {}
+}
+
+
+.main-page__section-title,
+.main-page__article-title {
+  @include font_secondary($font-regular);
+  font-size: $font-small;
+
+  @media (min-width: $min-desktop) {}
+}
+
+.main-page__footer {
+  @media (min-width: $min-desktop) {}
+}

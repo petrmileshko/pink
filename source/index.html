@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Краткое описание о чем сайт / страница">
+  <meta name="author" content="Автор контента страницы">
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+    content="Заголовок страницы, выражающий ее основную тематику (можно одинаково с главным заголовком 1го уровня h1)">
+  <meta property="og:description" content="Краткое описание о чем сайт / страница">
+  <meta property="og:url" content="https://адрес-сайта.зона/">
+  <meta property="og:site_name" content="Краткое название сайта">
+  <meta property="og:image" content="https:/адрес-сайта.зона/img/фото.jpg">
+  <!-- Картинка, которая будет выводится в плейсхолдере сайта -->
+  <meta property="og:image:width" content="582"><!-- ее ширина -->
+  <meta property="og:image:height" content="563"><!-- ее высота -->
+  <meta property="og:image:type" content="image/jpg"><!-- ее формат jpg/png/webp или другие -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://адрес-сайта.зона/">
+
+  <link rel="icon" href="./favicon.ico">
+  <!-- подключение обычной фавиконки в устаревших браузерах, которые не поддерживают новые способы и форматы -->
+  <link rel="icon" href="./img/favicon/32.svg" type="image/svg+xml" sizes="any">
+  <!-- подключение фавиконки в формате svg -->
+  <link rel="apple-touch-icon" href="./img/favicon/180.png"><!-- подключение фавиконки для макбуков и айфонов-->
+  <link rel="manifest" href="./manifest.webmanifest">
+  <!-- подключение остальных фавиконок разных форматов и размеров под разные устройства-->
+  <title>Название страницы во вкладке</title>
+
+  <!--
+      Конструкция ниже предназначена для оптимизации скорости загрузки документа
+
+  <style>
+    В инлайн стилях объявлять правила всех стилей для первого экрана страницы
+  </style>
+
+	<link rel="preload" href="css/style.min.css?ver=1.0" as="style" onload="this.onload=null;this.rel='stylesheet'">  Остальные стили загружаем параллельно с документом
+  <noscript><link rel="stylesheet" href="css/style.min.css?ver=1.0"></noscript>    Если JS отключен в браузере то загружать стили обычным способом
+-->
+
+  <link rel="stylesheet" href="./css/style.min.css?ver=1.0"> <!-- Обычное подключение стилей -->
+  <link rel="stylesheet" href="./outlines.css"> <!-- Стили для визуального выделения блоков, применять только при отладки разметки -->
+
+  <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body class="page__body">
+  <header class="page__header page-header">
+    Раздел - Шапка сайта (поврторяется на основных страницах)
+  </header>
+
+  <main class="page__main main-page">
+    <h1 class="main-page__title">Заголовок всей страницы</h1>
+    Раздел Основное содержимое (уникальный и не повторяющийся на других страницах материал)
+    <header class="main-page__header">
+      Вступительный блок / шапка основного содержимого
+      <a class="link link--underline" href="#">Образец ссылки</a>
+    </header>
+    <section class="main-page__section">
+      <h2 class="main-page__section-title">Заголовок раздела/секции</h2>
+      Раздел / секция
+      <p>Это абзац в секции</p>
+      <article class="main-page__article">
+        <h1 class="main-page__article-title">Заголовок статьи</h1>
+        Отдельная статья по теме, но выступает как самостоятельный материал
+      </article>
+    </section>
+    <footer class="main-page__footer">
+      Подвал основного содержимого
+      <aside>
+        Блок с материалом, не относящийся к теме основного содержимого, но косвенно связан с ним.
+      </aside>
+    </footer>
+  </main>
+
+  <footer class="page__footer page-footer">
+    Раздел - подвал сайта (поврторяется на основных страницах)
+  </footer>
+
+  <script src="js/lib/imask.min.js"></script><!-- Скрипт для форматирования полей ввода с телефоном -->
+  <script src="js/lib/pristine.min.js"></script><!-- Скрипт для валидции полей формы -->
+  <script src="js/app.min.js"></script>
+  <!-- Главные скрипты для упрваления интерактивными элементами, формами и анимацией -->
+
+</body>
+
+</html>

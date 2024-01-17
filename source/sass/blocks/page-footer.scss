@@ -1,0 +1,26 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $bg-color-secondary;
+
+  @media (min-width: $min-tablet) {}
+
+  @media (min-width: $min-desktop) {}
+}
+
+.page-footer__logo {
+  margin-bottom: 20px;
+
+  @media (min-width: $min-tablet) {}
+}
+
+.page-footer__socials {
+  margin-bottom: 20px;
+
+  @media (min-width: $min-tablet) {}
+}
+
+.page-footer__developer {
+  @media (min-width: $min-tablet) {}
+}

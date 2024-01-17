@@ -1,0 +1,29 @@
+//Блок страница - для корневого <html>
+.page {
+  min-width: 320px;
+  height: 100%;
+  margin-left: calc(100vw - 100%);
+
+  @media (min-width: $min-tablet) {}
+}
+
+//Элемент страницы body
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+
+  @include font_primary($font-regular);
+  background-color: $bg-color-primary;
+}
+
+.page__header {
+  min-height: 90px;
+  color: $font-color;
+}
+
+.page__footer {
+  min-height: 100px;
+  color: $font-color;
+}

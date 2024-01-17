@@ -1,0 +1,23 @@
+// Глобальные
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+
+// Компоненты БЭМ
+// базовые глобальные
+@import "blocks/visually-hidden.scss";
+@import "blocks/block-center.scss";
+@import "blocks/page.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/button.scss";
+@import "blocks/link.scss";
+@import "blocks/logo.scss";
+@import "blocks/form.scss";
+
+/* Стили для Главная страница */
+@import "blocks/main-page.scss";
+
+/* Стили для Страница каталога */
+/* Стили для Страница формы заказов */

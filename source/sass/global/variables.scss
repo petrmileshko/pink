@@ -1,0 +1,42 @@
+//Параметры шрифта
+$font-primary: "Arial", sans-serif;
+$font-secondary: "Oswald", "Arial", sans-serif;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+$font-color: #ffffff;
+$font-color-inverted: #000000;
+$font-small: 14px;
+$font-large: 18px;
+
+//Фон
+$bg-color-primary: #104365;
+$bg-color-secondary: #0d3a57;
+$bg-color-header: #002a45;
+
+// Кнопки
+$button-color-primary: #202020;
+$button-color-secondary: #1c1b1b;
+$button-color-hover: #3dc668;
+$button-color-hover-secondary: #ffffff;
+$button-bg-color: #3dc668;
+$button-bg-secondary: #ffffff;
+$button-bg-hover: transparent;
+$button-border-hover: #3dc668;
+$button-border-hover-secondary: #ffffff;
+
+// Рамки полей
+$input-border-color: rgba(255, 255, 255, 0.5);
+$input-border-hover: #ffffff;
+$input-border-focus: $button-bg-color;
+$input-border-error: #ff8282;
+
+
+// Ссылки
+$links-color: #000000;
+$links-color-hover: #3dc668;
+$links-hover-secondary: #ffffff;
+
+//Экраны
+$min-tablet: 768px;
+$min-desktop: 1190px;

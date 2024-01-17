@@ -1,0 +1,11 @@
+//Блок шапки сайта
+//Тут задавать стили внешнего представления этого блока
+.page-header {
+  position: relative;
+  width: 100%;
+  background-color: $bg-color-header;
+}
+
+.page-header__logo {
+  margin: 0;
+}

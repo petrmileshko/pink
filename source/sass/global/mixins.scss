@@ -1,0 +1,17 @@
+//Используемые шрифты и их насыщенность
+@mixin font_primary($weight) {
+  font-family: $font-primary;
+  font-weight: $weight;
+}
+
+@mixin font_secondary($weight) {
+  font-family: $font-secondary;
+  font-weight: $weight;
+}
+
+
+//Для тестирования
+@mixin only_for_test($test-color: #a21c32) {
+  outline: 2px solid $test-color;
+  outline-offset: -2px;
+}

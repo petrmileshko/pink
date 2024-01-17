@@ -1,0 +1,16 @@
+.logo {
+
+  &:hover {}
+
+  &:active {}
+
+  @media (min-width: $min-tablet) {}
+}
+
+.logo__image {
+
+  @media (min-width: $min-tablet) {}
+
+  @media (min-width: $min-desktop) {}
+
+}
