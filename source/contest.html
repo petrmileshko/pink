@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Отличное мобильное приложение для путешествий и выражения своих эмоций">
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Приложение PINK для мобильных устройств - подарит вам много не повторимых эмоций">
+  <meta property="og:description"
+    content="Описание мобильного приложения Pink, цены на разных тарифах, особенные возможности">
+  <meta property="og:url" content="https://portfolio.webpeternet.ru/pink/">
+  <meta property="og:site_name" content="Приложение PINK">
+  <meta property="og:image" content="https://portfolio.webpeternet.ru/pink/img/pink-image.jpg">
+  <!-- Картинка, которая будет выводится в плейсхолдере сайта -->
+  <meta property="og:image:width" content="582"><!-- ее ширина -->
+  <meta property="og:image:height" content="563"><!-- ее высота -->
+  <meta property="og:image:type" content="image/jpg"><!-- ее формат jpg/png/webp или другие -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://portfolio.webpeternet.ru/pink/">
+
+  <link rel="icon" href="./favicon.ico">
+  <!-- подключение обычной фавиконки в устаревших браузерах, которые не поддерживают новые способы и форматы -->
+  <link rel="icon" href="./img/favicon/32.svg" type="image/svg+xml" sizes="any">
+  <!-- подключение фавиконки в формате svg -->
+  <link rel="apple-touch-icon" href="./img/favicon/180.png"><!-- подключение фавиконки для макбуков и айфонов-->
+  <link rel="manifest" href="./manifest.webmanifest">
+  <!-- подключение остальных фавиконок разных форматов и размеров под разные устройства-->
+  <title>Название страницы во вкладке</title>
+
+  <!--
+      Конструкция ниже предназначена для оптимизации скорости загрузки документа
+
+  <style>
+    В инлайн стилях объявлять правила всех стилей для первого экрана страницы
+  </style>
+
+	<link rel="preload" href="css/style.min.css?ver=1.0" as="style" onload="this.onload=null;this.rel='stylesheet'">  Остальные стили загружаем параллельно с документом
+  <noscript><link rel="stylesheet" href="css/style.min.css?ver=1.0"></noscript>    Если JS отключен в браузере то загружать стили обычным способом
+-->
+
+  <link rel="stylesheet" href="./css/style.min.css?ver=1.0"> <!-- Обычное подключение стилей -->
+  <!--  <link rel="stylesheet" href="./outlines.css">
+ Стили для визуального выделения блоков, применять только при отладки разметки -->
+
+  <link rel="preload" href="./fonts/open-sans-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/open-sans-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/open-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body class="page__body">
+  <header class="page__header page-header">
+    <nav class="page-header__navigation block-center">
+      <div class="page-header__bar">
+        <a class="page-header__logo logo" href="./">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/logo/header-descktop.svg">
+            <source media="(min-width: 660px)" srcset="./img/logo/header-tablet.svg">
+            <img class="logo__image" src="./img/logo/header-mobile.svg" width="74" height="23" alt="">
+          </picture>
+        </a>
+        <button class="page-header__toggler" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+
+      <ul class="page-header__menu site-menu">
+        <li class="site-menu__item">
+          <a class="site-menu__link" href="./">Главная</a>
+        </li>
+        <li class="site-menu__item">
+          <a class="site-menu__link" href="./gallery.html">Фотографии</a>
+        </li>
+        <li class="site-menu__item site-menu__item--active">
+          <span class="site-menu__link">Конкурс</span>
+        </li>
+        <li class="site-menu__item">
+          <a class="site-menu__link" href="https://htmlacademy.ru">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page__main main-page">
+    <header class="main-page__header hero block-center">
+      <h1 class="main-page__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </header>
+
+    <footer class="main-page__footer">
+    </footer>
+  </main>
+
+  <footer class="page__footer page-footer block-center">
+
+    <a class="page-footer__logo logo" href="./">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/logo/footer-descktop.svg">
+        <img class="logo__image" src="./img/logo/footer-mobile.svg" width="74" height="23" alt="">
+      </picture>
+    </a>
+
+    <ul class="page-footer__socials socials">
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <span class="visually-hidden">Twitter</span>
+          <svg width="18" height="15" viewBox="0 0 18 15">
+            <use xlink:href="./img/sprite.svg#ico-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <span class="visually-hidden">Facebook</span>
+          <svg width="9" height="18" viewBox="0 0 9 18">
+            <use xlink:href="./img/sprite.svg#ico-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <span class="visually-hidden">Youtube</span>
+          <svg width="15" height="13" viewBox="0 0 15 13">
+            <use xlink:href="./img/sprite.svg#ico-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <a class="page-footer__developers developers" href="https://htmlacademy.ru/intensive/adaptive">
+      Разработано<span class="visually-hidden"> в HTML Academy</span>
+      <svg class="developers__image" width="27" height="34" viewBox="0 0 27 34">
+        <use xlink:href="./img/sprite.svg#ico-htmlacademy"></use>
+      </svg>
+    </a>
+
+  </footer>
+
+  <!--<script src="js/lib/imask.min.js"></script> Скрипт для форматирования полей ввода с телефоном -->
+  <!-- <script src="js/lib/pristine.min.js"></script>Скрипт для валидции полей формы -->
+  <!-- <script src="js/lazysizes.min.js" async></script> Для отложенной загрузки карты в iframe-->
+  <script src="js/app.min.js"></script>
+  <!-- Главные скрипты для управления интерактивными элементами, формами и анимацией -->
+
+</body>
+
+</html>

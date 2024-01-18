@@ -3,27 +3,26 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Краткое описание о чем сайт / страница">
-  <meta name="author" content="Автор контента страницы">
+  <meta name="description" content="Отличное мобильное приложение для путешествий и выражения своих эмоций">
   <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
   <meta property="og:locale" content="ru_RU">
   <meta property="og:type" content="website">
-  <meta property="og:title"
-    content="Заголовок страницы, выражающий ее основную тематику (можно одинаково с главным заголовком 1го уровня h1)">
-  <meta property="og:description" content="Краткое описание о чем сайт / страница">
-  <meta property="og:url" content="https://адрес-сайта.зона/">
-  <meta property="og:site_name" content="Краткое название сайта">
-  <meta property="og:image" content="https:/адрес-сайта.зона/img/фото.jpg">
+  <meta property="og:title" content="Приложение PINK для мобильных устройств - подарит вам много не повторимых эмоций">
+  <meta property="og:description"
+    content="Описание мобильного приложения Pink, цены на разных тарифах, особенные возможности">
+  <meta property="og:url" content="https://portfolio.webpeternet.ru/pink/">
+  <meta property="og:site_name" content="Приложение PINK">
+  <meta property="og:image" content="https://portfolio.webpeternet.ru/pink/img/pink-image.jpg">
   <!-- Картинка, которая будет выводится в плейсхолдере сайта -->
   <meta property="og:image:width" content="582"><!-- ее ширина -->
   <meta property="og:image:height" content="563"><!-- ее высота -->
   <meta property="og:image:type" content="image/jpg"><!-- ее формат jpg/png/webp или другие -->
   <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="canonical" href="https://адрес-сайта.зона/">
+  <link rel="canonical" href="https://portfolio.webpeternet.ru/pink/">
 
   <link rel="icon" href="./favicon.ico">
   <!-- подключение обычной фавиконки в устаревших браузерах, которые не поддерживают новые способы и форматы -->
@@ -46,24 +45,25 @@
 -->
 
   <link rel="stylesheet" href="./css/style.min.css?ver=1.0"> <!-- Обычное подключение стилей -->
-  <link rel="stylesheet" href="./outlines.css">
-  <!-- Стили для визуального выделения блоков, применять только при отладки разметки -->
+  <!--  <link rel="stylesheet" href="./outlines.css">
+ Стили для визуального выделения блоков, применять только при отладки разметки -->
 
-  <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/open-sans-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/open-sans-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/open-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
-<body class="page__body">
+<body class="page__body" id="top">
   <header class="page__header page-header">
     <nav class="page-header__navigation block-center">
       <div class="page-header__bar">
-        <a class="page-header__logo logo" href="/">
+        <span class="page-header__logo logo">
           <picture>
             <source media="(min-width: 1200px)" srcset="./img/logo/header-descktop.svg">
             <source media="(min-width: 660px)" srcset="./img/logo/header-tablet.svg">
             <img class="logo__image" src="./img/logo/header-mobile.svg" width="74" height="23" alt="">
           </picture>
-        </a>
+        </span>
         <button class="page-header__toggler" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -71,16 +71,16 @@
 
       <ul class="page-header__menu site-menu">
         <li class="site-menu__item site-menu__item--active">
-          <a class="site-menu__link" href="#">Главная</a>
+          <span class="site-menu__link">Главная</span>
         </li>
         <li class="site-menu__item">
-          <a class="site-menu__link" href="#">Фотографии</a>
+          <a class="site-menu__link" href="./gallery.html">Фотографии</a>
         </li>
         <li class="site-menu__item">
-          <a class="site-menu__link" href="#">Конкурс</a>
+          <a class="site-menu__link" href="./contest.html">Конкурс</a>
         </li>
         <li class="site-menu__item">
-          <a class="site-menu__link" href="#">HTML Academy</a>
+          <a class="site-menu__link" href="./https://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -326,7 +326,7 @@
 
   <footer class="page__footer page-footer block-center">
 
-    <a class="page-footer__logo logo" href="/">
+    <a class="page-footer__logo logo" href="#top">
       <picture>
         <source media="(min-width: 1200px)" srcset="./img/logo/footer-descktop.svg">
         <img class="logo__image" src="./img/logo/footer-mobile.svg" width="74" height="23" alt="">
@@ -371,7 +371,7 @@
 
   <!--<script src="js/lib/imask.min.js"></script> Скрипт для форматирования полей ввода с телефоном -->
   <!-- <script src="js/lib/pristine.min.js"></script>Скрипт для валидции полей формы -->
-  <script src="js/lazysizes.min.js" async></script><!-- Для отложенной загрузки карты в iframe-->
+  <!-- <script src="js/lazysizes.min.js" async></script> Для отложенной загрузки карты в iframe-->
   <script src="js/app.min.js"></script>
   <!-- Главные скрипты для управления интерактивными элементами, формами и анимацией -->
 
