@@ -87,7 +87,7 @@
   </header>
 
   <main class="page__main main-page">
-    <header class="main-page__header hero">
+    <header class="main-page__header hero block-center">
       <h1 class="main-page__title visually-hidden">Приложение PINK для мобильных устройств</h1>
       <p class="hero__slogan">Взгляните на жизнь иначе!</p>
 
@@ -133,7 +133,7 @@
 
     </header>
 
-    <section class="main-page__section features">
+    <section class="main-page__section features block-center">
       <h2 class="visually-hidden">Особенности приложения</h2>
       <p class="features__text">Устали от серости мегаполиса?</p>
       <p class="features__text">Нам есть, что вам предложить!</p>
@@ -222,7 +222,7 @@
 
     </section>
 
-    <section class="main-page__section tariffs">
+    <section class="main-page__section tariffs block-center">
       <h2 class="visually-hidden"> Тарифные планы приложения Пинк</h2>
 
       <table class="tariffs__plans plan">
@@ -290,7 +290,7 @@
 
     <footer class="main-page__footer contacts">
 
-      <div class="contacts__container">
+      <div class="contacts__container block-center">
         <p class="contacts__heading">Остались вопросы? Свяжитесь с нами!</p>
         <p class="contacts__phone">
           Звоните:
@@ -313,12 +313,12 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="./img/map/descktop.jpg">
             <source media="(min-width: 660px)" srcset="./img/map/tablet.jpg">
-            <img class="map__image" src="./img/map/mobile.jpg" alt="Карта местоположения">
+            <img class="map__image" src="./img/map/mobile.jpg" alt="Карта местоположения в формате jpg">
           </picture>
         </figure>
-
-        <iframe class="map__interactive" title="Местоположение офиса на яндекс-картах"
-          data-src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab3c55d4b094121533920a7032d7930ffd94e588af5804c4e5c00a3bfe0378c56&amp;source=constructor"></iframe>
+        <iframe class="map__interactive" title="Местоположение офиса"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab3c55d4b094121533920a7032d7930ffd94e588af5804c4e5c00a3bfe0378c56&amp;source=constructor"
+          width="100%" height="400" frameborder="0"></iframe>
       </div>
 
     </footer>
