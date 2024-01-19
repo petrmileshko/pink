@@ -80,7 +80,7 @@
           <a class="site-menu__link" href="./contest.html">Конкурс</a>
         </li>
         <li class="site-menu__item">
-          <a class="site-menu__link" href="./https://htmlacademy.ru">HTML Academy</a>
+          <a class="site-menu__link" href="https://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -88,49 +88,51 @@
 
   <main class="page__main main-page">
     <header class="main-page__header hero block-center">
-      <h1 class="main-page__title visually-hidden">Приложение PINK для мобильных устройств</h1>
-      <p class="hero__slogan">Взгляните на жизнь иначе!</p>
-
-      <figure class="hero__image-container">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="./img/hero-descktop.png">
-          <source media="(min-width: 660px)" srcset="./img/hero-tablet.png">
-          <img class="hero__image" src="./img/hero-mobile.png" width="74" height="23" alt="Приложение Pink в мобильном">
-        </picture>
-        <figcaption class="visually-hidden">Вид приложения в мобильном с розовым фильтром</figcaption>
-      </figure>
-
       <div class="hero__wrapper">
-        <a class="hero__button" href="#">Скачать приложение</a>
-        <ul class="hero__list download">
-          <li class="download__item">
-            <a class="download__link" href="#">
-              <span class="visually-hidden">для IOS</span>
-              <svg width="47" height="56" viewBox="0 0 47 56">
-                <use xlink:href="./img/sprite.svg#ico-ios"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="download__item">
-            <a class="download__link" href="#">
-              <span class="visually-hidden">Для Android</span>
-              <svg width="43" height="47" viewBox="0 0 43 47">
-                <use xlink:href="./img/sprite.svg#ico-android"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="download__item">
-            <a class="download__link" href="#">
-              <span class="visually-hidden">Для Windows</span>
-              <svg width="44" height="41" viewBox="0 0 44 41">
-                <use xlink:href="./img/sprite.svg#ico-windows"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <p class="hero__accessibility">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
+        <h1 class="main-page__title visually-hidden">Мобильное приложение PINK</h1>
+        <p class="hero__slogan">Взгляните на жизнь иначе!</p>
 
+        <figure class="hero__images">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/hero-descktop.png">
+            <source media="(min-width: 660px)" srcset="./img/hero-tablet.png">
+            <img class="hero__image" src="./img/hero-mobile.png" width="74" height="23"
+              alt="Приложение Pink на экране смартфона">
+          </picture>
+          <figcaption class="visually-hidden">Вид приложения в мобильном с розовым фильтром</figcaption>
+        </figure>
+
+        <div class="hero__downloads downloads">
+          <a class="downloads__button" href="#">Скачать приложение</a>
+          <ul class="downloads__list">
+            <li class="downloads__item">
+              <a class="downloads__link" href="#">
+                <span class="visually-hidden">для IOS</span>
+                <svg width="47" height="56" viewBox="0 0 47 56">
+                  <use xlink:href="./img/sprite.svg#ico-ios"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="downloads__item">
+              <a class="downloads__link" href="#">
+                <span class="visually-hidden">Для Android</span>
+                <svg width="43" height="47" viewBox="0 0 43 47">
+                  <use xlink:href="./img/sprite.svg#ico-android"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="downloads__item">
+              <a class="downloads__link" href="#">
+                <span class="visually-hidden">Для Windows</span>
+                <svg width="44" height="41" viewBox="0 0 44 41">
+                  <use xlink:href="./img/sprite.svg#ico-windows"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="downloads__accessibility">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
     </header>
 
     <section class="main-page__section features block-center">
