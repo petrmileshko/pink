@@ -1,13 +1,18 @@
 //Параметры шрифта
 $font-primary: "Open Sans", "Verdana", sans-serif;
 $font-secondary: "Open Sans", "Verdana", sans-serif;
+$font-light: 300;
 $font-regular: 400;
-$font-medium: 500;
+//$font-medium: 500;
 $font-bold: 700;
-$font-color: #ffffff;
-$font-color-inverted: #000000;
-$font-small: 14px;
-$font-large: 18px;
+$font-color: #283645;
+$font-color-headings: #000000;
+$font-color-titles: #283645;
+$font-color-inverted: #ffffff;
+
+$font-title-mobile: 24px;
+$font-title-tablet: 40px;
+$font-title-desktop: 50px;
 
 //Фон
 $bg-color-primary: #ffffff;
@@ -15,27 +20,36 @@ $bg-color-secondary: #f2f2f2;
 $bg-color-header: #1d2631;
 
 // Кнопки
-$button-color-primary: #202020;
-$button-color-secondary: #1c1b1b;
-$button-color-hover: #3dc668;
-$button-color-hover-secondary: #ffffff;
-$button-bg-color: #3dc668;
-$button-bg-secondary: #ffffff;
-$button-bg-hover: transparent;
-$button-border-hover: #3dc668;
-$button-border-hover-secondary: #ffffff;
+$button-color-primary: #2aab6d;
+$button-color-secondary: #1c9b5e;
+$button-hero-color: transparent;
+$button-hero-border: #ffffff;
+$button-hero-hover: #ffffff;
+$button-upload-color: transparent;
+$button-upload-border: #d22856;
+$button-upload-hover: #d22856;
+$button-cancel-color: transparent;
+$button-cancel-border: #283645;
+$button-cancel-hover: #283645;
+$button-burger-color: #ffffff;
+$button-burger-hover: #d22856;
+$button-burger-active: rgba(210, 40, 86, 0.3);
 
 // Рамки полей
-$input-border-color: rgba(255, 255, 255, 0.5);
-$input-border-hover: #ffffff;
-$input-border-focus: $button-bg-color;
-$input-border-error: #ff8282;
+$input-border-color: #e5e5e5;
+$input-border-hover: #283645;
+$input-border-active: #d22856;
+$input-error: #ff8282;
 
 
 // Ссылки
 $links-color: #000000;
 $links-color-hover: #3dc668;
 $links-hover-secondary: #ffffff;
+
+// Меню
+$menu-hover: #d22856;
+$menu-active: rgba(210, 40, 86, 0.3);
 
 //Экраны
 $min-tablet: 660px;

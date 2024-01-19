@@ -5,25 +5,17 @@
 }
 
 .main-page__title {
-  @include font_secondary($font-regular);
-  font-size: $font-large;
-
-  @media (min-width: $min-desktop) {}
+  margin: 0;
+  color: $font-color-inverted;
 }
 
 .main-page__section {
   @media (min-width: $min-desktop) {}
 }
 
-.main-page__article {
-  @media (min-width: $min-desktop) {}
-}
 
-
-.main-page__section-title,
-.main-page__article-title {
-  @include font_secondary($font-regular);
-  font-size: $font-small;
+.main-page__section-title {
+  color: $font-color-titles;
 
   @media (min-width: $min-desktop) {}
 }

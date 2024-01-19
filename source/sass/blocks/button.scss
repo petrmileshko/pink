@@ -1,4 +1,10 @@
 .button {
+  display: block;
+  color: inherit;
+  background-color: none;
+  border: none;
+  cursor: pointer;
+
   &:hover {}
 
   &:focus {}

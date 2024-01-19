@@ -59,19 +59,21 @@
       <div class="page-header__bar">
         <span class="page-header__logo logo">
           <picture>
-            <source media="(min-width: 1200px)" srcset="./img/logo/header-descktop.svg">
+            <source media="(min-width: 1200px)" srcset="./img/logo/header-desktop.svg">
             <source media="(min-width: 660px)" srcset="./img/logo/header-tablet.svg">
             <img class="logo__image" src="./img/logo/header-mobile.svg" width="74" height="23" alt="">
           </picture>
         </span>
         <button class="page-header__toggler" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="burger">
+            <span class="visually-hidden">Открыть меню</span>
+          </span>
         </button>
       </div>
 
       <ul class="page-header__menu site-menu">
-        <li class="site-menu__item site-menu__item--active">
-          <span class="site-menu__link">Главная</span>
+        <li class="site-menu__item">
+          <span class="site-menu__link site-menu__link--active">Главная</span>
         </li>
         <li class="site-menu__item">
           <a class="site-menu__link" href="./gallery.html">Фотографии</a>
@@ -90,23 +92,28 @@
     <header class="main-page__header hero">
       <div class="hero__wrapper block-center">
 
-        <h1 class="main-page__title">
+        <h1 class="main-page__title title">
           <span class="visually-hidden">Мобильное приложение PINK. </span>
           Взгляните на жизнь иначе!
         </h1>
 
         <figure class="hero__images">
           <picture>
-            <source media="(min-width: 1200px)" srcset="./img/hero-descktop.png">
-            <source media="(min-width: 660px)" srcset="./img/hero-tablet.png">
-            <img class="hero__image" src="./img/hero-mobile.png" width="74" height="23"
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="./img/hero/descktop.webp 1x, ./img/hero/descktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)"
+              srcset="./img/hero/tablet@2x.webp 1x, ./img/hero/tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/hero/mobile.webp 1x, ./img/hero/mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="./img/hero/descktop.png 1x, ./img/hero/descktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="./img/hero/tablet.png 1x, ./img/hero/tablet@2x.png 2x">
+            <img class="hero__image" src="./img/hero/mobile.png" srcset="./img/hero/mobile@2x.png 2x"
               alt="Приложение Pink на экране смартфона">
           </picture>
           <figcaption class="visually-hidden">Вид приложения в мобильном с розовым фильтром</figcaption>
         </figure>
 
         <div class="hero__downloads downloads">
-          <a class="downloads__button" href="#">Скачать приложение</a>
+          <a class="downloads__button button button--hero" href="#">Скачать приложение</a>
           <ul class="downloads__list">
             <li class="downloads__item">
               <a class="downloads__link" href="#">
@@ -140,8 +147,8 @@
 
     <section class="main-page__section features block-center">
       <h2 class="visually-hidden">Особенности приложения</h2>
-      <p class="features__text">Устали от серости мегаполиса?</p>
-      <p class="features__text">Нам есть, что вам предложить!</p>
+      <p class="features__text title">Устали от серости мегаполиса?</p>
+      <p class="features__text title">Нам есть, что вам предложить!</p>
 
       <ul class="features__list">
         <li class="features__item">
@@ -296,7 +303,7 @@
     <footer class="main-page__footer contacts">
 
       <div class="contacts__container block-center">
-        <p class="contacts__heading">Остались вопросы? Свяжитесь с нами!</p>
+        <p class="contacts__heading title">Остались вопросы? Свяжитесь с нами!</p>
         <p class="contacts__phone">
           Звоните:
           <a class="contacts__phone-link" href="tel:+78125556666">+7&nbsp;(812)&nbsp;555-66-66</a>
@@ -332,8 +339,8 @@
 
     <a class="page-footer__logo logo" href="#top">
       <picture>
-        <source media="(min-width: 1200px)" srcset="./img/logo/footer-descktop.svg">
-        <img class="logo__image" src="./img/logo/footer-mobile.svg" width="74" height="23" alt="">
+        <source media="(min-width: 1200px)" srcset="./img/logo/footer-desktop.svg">
+        <img class="logo__image" src="./img/logo/footer-tablet.svg" width="145" height="40" alt="">
       </picture>
     </a>
 

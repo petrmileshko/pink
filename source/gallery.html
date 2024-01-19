@@ -57,13 +57,15 @@
       <div class="page-header__bar">
         <a class="page-header__logo logo" href="./">
           <picture>
-            <source media="(min-width: 1200px)" srcset="./img/logo/header-descktop.svg">
+            <source media="(min-width: 1200px)" srcset="./img/logo/header-desktop.svg">
             <source media="(min-width: 660px)" srcset="./img/logo/header-tablet.svg">
             <img class="logo__image" src="./img/logo/header-mobile.svg" width="74" height="23" alt="">
           </picture>
         </a>
         <button class="page-header__toggler" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="burger">
+            <span class="visually-hidden">Открыть меню</span>
+          </span>
         </button>
       </div>
 
@@ -71,8 +73,8 @@
         <li class="site-menu__item">
           <a class="site-menu__link" href="./">Главная</a>
         </li>
-        <li class="site-menu__item site-menu__item--active">
-          <span class="site-menu__link">Фотографии</span>
+        <li class="site-menu__item">
+          <span class="site-menu__link site-menu__link--active">Фотографии</span>
         </li>
         <li class="site-menu__item">
           <a class="site-menu__link" href="./contest.html">Конкурс</a>
@@ -87,14 +89,15 @@
   <main class="page__main main-page">
     <header class="main-page__header hero">
       <div class="hero__wrapper block-center">
-        <h1 class="main-page__title">Фотографии пользователей
+        <h1 class="main-page__title title">Фотографии пользователей
           <span class="visually-hidden">в мобильнои приложении Pink</span>
         </h1>
       </div>
     </header>
     <section class="main-page__section catalog block-center">
       <h2 class="visually-hidden">Каталолг фотографий</h2>
-      <p class="main-page__section__text">Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите, как
+      <p class="main-page__section-title title">Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите,
+        как
         не&nbsp;хватает ваших?</p>
       <ul class="catalog__list posts">
         <li class="posts__item post post--best">
@@ -320,7 +323,7 @@
     <section class="main-page__section upload">
       <h2 class="visually-hidden">Отправка фотографий</h2>
 
-      <p class="main-page__section__text block-center">Затмите их&nbsp;всех! Выкладывайте все, что накопилось
+      <p class="main-page__section-title title block-center">Затмите их&nbsp;всех! Выкладывайте все, что накопилось
         в&nbsp;телефоне!</p>
 
       <form class="upload__form form block-center" action="https://echo.htmlacademy.ru/" method="post"
@@ -378,8 +381,8 @@
 
     <a class="page-footer__logo logo" href="./">
       <picture>
-        <source media="(min-width: 1200px)" srcset="./img/logo/footer-descktop.svg">
-        <img class="logo__image" src="./img/logo/footer-mobile.svg" width="74" height="23" alt="">
+        <source media="(min-width: 1200px)" srcset="./img/logo/footer-desktop.svg">
+        <img class="logo__image" src="./img/logo/footer-tablet.svg" width="145" height="40" alt="">
       </picture>
     </a>
 

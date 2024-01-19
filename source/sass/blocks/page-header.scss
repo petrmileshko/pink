@@ -13,3 +13,26 @@
 .page-header__navigation {
   background-color: inherit;
 }
+
+.page-header__toggler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 24px;
+  background: none;
+  border: none;
+
+  @media (min-width: $min-tablet) {
+    display: none;
+  }
+}
+
+.page-header__menu {
+  display: none;
+
+  @media (min-width: $min-tablet) {
+    display: flex;
+    width: 100%;
+  }
+}

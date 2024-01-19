@@ -1,0 +1,47 @@
+// Блок для кнопки меню мобильной версии
+.burger {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: $button-burger-color;
+  border: none;
+  transform: rotateZ(0);
+  transition: 0.4s ease all;
+
+  &::before,
+  &::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: $button-burger-color;
+    content: "";
+    transform: rotateZ(0);
+    transition: 0.4s ease all;
+  }
+
+  &::before {
+    top: -8px;
+  }
+
+  &::after {
+    bottom: -8px;
+  }
+
+  &--opened::before {
+    width: 24px;
+    top: 0;
+    transform: rotateZ(405deg);
+  }
+
+  &--opened::after {
+    width: 24px;
+    bottom: 0;
+    transform: rotateZ(315deg);
+  }
+
+  &--opened {
+    background-color: transparent;
+  }
+}

@@ -58,13 +58,15 @@
       <div class="page-header__bar">
         <a class="page-header__logo logo" href="./">
           <picture>
-            <source media="(min-width: 1200px)" srcset="./img/logo/header-descktop.svg">
+            <source media="(min-width: 1200px)" srcset="./img/logo/header-desktop.svg">
             <source media="(min-width: 660px)" srcset="./img/logo/header-tablet.svg">
             <img class="logo__image" src="./img/logo/header-mobile.svg" width="74" height="23" alt="">
           </picture>
         </a>
         <button class="page-header__toggler" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="burger">
+            <span class="visually-hidden">Открыть меню</span>
+          </span>
         </button>
       </div>
 
@@ -75,8 +77,8 @@
         <li class="site-menu__item">
           <a class="site-menu__link" href="./gallery.html">Фотографии</a>
         </li>
-        <li class="site-menu__item site-menu__item--active">
-          <span class="site-menu__link">Конкурс</span>
+        <li class="site-menu__item">
+          <span class="site-menu__link site-menu__link--active">Конкурс</span>
         </li>
         <li class="site-menu__item">
           <a class="site-menu__link" href="https://htmlacademy.ru">HTML Academy</a>
@@ -88,14 +90,14 @@
   <main class="page__main main-page">
     <header class="main-page__header hero">
       <div class="hero__wrapper block-center">
-        <h1 class="main-page__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="main-page__title title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
     </header>
 
     <section class="main-page__section application">
       <h2 class="visually-hidden">Отправка фотографий</h2>
 
-      <p class="main-page__section__text block-center">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный
+      <p class="main-page__section-title title block-center">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный
         приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту!</p>
 
       <form class="application__form form" action="https://echo.htmlacademy.ru/" method="post"
@@ -167,11 +169,11 @@
               <span class="control__marker">Pink для iOS</span>
             </label>
             <label class="form__label control control--radio">
-              <input class="control__input" type="radio" name="type" value="android" checked>
+              <input class="control__input" type="radio" name="type" value="android">
               <span class="control__marker">Pink на Android</span>
             </label>
             <label class="form__label control control--radio">
-              <input class="control__input" type="radio" name="type" value="windows" checked>
+              <input class="control__input" type="radio" name="type" value="windows">
               <span class="control__marker">Windows Phone</span>
             </label>
           </fieldset>
@@ -195,8 +197,8 @@
 
     <a class="page-footer__logo logo" href="./">
       <picture>
-        <source media="(min-width: 1200px)" srcset="./img/logo/footer-descktop.svg">
-        <img class="logo__image" src="./img/logo/footer-mobile.svg" width="74" height="23" alt="">
+        <source media="(min-width: 1200px)" srcset="./img/logo/footer-desktop.svg">
+        <img class="logo__image" src="./img/logo/footer-tablet.svg" width="145" height="40" alt="">
       </picture>
     </a>
 
