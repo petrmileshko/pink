@@ -317,16 +317,16 @@
         </li>
       </ul>
     </section>
-    <section class="main-page__section submit submit--picture">
+    <section class="main-page__section upload">
       <h2 class="visually-hidden">Отправка фотографий</h2>
 
       <p class="main-page__section__text block-center">Затмите их&nbsp;всех! Выкладывайте все, что накопилось
         в&nbsp;телефоне!</p>
 
-      <form class="submit__form form block-center" action="https://echo.htmlacademy.ru/" method="post"
+      <form class="upload__form form block-center" action="https://echo.htmlacademy.ru/" method="post"
         enctype="multipart/form-data" autocomplete="off">
-        <fieldset class="form__group picture-uplod">
-          <label class="picture-uplod__label" for="upload-pic">
+        <fieldset class="upload__image">
+          <label class="upload__image-label" for="upload-pic">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="./img/descktop-default-picture.webp 1x, ./img/descktop-default-picture@2x.webp 2x">
@@ -338,36 +338,37 @@
                 srcset="./img/descktop-default-picture.jpg 1x, ./img/descktop-default-picture@2x.jpg 2x">
               <source media="(min-width: 660px)"
                 srcset="./img/tablet-default-picture.jpg 1x, ./img/tablet-default-picture@2x.jpg 2x">
-              <img class="picture-uplod__image" src="./img/mobile-default-picture.jpg"
+              <img class="upload__image" src="./img/mobile-default-picture.jpg"
                 srcset="./img/mobile-default-picture@2x.jpg 2x" alt="">
             </picture>
           </label>
-          <input class="picture-uplod__input visually-hidden" type="file" id="upload-pic" name="filename"
+          <input class="upload__image-input visually-hidden" type="file" id="upload-pic" name="filename"
             accept="image/*" required>
         </fieldset>
-        <fieldset class="form__group picture-effects">
-          <ul class="picture-effects__list">
-            <li class="picture-effects__item picture-effects__item--active">
-              <label class="picture-effects__label picture-effects__label--crop">
+        <fieldset class="upload__effects">
+          <ul class="upload__effects-list">
+            <li class="upload__effects-item upload__effects-item--active">
+              <label class="upload__effects-label upload__effects-label--crop">
                 <span class="visually-hidden">Обрезать</span>
-                <input class="picture-effects__control" name="crop" type="range" value="85" min="1" max="100">
+                <input class="form__range form__range--effects" name="crop" type="range" value="85" min="1" max="100">
               </label>
             </li>
-            <li class="picture-effects__item">
-              <label class="picture-effects__label picture-effects__label--fill">
+            <li class="upload__effects-item">
+              <label class="upload__effects-label upload__effects-label--fill">
                 <span class="visually-hidden">Цветокоррекция</span>
-                <input class="picture-effects__control" name="fill" type="range" value="51" min="1" max="100">
+                <input class="form__range form__range--effects" name="fill" type="range" value="51" min="1" max="100">
               </label>
             </li>
-            <li class="picture-effects__item">
-              <label class="picture-effects__label picture-effects__label--contrast">
+            <li class="upload__effects-item">
+              <label class="upload__effects-label upload__effects-label--contrast">
                 <span class="visually-hidden">Контраст</span>
-                <input class="picture-effects__control" name="contrast" type="range" value="14" min="1" max="100">
+                <input class="form__range form__range--effects" name="contrast" type="range" value="14" min="1"
+                  max="100">
               </label>
             </li>
           </ul>
-          <button class="form__submit button" type="submit">Запостить</button>
-          <button class="form__reset button" type="reset" disabled>Отмена</button>
+          <button class="form__button button button--upload" type="submit">Запостить</button>
+          <button class="form__button button button--reset" type="reset" disabled>Отмена</button>
         </fieldset>
       </form>
     </section>
