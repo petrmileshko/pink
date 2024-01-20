@@ -14,7 +14,7 @@ const autoprefix = require('autoprefixer'); // автоматическая по
 const squoosh = require("gulp-libsquoosh"); // Оптимизация картинок
 const webp = require("gulp-webp"); // Конвертер изображений в формат webp
 const svgstore = require("gulp-svgstore"); // Сборка svg файлов в спрайт
-const svgmin = require('gulp-svgmin');     // Сжимание файлов svg
+const svgmin = require('gulp-svgmin'); // Сжимание файлов svg
 const path = require('path');
 const del = require("del"); // удаление папки
 const sync = require('browser-sync').create();
@@ -40,8 +40,9 @@ exports.server = server;
 
 // Отслеживание изменений в исходных файлах (режим разработчика)
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series(styles)); // отслеживать файлы препроцессора
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles, reload)); // отслеживать файлы препроцессора
   gulp.watch("source/js/**/*.js", gulp.series(scriptsjs)); // отслеживать файлы скриптов
+  gulp.watch("source/img/**/*.{jpg,png}", gulp.series(createWebp, reload)); // отслеживать картинки
   gulp.watch("source/*.html", gulp.series(html, reload)); // отслеживать файлы разметки HTML
 }
 exports.watcher = watcher;
@@ -85,7 +86,9 @@ exports.scriptsjs = scriptsjs;
 // минификация html
 const html = () => {
   return gulp.src("source/*.html")
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
     .pipe(gulp.dest("build"));
 }
 exports.html = html;
@@ -132,7 +135,7 @@ exports.optimizeImages = optimizeImages;
 const createWebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}") // выбираем все файлы указанного формата
     .pipe(webp({
-      quality: 90
+      quality: 70
     })) // конвертируем через плагин
     .pipe(gulp.dest("build/img")); // сохраняем в указанную папку
 }
@@ -141,7 +144,7 @@ exports.createWebp = createWebp;
 //  Создание спрайта из иконок в svg
 const sprite = () => {
   return gulp.src("source/img/icons/*.svg") // выбираем все файлы формата SVG в папке с иконками
-    .pipe(svgmin((file) => {                // сжимаем сначала svg файл
+    .pipe(svgmin((file) => { // сжимаем сначала svg файл
       const prefix = path.basename(file.relative, path.extname(file.relative));
       return {
         plugins: [{
