@@ -61,7 +61,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="./img/logo/header-desktop.svg">
             <source media="(min-width: 660px)" srcset="./img/logo/header-tablet.svg">
-            <img class="logo__image" src="./img/logo/header-mobile.svg" width="74" height="23" alt="">
+            <img class="logo__image" src="./img/logo/header-mobile.svg" alt="">
           </picture>
         </span>
         <button class="page-header__toggler" type="button">
@@ -145,35 +145,36 @@
       </div>
     </header>
 
-    <section class="main-page__section features block-center">
+    <section class="main-page__section features">
       <h2 class="visually-hidden">Особенности приложения</h2>
-      <p class="features__text title">Устали от серости мегаполиса?</p>
-      <p class="features__text title">Нам есть, что вам предложить!</p>
+      <div class="features__wrapper block-center">
+        <p class="features__text title">Устали от серости мегаполиса?</p>
+        <p class="features__text title">Нам есть, что вам предложить!</p>
 
-      <ul class="features__list">
-        <li class="features__item features__item--mood">
-          <h3 class="features__slogan">Поднимает настроение</h3>
-          <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-            несколько кликов!</p>
-        </li>
-        <li class="features__item features__item--pink">
-          <h3 class="features__slogan">Меняет мир вокруг</h3>
-          <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-            усилить эффект</p>
-        </li>
-        <li class="features__item features__item--friends">
-          <h3 class="features__slogan">Заводит новых друзей</h3>
-          <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-            новых</p>
-        </li>
-        <li class="features__item features__item--research">
-          <h3 class="features__slogan">Эффект на 24 часа!</h3>
-          <p class="features__description">Британские ученые провели исследования и доказали, что положительный эффект
-            от использования приложения длится целые сутки!</p>
-          <a class="features__link link link--underline" href="">Узнать больше об исследовании</a>
-        </li>
-      </ul>
-
+        <ul class="features__list">
+          <li class="features__item features__item--mood">
+            <h3 class="features__slogan">Поднимает настроение</h3>
+            <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+              несколько кликов!</p>
+          </li>
+          <li class="features__item features__item--pink">
+            <h3 class="features__slogan">Меняет мир вокруг</h3>
+            <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+              усилить эффект</p>
+          </li>
+          <li class="features__item features__item--friends">
+            <h3 class="features__slogan">Заводит новых друзей</h3>
+            <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+              новых</p>
+          </li>
+          <li class="features__item features__item--research">
+            <h3 class="features__slogan">Эффект на 24 часа!</h3>
+            <p class="features__description">Британские ученые провели исследования и доказали, что положительный эффект
+              от использования приложения длится целые сутки!</p>
+            <a class="features__link link link--underline" href="">Узнать больше об исследовании</a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="main-page__section testimonials block-center">
@@ -340,7 +341,7 @@
     <a class="page-footer__logo logo" href="#top">
       <picture>
         <source media="(min-width: 1200px)" srcset="./img/logo/footer-desktop.svg">
-        <img class="logo__image" src="./img/logo/footer-tablet.svg" width="145" height="40" alt="">
+        <img class="logo__image" src="./img/logo/footer-tablet.svg" alt="">
       </picture>
     </a>
 

@@ -1,0 +1,115 @@
+.features {}
+
+.features__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--research {
+    display: none;
+  }
+
+  &::after {
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+
+  &--friends::after {
+    width: 157px;
+    height: 277px;
+    background-image: url("../img/backgrounds/features/mobile/friends.webp");
+    background-size: 157px auto;
+    content: "";
+  }
+
+  @media (min-resolution: 2dppx) {
+    &--friends::after {
+      background-image: url("../img/backgrounds/features/mobile/friends@2x.webp");
+    }
+  }
+
+  @media (min-width: $min-tablet) {
+
+    &--research {
+      display: flex;
+    }
+
+    &--friends::after {
+      width: 268px;
+      height: 481px;
+      background-image: url("../img/backgrounds/features/mobile/friends.webp");
+      background-size: 268px auto;
+      content: "";
+    }
+
+    &--research::after {
+      width: 238px;
+      height: 276px;
+      background-size: contain;
+      background-image: url("../img/backgrounds/features/research.svg");
+      content: "";
+    }
+
+    @media (min-resolution: 2dppx) {
+      &--friends::after {
+        background-image: url("../img/backgrounds/features/tablet/friends@2x.webp");
+      }
+    }
+  }
+
+  @media (min-width: $min-desktop) {
+    &::after {
+      width: 186px;
+      height: 301px;
+      background-size: 186px auto;
+      content: "";
+    }
+
+    &--mood::after {
+      background-image: url("../img/backgrounds/features/desktop/mood.webp");
+    }
+
+    &--pink::after {
+      background-image: url("../img/backgrounds/features/desktop/pink.webp");
+    }
+
+    &--friends::after {
+      background-image: url("../img/backgrounds/features/desktop/friends.webp");
+    }
+
+    &--research::after {
+      width: 298px;
+      height: 345px;
+      background-image: url("../img/backgrounds/features/research.svg");
+    }
+
+    @media (min-resolution: 2dppx) {
+      &--mood::after {
+        background-image: url("../img/backgrounds/features/desktop/mood@2x.webp");
+      }
+
+      &--pink::after {
+        background-image: url("../img/backgrounds/features/desktop/pink@2x.webp");
+      }
+
+      &--friends::after {
+        background-image: url("../img/backgrounds/features/desktop/friends@2x.webp");
+      }
+    }
+  }
+}

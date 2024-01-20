@@ -1,10 +1,19 @@
 .logo {
+  display: block;
 
   &:hover {}
 
   &:active {}
 
-  @media (min-width: $min-tablet) {}
+  @media (min-width: $min-tablet) {
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: $min-desktop) {
+    width: 147px;
+    height: 40px;
+  }
 }
 
 .logo__image {

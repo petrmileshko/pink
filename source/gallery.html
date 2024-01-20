@@ -59,7 +59,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="./img/logo/header-desktop.svg">
             <source media="(min-width: 660px)" srcset="./img/logo/header-tablet.svg">
-            <img class="logo__image" src="./img/logo/header-mobile.svg" width="74" height="23" alt="">
+            <img class="logo__image" src="./img/logo/header-mobile.svg" alt="">
           </picture>
         </a>
         <button class="page-header__toggler" type="button">
@@ -94,23 +94,56 @@
         </h1>
       </div>
     </header>
-    <section class="main-page__section catalog block-center">
+    <section class="main-page__section catalog">
       <h2 class="visually-hidden">Каталолг фотографий</h2>
-      <p class="main-page__section-title title">Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите,
+      <p class="main-page__section-title title block-center">Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите,
         как
         не&nbsp;хватает ваших?</p>
-      <ul class="catalog__list posts">
-        <li class="posts__item post post--best">
+
+      <figure class="catalog__panorama panorama">
+        <a class="panorama__link" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="./img/catalog/desktop/panorama.webp 1x, ./img/catalog/desktop/panorama@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)"
+              srcset="./img/catalog/tablet/panorama.jpg 1x, ./img/catalog/tablet/panorama@2x.jpg 2x">
+            <source type="image/webp"
+              srcset="./img/catalog/mobile/panorama.webp 1x, ./img/catalog/mobile/panorama@2x.webp 2x">
+            <source media="(min-width: 1200px)"
+              srcset="./img/catalog/desktop/panorama.jpg 1x, ./img/catalog/desktop/panorama@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+              srcset="./img/catalog/tablet/panorama.jpg 1x, ./img/catalog/tablet/panorama@2x.jpg 2x">
+            <img class="panorama__image" src="./img/catalog/mobile/panorama.jpg"
+              srcset="./img/catalog/mobile/panorama@2x.jpg 2x" alt="">
+          </picture>
+        </a>
+        <figcaption class="panorama__data block-center">
+          <p class="panorama__meta meta">
+            <b class="meta__author">Надежда</b>
+            <time class="meta__time" datetime="2024-01-20T11:00">(45 часов назад)</time>
+          </p>
+          <p class="panorama__text">Всем GM и взаимные лайки!</p>
+          <p class="panorama__statistics likes">
+            <button class="likes__button" type="button">
+              <span class="visually-hidden">Поставить лайк</span>
+            </button>
+            <span class="likes__total">Нравится: 2560</span>
+          </p>
+        </figcaption>
+      </figure>
+
+      <ul class="catalog__list posts block-center">
+        <li class="posts__item post">
           <a class="post__picture-link" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
-                srcset="./img/catalog/descktop/picture_1.webp 1x, ./img/catalog/descktop/picture_1@2x.webp 2x">
+                srcset="./img/catalog/desktop/picture_1.webp 1x, ./img/catalog/desktop/picture_1@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)"
                 srcset="./img/catalog/tablet/picture_1.jpg 1x, ./img/catalog/tablet/picture_1@2x.jpg 2x">
               <source type="image/webp"
                 srcset="./img/catalog/mobile/picture_1.webp 1x, ./img/catalog/mobile/picture_1@2x.webp 2x">
               <source media="(min-width: 1200px)"
-                srcset="./img/catalog/descktop/picture_1.jpg 1x, ./img/catalog/descktop/picture_1@2x.jpg 2x">
+                srcset="./img/catalog/desktop/picture_1.jpg 1x, ./img/catalog/desktop/picture_1@2x.jpg 2x">
               <source media="(min-width: 660px)"
                 srcset="./img/catalog/tablet/picture_1.jpg 1x, ./img/catalog/tablet/picture_1@2x.jpg 2x">
               <img class="post__image" src="./img/catalog/mobile/picture_1.jpg"
@@ -120,7 +153,7 @@
           <div class="post__data block-center">
             <p class="post__meta meta">
               <b class="meta__name">Анна</b>
-              <span class="meta__time">(5 минут назад)</span>
+              <time class="meta__time"  datetime="2024-01-20T10:00">(5 минут назад)</time>
             </p>
             <p class="post__text">Прыгать или нет? Напишите в&nbsp;комментарии свой совет и&nbsp;смотрите прямую
               трансляцию в&nbsp;перископе, задавайте свои вопросы!</p>
@@ -136,23 +169,23 @@
           <a class="post__picture-link" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
-                srcset="./img/catalog/descktop/picture_1.webp 1x, ./img/catalog/descktop/picture_1@2x.webp 2x">
+                srcset="./img/catalog/desktop/picture_2.webp 1x, ./img/catalog/desktop/picture_2@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)"
-                srcset="./img/catalog/tablet/picture_1.jpg 1x, ./img/catalog/tablet/picture_1@2x.jpg 2x">
+                srcset="./img/catalog/tablet/picture_2.jpg 1x, ./img/catalog/tablet/picture_2@2x.jpg 2x">
               <source type="image/webp"
-                srcset="./img/catalog/mobile/picture_1.webp 1x, ./img/catalog/mobile/picture_1@2x.webp 2x">
+                srcset="./img/catalog/mobile/picture_2.webp 1x, ./img/catalog/mobile/picture_2@2x.webp 2x">
               <source media="(min-width: 1200px)"
-                srcset="./img/catalog/descktop/picture_1.jpg 1x, ./img/catalog/descktop/picture_1@2x.jpg 2x">
+                srcset="./img/catalog/desktop/picture_2.jpg 1x, ./img/catalog/desktop/picture_2@2x.jpg 2x">
               <source media="(min-width: 660px)"
-                srcset="./img/catalog/tablet/picture_1.jpg 1x, ./img/catalog/tablet/picture_1@2x.jpg 2x">
-              <img class="post__image" src="./img/catalog/mobile/picture_1.jpg"
-                srcset="./img/catalog/mobile/picture_1@2x.jpg 2x" alt="">
+                srcset="./img/catalog/tablet/picture_2.jpg 1x, ./img/catalog/tablet/picture_2@2x.jpg 2x">
+              <img class="post__image" src="./img/catalog/mobile/picture_2.jpg"
+                srcset="./img/catalog/mobile/picture_2@2x.jpg 2x" alt="">
             </picture>
           </a>
           <div class="post__data">
             <p class="post__meta meta">
               <b class="meta__name">Левон</b>
-              <span class="meta__time">(5 часов назад)</span>
+              <time class="meta__time" datetime="2024-01-20T01:00">(5 часов назад)</time>
             </p>
             <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <p class="post__statistics likes">
@@ -167,23 +200,23 @@
           <a class="post__picture-link" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
-                srcset="./img/catalog/descktop/picture_1.webp 1x, ./img/catalog/descktop/picture_1@2x.webp 2x">
+                srcset="./img/catalog/desktop/picture_3.webp 1x, ./img/catalog/desktop/picture_3@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)"
-                srcset="./img/catalog/tablet/picture_1.jpg 1x, ./img/catalog/tablet/picture_1@2x.jpg 2x">
+                srcset="./img/catalog/tablet/picture_3.jpg 1x, ./img/catalog/tablet/picture_3@2x.jpg 2x">
               <source type="image/webp"
-                srcset="./img/catalog/mobile/picture_1.webp 1x, ./img/catalog/mobile/picture_1@2x.webp 2x">
+                srcset="./img/catalog/mobile/picture_3.webp 1x, ./img/catalog/mobile/picture_3@2x.webp 2x">
               <source media="(min-width: 1200px)"
-                srcset="./img/catalog/descktop/picture_1.jpg 1x, ./img/catalog/descktop/picture_1@2x.jpg 2x">
+                srcset="./img/catalog/desktop/picture_3.jpg 1x, ./img/catalog/desktop/picture_3@2x.jpg 2x">
               <source media="(min-width: 660px)"
-                srcset="./img/catalog/tablet/picture_1.jpg 1x, ./img/catalog/tablet/picture_1@2x.jpg 2x">
-              <img class="post__image" src="./img/catalog/mobile/picture_1.jpg"
-                srcset="./img/catalog/mobile/picture_1@2x.jpg 2x" alt="">
+                srcset="./img/catalog/tablet/picture_3.jpg 1x, ./img/catalog/tablet/picture_3@2x.jpg 2x">
+              <img class="post__image" src="./img/catalog/mobile/picture_3.jpg"
+                srcset="./img/catalog/mobile/picture_3@2x.jpg 2x" alt="">
             </picture>
           </a>
           <div class="post__data">
             <p class="post__meta meta">
               <b class="meta__name">Антон</b>
-              <span class="meta__time">(12 часов назад)</span>
+              <time class="meta__time" datetime="2024-01-20T11:00">(12 часов назад)</time>
             </p>
             <p class="post__text">Соседи будут рады!</p>
             <p class="post__statistics likes">
@@ -198,23 +231,23 @@
           <a class="post__picture-link" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
-                srcset="./img/catalog/descktop/picture_1.webp 1x, ./img/catalog/descktop/picture_1@2x.webp 2x">
+                srcset="./img/catalog/desktop/picture_4.webp 1x, ./img/catalog/desktop/picture_4@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)"
-                srcset="./img/catalog/tablet/picture_1.jpg 1x, ./img/catalog/tablet/picture_1@2x.jpg 2x">
+                srcset="./img/catalog/tablet/picture_4.jpg 1x, ./img/catalog/tablet/picture_4@2x.jpg 2x">
               <source type="image/webp"
-                srcset="./img/catalog/mobile/picture_1.webp 1x, ./img/catalog/mobile/picture_1@2x.webp 2x">
+                srcset="./img/catalog/mobile/picture_4.webp 1x, ./img/catalog/mobile/picture_4@2x.webp 2x">
               <source media="(min-width: 1200px)"
-                srcset="./img/catalog/descktop/picture_1.jpg 1x, ./img/catalog/descktop/picture_1@2x.jpg 2x">
+                srcset="./img/catalog/desktop/picture_4.jpg 1x, ./img/catalog/desktop/picture_4@2x.jpg 2x">
               <source media="(min-width: 660px)"
-                srcset="./img/catalog/tablet/picture_1.jpg 1x, ./img/catalog/tablet/picture_1@2x.jpg 2x">
-              <img class="post__image" src="./img/catalog/mobile/picture_1.jpg"
-                srcset="./img/catalog/mobile/picture_1@2x.jpg 2x" alt="">
+                srcset="./img/catalog/tablet/picture_4.jpg 1x, ./img/catalog/tablet/picture_4@2x.jpg 2x">
+              <img class="post__image" src="./img/catalog/mobile/picture_4.jpg"
+                srcset="./img/catalog/mobile/picture_4@2x.jpg 2x" alt="">
             </picture>
           </a>
           <div class="post__data">
             <p class="post__meta meta">
               <b class="meta__name">Борис</b>
-              <span class="meta__time">(20 часов назад)</span>
+              <time class="meta__time" datetime="2024-01-20T11:00">(20 часов назад)</time>
             </p>
             <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <p class="post__statistics likes">
@@ -229,23 +262,23 @@
           <a class="post__picture-link" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
-                srcset="./img/catalog/descktop/picture_1.webp 1x, ./img/catalog/descktop/picture_1@2x.webp 2x">
+                srcset="./img/catalog/desktop/picture_5.webp 1x, ./img/catalog/desktop/picture_5@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)"
-                srcset="./img/catalog/tablet/picture_1.jpg 1x, ./img/catalog/tablet/picture_1@2x.jpg 2x">
+                srcset="./img/catalog/tablet/picture_5.jpg 1x, ./img/catalog/tablet/picture_5@2x.jpg 2x">
               <source type="image/webp"
-                srcset="./img/catalog/mobile/picture_1.webp 1x, ./img/catalog/mobile/picture_1@2x.webp 2x">
+                srcset="./img/catalog/mobile/picture_5.webp 1x, ./img/catalog/mobile/picture_5@2x.webp 2x">
               <source media="(min-width: 1200px)"
-                srcset="./img/catalog/descktop/picture_1.jpg 1x, ./img/catalog/descktop/picture_1@2x.jpg 2x">
+                srcset="./img/catalog/desktop/picture_5.jpg 1x, ./img/catalog/desktop/picture_5@2x.jpg 2x">
               <source media="(min-width: 660px)"
-                srcset="./img/catalog/tablet/picture_1.jpg 1x, ./img/catalog/tablet/picture_1@2x.jpg 2x">
-              <img class="post__image" src="./img/catalog/mobile/picture_1.jpg"
-                srcset="./img/catalog/mobile/picture_1@2x.jpg 2x" alt="">
+                srcset="./img/catalog/tablet/picture_5.jpg 1x, ./img/catalog/tablet/picture_5@2x.jpg 2x">
+              <img class="post__image" src="./img/catalog/mobile/picture_5.jpg"
+                srcset="./img/catalog/mobile/picture_5@2x.jpg 2x" alt="">
             </picture>
           </a>
           <div class="post__data">
             <p class="post__meta meta">
               <b class="meta__name">Сергей</b>
-              <span class="meta__time">(25 часов назад)</span>
+              <time class="meta__time" datetime="2024-01-20T11:00">(25 часов назад)</time>
             </p>
             <p class="post__text">Самая кубанская в мире!</p>
             <p class="post__statistics likes">
@@ -260,23 +293,23 @@
           <a class="post__picture-link" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
-                srcset="./img/catalog/descktop/picture_1.webp 1x, ./img/catalog/descktop/picture_1@2x.webp 2x">
+                srcset="./img/catalog/desktop/picture_6.webp 1x, ./img/catalog/desktop/picture_6@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)"
-                srcset="./img/catalog/tablet/picture_1.jpg 1x, ./img/catalog/tablet/picture_1@2x.jpg 2x">
+                srcset="./img/catalog/tablet/picture_6.jpg 1x, ./img/catalog/tablet/picture_6@2x.jpg 2x">
               <source type="image/webp"
-                srcset="./img/catalog/mobile/picture_1.webp 1x, ./img/catalog/mobile/picture_1@2x.webp 2x">
+                srcset="./img/catalog/mobile/picture_6.webp 1x, ./img/catalog/mobile/picture_6@2x.webp 2x">
               <source media="(min-width: 1200px)"
-                srcset="./img/catalog/descktop/picture_1.jpg 1x, ./img/catalog/descktop/picture_1@2x.jpg 2x">
+                srcset="./img/catalog/desktop/picture_6.jpg 1x, ./img/catalog/desktop/picture_6@2x.jpg 2x">
               <source media="(min-width: 660px)"
-                srcset="./img/catalog/tablet/picture_1.jpg 1x, ./img/catalog/tablet/picture_1@2x.jpg 2x">
-              <img class="post__image" src="./img/catalog/mobile/picture_1.jpg"
-                srcset="./img/catalog/mobile/picture_1@2x.jpg 2x" alt="">
+                srcset="./img/catalog/tablet/picture_6.jpg 1x, ./img/catalog/tablet/picture_6@2x.jpg 2x">
+              <img class="post__image" src="./img/catalog/mobile/picture_6.jpg"
+                srcset="./img/catalog/mobile/picture_6@2x.jpg 2x" alt="">
             </picture>
           </a>
           <div class="post__data">
             <p class="post__meta meta">
               <b class="meta__name">Максим</b>
-              <span class="meta__time">(40 часов назад)</span>
+              <time class="meta__time" datetime="2024-01-20T11:00">(40 часов назад)</time>
             </p>
             <p class="post__text">Где снег-то?</p>
             <p class="post__statistics likes">
@@ -284,37 +317,6 @@
                 <span class="visually-hidden">Поставить лайк</span>
               </button>
               <span class="likes__total">Нравится: 150</span>
-            </p>
-          </div>
-        </li>
-        <li class="posts__item post">
-          <a class="post__picture-link" href="#">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)"
-                srcset="./img/catalog/descktop/picture_1.webp 1x, ./img/catalog/descktop/picture_1@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)"
-                srcset="./img/catalog/tablet/picture_1.jpg 1x, ./img/catalog/tablet/picture_1@2x.jpg 2x">
-              <source type="image/webp"
-                srcset="./img/catalog/mobile/picture_1.webp 1x, ./img/catalog/mobile/picture_1@2x.webp 2x">
-              <source media="(min-width: 1200px)"
-                srcset="./img/catalog/descktop/picture_1.jpg 1x, ./img/catalog/descktop/picture_1@2x.jpg 2x">
-              <source media="(min-width: 660px)"
-                srcset="./img/catalog/tablet/picture_1.jpg 1x, ./img/catalog/tablet/picture_1@2x.jpg 2x">
-              <img class="post__image" src="./img/catalog/mobile/picture_1.jpg"
-                srcset="./img/catalog/mobile/picture_1@2x.jpg 2x" alt="">
-            </picture>
-          </a>
-          <div class="post__data">
-            <p class="post__meta meta">
-              <b class="meta__name">Надежда</b>
-              <span class="meta__time">(45 часов назад)</span>
-            </p>
-            <p class="post__text">Всем GM и взаимные лайки!</p>
-            <p class="post__statistics likes">
-              <button class="likes__button" type="button">
-                <span class="visually-hidden">Поставить лайк</span>
-              </button>
-              <span class="likes__total">Нравится: 2560</span>
             </p>
           </div>
         </li>
@@ -332,13 +334,13 @@
           <label class="upload__image-label" for="upload-pic">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
-                srcset="./img/descktop-default-picture.webp 1x, ./img/descktop-default-picture@2x.webp 2x">
+                srcset="./img/desktop-default-picture.webp 1x, ./img/desktop-default-picture@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)"
                 srcset="./img/tablet-default-picture.jpg 1x, ./img/tablet-default-picture@2x.jpg 2x">
               <source type="image/webp"
                 srcset="./img/mobile-default-picture.webp 1x, ./img/mobile-default-picture@2x.webp 2x">
               <source media="(min-width: 1200px)"
-                srcset="./img/descktop-default-picture.jpg 1x, ./img/descktop-default-picture@2x.jpg 2x">
+                srcset="./img/desktop-default-picture.jpg 1x, ./img/desktop-default-picture@2x.jpg 2x">
               <source media="(min-width: 660px)"
                 srcset="./img/tablet-default-picture.jpg 1x, ./img/tablet-default-picture@2x.jpg 2x">
               <img class="upload__image" src="./img/mobile-default-picture.jpg"
@@ -382,7 +384,7 @@
     <a class="page-footer__logo logo" href="./">
       <picture>
         <source media="(min-width: 1200px)" srcset="./img/logo/footer-desktop.svg">
-        <img class="logo__image" src="./img/logo/footer-tablet.svg" width="145" height="40" alt="">
+        <img class="logo__image" src="./img/logo/footer-tablet.svg" alt="">
       </picture>
     </a>
 
