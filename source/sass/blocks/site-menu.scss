@@ -3,6 +3,13 @@
   margin: 0;
   list-style-type: none;
 
+  font-size: 18px;
+  font-style: normal;
+  font-weight: $font-bold;
+  line-height: 32px;
+  text-transform: uppercase;
+  background-color: #283645;
+
   &--opened {
     display: flex;
     flex-direction: column;
@@ -14,6 +21,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 620px;
+    font-weight: $font-regular;
+    text-transform: none;
+    background-color: $bg-color-header;
   }
 }
 

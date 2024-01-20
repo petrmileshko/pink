@@ -2,12 +2,16 @@
   padding: 0;
   font-size: $font-title-mobile;
   font-weight: $font-light;
+  line-height: 28.8px;
+  text-align: center;
 
   @media (min-width: $min-tablet) {
     font-size: $font-title-tablet;
+    line-height: 48px;
   }
 
   @media (min-width: $min-desktop) {
     font-size: $font-title-desktop;
+    line-height: normal;
   }
 }

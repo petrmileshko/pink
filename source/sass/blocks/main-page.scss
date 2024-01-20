@@ -13,8 +13,14 @@
 }
 
 .main-page__title {
+  max-width: 280px;
   margin: 0;
   color: $font-color-inverted;
+
+  @media (min-width: $min-tablet) {
+    max-width: 300px;
+  }
+
 }
 
 .main-page__section {
