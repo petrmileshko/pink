@@ -18,8 +18,11 @@
 }
 
 .page__header {
-  min-height: 90px;
-  color: $font-color;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: $font-color-inverted;
 }
 
 .page__footer {

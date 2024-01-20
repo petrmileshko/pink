@@ -1,7 +1,15 @@
 .main-page {}
 
 .main-page__header {
-  @media (min-width: $min-desktop) {}
+  min-height: 733px;
+
+  @media (min-width: $min-tablet) {
+    min-height: 729px;
+  }
+
+  @media (min-width: $min-desktop) {
+    min-height: 853px;
+  }
 }
 
 .main-page__title {

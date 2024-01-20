@@ -32,12 +32,14 @@
   &--opened::before {
     width: 24px;
     top: 0;
+    left: 11px;
     transform: rotateZ(405deg);
   }
 
   &--opened::after {
     width: 24px;
     bottom: 0;
+    left: 11px;
     transform: rotateZ(315deg);
   }
 

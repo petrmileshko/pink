@@ -1,13 +1,39 @@
 .hero {
   color: $font-color-inverted;
-  background-color: $bg-color-header;
+  background-color: $bg-color-hero;
 
   background-image: url("../img/backgrounds/hero-mobile.webp");
   background-repeat: no-repeat;
   background-size: auto 462px;
-  background-position: center;
+  background-position: center top;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/backgrounds/hero-mobile@2x.webp");
+  }
+
+  @media (min-width: $min-tablet) {
+    background-image: url("../img/backgrounds/hero-tablet.webp");
+    background-size: auto 729px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/hero-tablet@2x.webp");
+    }
+  }
+
+  @media (min-width: $min-desktop) {
+    background-image: url("../img/backgrounds/hero-desktop.webp");
+    background-size: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/hero-desktop@2x.webp");
+    }
+  }
+}
+
+.hero__wrapper {
+  padding-top: 66px;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 110pxpx;
   }
 }
