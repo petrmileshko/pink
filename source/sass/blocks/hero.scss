@@ -1,4 +1,13 @@
 .hero {
   color: $font-color-inverted;
   background-color: $bg-color-header;
+
+  background-image: url("../img/backgrounds/hero-mobile.webp");
+  background-repeat: no-repeat;
+  background-size: auto 462px;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgrounds/hero-mobile@2x.webp");
+  }
 }
