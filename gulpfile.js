@@ -41,7 +41,7 @@ exports.server = server;
 // Отслеживание изменений в исходных файлах (режим разработчика)
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles, reload)); // отслеживать файлы препроцессора
-  gulp.watch("source/js/**/*.js", gulp.series(scriptsjs)); // отслеживать файлы скриптов
+  gulp.watch("source/js/**/*.js", gulp.series(scriptsjs, reload)); // отслеживать файлы скриптов
   gulp.watch("source/img/**/*.{jpg,png}", gulp.series(createWebp, reload)); // отслеживать картинки
   gulp.watch("source/*.html", gulp.series(html, reload)); // отслеживать файлы разметки HTML
 }
