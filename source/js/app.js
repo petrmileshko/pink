@@ -60,4 +60,4 @@ const initMobileMenu = menuMobile({
 initMobileMenu();
 //Бургер окончание
 
-parentContainer('.page__body', '--nojs'); // Удалить модификаторы, для отключенного JS в браузере
+parentContainer('.page__body', '--nojs'); // Удалить модификаторы, для отключенного JS в браузере, во всем документе
