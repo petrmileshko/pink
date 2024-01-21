@@ -1,0 +1,11 @@
+.tariffs {
+  padding-top: 129px;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 114px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-top: 159px;
+  }
+}
