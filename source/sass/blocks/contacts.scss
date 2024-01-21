@@ -17,6 +17,14 @@
 
 .contacts__heading {
   margin: 0 0 45px 0;
+
+  @media (min-width: $min-tablet) {
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $min-tablet) {
+    margin-bottom: 61px;
+  }
 }
 
 .contacts__data {

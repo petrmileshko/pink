@@ -1,10 +1,18 @@
 .map {
   position: relative;
   height: 200px;
+
   &--nojs .map__images {
     display: flex;
-    align-items: center;
     justify-content: center;
+  }
+
+  @media (min-width: $min-tablet) {
+    height: 374px;
+  }
+
+  @media (min-width: $min-desktop) {
+    height: 502px;
   }
 }
 
@@ -18,23 +26,38 @@
 }
 
 .map__marker {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 36px;
   height: 36px;
+  margin-top: 95px;
   background-color: $bg-map-marker;
   border: 10px solid #ffffff;
   border-radius: 50%;
+  z-index: 2;
+
+  @media (min-width: $min-tablet) {
+    margin-top: 194px;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin-top: 264px;
+  }
 }
 
 .map__image {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  height: auto;
-  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  object-fit: fill;
+
+  @media (min-width: $min-tablet) {
+    height: 374px;
+  }
+
+  @media (min-width: $min-desktop) {
+    height: 502px;
+  }
 }
 
 .map__interactive {

@@ -331,20 +331,28 @@
         </p>
         <address class="contacts__data">
           Приезжайте в гости:
-          <span class="visually-hidden">г. Санкт-Петербург </span><span class="contacts__details">ул. Большая Конюшенная, 19/8</span>
+          <span class="visually-hidden">г. Санкт-Петербург </span><span class="contacts__details">ул. Большая
+            Конюшенная, 19/8</span>
         </address>
       </div>
 
       <div class="contacts__map map map--nojs">
         <figure class="map__images">
-          <figcaption class="map__marker">
-            <span class="visually-hidden">Карта с меткой на адрес: г. Санкт-Петербург, ул. Большая Конюшенная, 19/8</span>
-          </figcaption>
           <picture>
-            <source media="(min-width: 1200px)" srcset="./img/map/descktop.jpg">
-            <source media="(min-width: 660px)" srcset="./img/map/tablet.jpg">
-            <img class="map__image" src="./img/map/mobile.jpg" alt="Карта местоположения в формате jpg">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="./img/map/desktop.webp 1x, ./img/map/desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)"
+              srcset="./img/map/tablet@2x.webp 1x, ./img/map/tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/map/mobile.webp 1x, ./img/map/mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="./img/map/descktop.jpg 1x, ./img/map/descktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="./img/map/tablet.jpg 1x, ./img/map/tablet@2x.jpg 2x">
+            <img class="map__image" src="./img/map/mobile.jpg" srcset="./img/map/mobile@2x.jpg 2x"
+              alt="Карта местоположения в формате jpg">
           </picture>
+          <figcaption class="map__marker">
+            <span class="visually-hidden">Карта с меткой на адрес: г. Санкт-Петербург, ул. Большая Конюшенная,
+              19/8</span>
+          </figcaption>
         </figure>
         <iframe class="map__interactive map__interactive--nojs" title="Местоположение офиса"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab3c55d4b094121533920a7032d7930ffd94e588af5804c4e5c00a3bfe0378c56&amp;source=constructor"></iframe>
