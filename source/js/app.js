@@ -1,3 +1,31 @@
+//Вспомогательные функции
+// Удаление в контейнере классов по маске
+function parentContainer(container, modifier) {
+  const element = document.querySelector(container);
+
+  return function () {
+    if (element !== null) {
+      element.classList.forEach(item => {
+        if (item.includes(modifier)) {
+          removeClass(element, item);
+        }
+      });
+
+      const childs = element.querySelectorAll(`*[class*="${modifier}"]`);
+
+      childs.forEach(child => {
+        child.classList.forEach(item => {
+          if (item.includes(modifier)) {
+            removeClass(child, item);
+          }
+        });
+      });
+    }
+    return element;
+  }
+
+} // Вспомогательные функции
+
 // Бургер
 function menuMobile(menu, control) {
   const menuElement = document.querySelector(menu.element);
@@ -31,3 +59,5 @@ const initMobileMenu = menuMobile({
 
 initMobileMenu();
 //Бургер окончание
+
+parentContainer('.page__body', '--nojs'); // Удалить модификаторы, для отключенного JS в браузере
