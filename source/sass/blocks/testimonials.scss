@@ -10,6 +10,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 44px;
+
+  @media (min-width: $min-tablet) {
+    padding-bottom: 49px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-bottom: 41px;
+  }
 }
 
 .testimonials__item {
@@ -30,6 +39,12 @@
 
   @media (min-width: $min-tablet) {
     order: 2;
+    margin-top: 50px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $min-desktop) {
+    font-size: 24px;
   }
 }
 
@@ -41,6 +56,10 @@
     display: block;
     order: 3;
   }
+
+  @media (min-width: $min-desktop) {
+    font-size: 18px;
+  }
 }
 
 .testimonials__text {
@@ -48,5 +67,6 @@
 
   @media (min-width: $min-tablet) {
     order: 1;
+    font-size: 18px;
   }
 }
