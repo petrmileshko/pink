@@ -13,12 +13,11 @@
 }
 
 .slider__item {
-
-  &:not(.slider__item--active) {
+  &:not(&[data-slider="active"]) {
     display: none;
   }
 
-  .slider--nojs &:not(.slider__item--active) {
+  .slider--nojs &:not(&[data-slider="active"]) {
     display: grid;
   }
 }
@@ -41,7 +40,7 @@
     height: 16px;
     color: inherit;
     background-color: inherit;
-    background-image: url('../img/arrow-right.svg');
+    background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
