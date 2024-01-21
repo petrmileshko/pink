@@ -235,70 +235,86 @@
 
     </section>
 
-    <section class="main-page__section tariffs">
+    <section class="main-page__section tariffs tariffs--nojs">
       <h2 class="visually-hidden"> Тарифные планы приложения Пинк</h2>
+      <div class="tariffs__wrapper">
+        <table class="tariffs__plans plan">
 
-      <table class="tariffs__plans plan block-center">
-
-        <thead class="plan__types">
-          <tr>
-            <th class="plan__options-heads"><span class="visually-hidden">Опции</span></th>
-            <th class="plan__type">
-              <span class="plan__type-name">База</span>
-              <span class="plan__type-price">1,99 USD</span>
-            </th>
-            <th class="plan__type">
-              <span class="plan__type-name">База</span>
-              <span class="plan__type-price">1,99 USD</span>
-            </th>
-            <th class="plan__type">
-              <span class="plan__type-name">База</span>
-              <span class="plan__type-price">1,99 USD</span>
-            </th>
-          </tr>
-        </thead>
-        <!-- По умолчанию Опция отключена, чтобы включить опцию в тарифный план надо добавить модификатор (included) к классу plan__feature у элемента <td class="plan__feature"> и поменять контент (Есть/Нету) у элемента <span class="plan__feature-status visually-hidden">Есть / Нету</span> -->
-        <tbody class="plan__features">
-          <tr>
-            <th class="plan__feature-name">Розовый фильтр</th>
-            <td class="plan__feature plan__feature--included" data-feature="Розовый фильтр">
-              <span class="plan__feature-status visually-hidden">Есть</span>
-            </td>
-            <td class="plan__feature plan__feature--included" data-feature="Розовый фильтр">
-              <span class="plan__feature-status visually-hidden">Есть</span>
-            </td>
-            <td class="plan__feature plan__feature--included" data-feature="Розовый фильтр">
-              <span class="plan__feature-status visually-hidden">Есть</span>
-            </td>
-          </tr>
-          <tr>
-            <th class="plan__feature-name">Смайлики</th>
-            <td class="plan__feature" data-feature="Смайлики">
-              <span class="plan__feature-status visually-hidden">Нету</span>
-            </td>
-            <td class="plan__feature plan__feature--included" data-feature="Смайлики">
-              <span class="plan__feature-status visually-hidden">Есть</span>
-            </td>
-            <td class="plan__feature plan__feature--included" data-feature="Смайлики">
-              <span class="plan__feature-status visually-hidden">Есть</span>
-            </td>
-          </tr>
-          <tr>
-            <th class="plan__feature-name">Комментарии</th>
-            <td class="plan__feature" data-feature="Комментарии">
-              <span class="plan__feature-status visually-hidden">Нету</span>
-            </td>
-            <td class="plan__feature" data-feature="Комментарии">
-              <span class="plan__feature-status visually-hidden">Нету</span>
-            </td>
-            <td class="plan__feature plan__feature--included" data-feature="Комментарии">
-              <span class="plan__feature-status visually-hidden">Есть</span>
-            </td>
-          </tr>
-        </tbody>
-
-      </table>
-
+          <thead class="plan__types">
+            <tr>
+              <th class="plan__options-heads"><span class="visually-hidden">Опции</span></th>
+              <th class="plan__type">
+                <span class="plan__type-name">База</span>
+                <span class="plan__type-price">1,99 USD</span>
+              </th>
+              <th class="plan__type">
+                <span class="plan__type-name">Стандарт</span>
+                <span class="plan__type-price">1,99 USD</span>
+              </th>
+              <th class="plan__type">
+                <span class="plan__type-name">Анлим</span>
+                <span class="plan__type-price">1,99 USD</span>
+              </th>
+            </tr>
+          </thead>
+          <!-- По умолчанию Опция отключена, чтобы включить опцию в тарифный план надо добавить модификатор (included) к классу plan__feature у элемента <td class="plan__feature"> и поменять контент (Есть/Нету) у элемента <span class="plan__feature-status visually-hidden">Есть / Нету</span> -->
+          <tbody class="plan__features">
+            <tr>
+              <th class="plan__feature-name">Розовый фильтр</th>
+              <td class="plan__feature plan__feature--included" data-feature="Розовый фильтр">
+                <span class="plan__feature-status visually-hidden">Есть</span>
+              </td>
+              <td class="plan__feature plan__feature--included" data-feature="Розовый фильтр">
+                <span class="plan__feature-status visually-hidden">Есть</span>
+              </td>
+              <td class="plan__feature plan__feature--included" data-feature="Розовый фильтр">
+                <span class="plan__feature-status visually-hidden">Есть</span>
+              </td>
+            </tr>
+            <tr>
+              <th class="plan__feature-name">Смайлики</th>
+              <td class="plan__feature" data-feature="Смайлики">
+                <span class="plan__feature-status visually-hidden">Нету</span>
+              </td>
+              <td class="plan__feature plan__feature--included" data-feature="Смайлики">
+                <span class="plan__feature-status visually-hidden">Есть</span>
+              </td>
+              <td class="plan__feature plan__feature--included" data-feature="Смайлики">
+                <span class="plan__feature-status visually-hidden">Есть</span>
+              </td>
+            </tr>
+            <tr>
+              <th class="plan__feature-name">Комментарии</th>
+              <td class="plan__feature" data-feature="Комментарии">
+                <span class="plan__feature-status visually-hidden">Нету</span>
+              </td>
+              <td class="plan__feature" data-feature="Комментарии">
+                <span class="plan__feature-status visually-hidden">Нету</span>
+              </td>
+              <td class="plan__feature plan__feature--included" data-feature="Комментарии">
+                <span class="plan__feature-status visually-hidden">Есть</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <ol class="tariffs__indicators tariffs__indicators--nojs">
+          <li class="tariffs__indicator">
+            <button class="tariffs__toggler" type="button" data-toggler="" data-toggle="1">
+              <span class="visually-hidden">База</span>
+            </button>
+          </li>
+          <li class="tariffs__indicator">
+            <button class="tariffs__toggler" type="button" data-toggler="active" data-toggle="2">
+              <span class="visually-hidden">Стандарт</span>
+            </button>
+          </li>
+          <li class="tariffs__indicator">
+            <button class="tariffs__toggler" type="button" data-toggler="" data-toggle="3">
+              <span class="visually-hidden">Анлим</span>
+            </button>
+          </li>
+        </ol>
+      </div>
     </section>
 
     <footer class="main-page__footer contacts">

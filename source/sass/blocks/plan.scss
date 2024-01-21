@@ -1,0 +1,49 @@
+.plan {
+  border-collapse: collapse;
+  font-size: 14px;
+  font-weight: $font-regular;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.plan__types {
+  color: $font-color-inverted;
+}
+
+.plan__type {
+  text-align: center;
+  background-color: $bg-thead-plan;
+}
+
+.plan__options-heads {
+  background-color: #ffffff;
+}
+
+.plan__type-name {
+  font-size: 16px;
+  font-weight: $font-bold;
+
+  @media (min-width: $min-desktop) {
+    font-size: 18px;
+  }
+}
+
+.plan__type-price {
+  font-size: 18px;
+  font-weight: $font-light;
+
+  @media (min-width: $min-desktop) {
+    font-size: 24px;
+  }
+}
+
+.plan__features {
+  background-color: #ffffff;
+}
+
+.plan__feature-name {
+  font-weight: inherit;
+  @media (min-width: $min-desktop) {
+    font-size: 18px;
+  }
+}

@@ -103,9 +103,13 @@ function runSlides(container) {
   }
 }
 
-const initSlider = parentContainer('.slider', '--nojs'); // первый параметр класс родительского контейнера, второй модификатор который надо удалить у дочерних
+const initTestimonialsSlider = parentContainer('.slider', '--nojs'); // первый параметр класс родительского контейнера, второй модификатор который надо удалить у дочерних
 
-const slider = initSlider();
+const sliderTestimonials = initTestimonialsSlider();
 let slideIndex = 0;
 
-runSlides(slider);
+runSlides(sliderTestimonials);
+
+
+const initTariffsSlider = parentContainer('.tariffs', '--nojs');
+const sliderTariffs = initTariffsSlider();
