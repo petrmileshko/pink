@@ -1,10 +1,14 @@
 .slider {
-  display: grid;
-  grid-template-columns: 18px 1fr 18px;
-  align-items: center;
+  display: block;
 
   &--nojs {
     display: block;
+  }
+
+  @media (min-width: $min-desktop) {
+    display: grid;
+    grid-template-columns: 18px 1fr 18px;
+    align-items: center;
   }
 }
 
@@ -23,6 +27,7 @@
 }
 
 .slider__button {
+  display: none;
   width: 18px;
   height: 16px;
   padding: 0;
@@ -32,6 +37,10 @@
 
   &--nojs {
     display: none;
+  }
+
+  @media (min-width: $min-desktop) {
+    display: block;
   }
 
   &::before {
@@ -67,5 +76,49 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.slider__indicators {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  &--nojs {
+    display: none;
+  }
+
+  @media (min-width: $min-desktop) {
+    display: none;
+  }
+}
+
+.slider__indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9px;
+  height: 9px;
+
+  &:not(:last-of-type) {
+    margin-right: 16px;
+  }
+}
+
+.slider__toggler {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  background-color: #283645;
+  border: none;
+  outline: 3px solid #ffffff;
+  border-radius: 50px;
+  cursor: pointer;
+
+  &[data-toggler="active"] {
+    background-color: #ffffff;
+    outline: 3px solid #283645;
   }
 }
