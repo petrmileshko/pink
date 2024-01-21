@@ -1,0 +1,40 @@
+.post {
+  display: flex;
+  flex-direction: column;
+}
+
+.post__image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+}
+
+.post__data {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 17px;
+  background-color: $bg-color-secondary;
+
+  @media (min-width: $min-tablet) {
+    padding: 30px;
+  }
+}
+
+.post__meta {
+  margin: 0;
+}
+
+.post__text {
+  margin: 0;
+  margin-bottom: 23px;
+
+  @media (min-width: $min-tablet) {
+    margin-bottom: 27px;
+  }
+}
+
+.post__statistics {
+  margin: 0;
+}

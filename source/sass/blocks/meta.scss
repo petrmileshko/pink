@@ -1,0 +1,15 @@
+.meta {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.meta__name {
+  margin-right: 3px;
+}
+
+.meta__time {
+  font-size: 12px;
+  font-weight: $font-light;
+  line-height: 24px;
+  text-transform: uppercase;
+}

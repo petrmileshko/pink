@@ -1,0 +1,22 @@
+.catalog {
+  padding-top: 54px;
+  font-size: 14px;
+  font-weight: $font-regular;
+  line-height: 24px;
+  color: $font-color;
+}
+
+.catalog__panorama {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $min-tablet) {
+    margin-bottom: 50px;
+  }
+}
+
+.catalog__list {
+  padding: 0;
+  margin: 0 auto;
+  list-style-type: none;
+}

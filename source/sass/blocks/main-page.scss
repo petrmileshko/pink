@@ -10,6 +10,10 @@
   @media (min-width: $min-desktop) {
     min-height: 853px;
   }
+
+  &--gallery {
+    min-height: initial;
+  }
 }
 
 .main-page__title {
@@ -21,6 +25,13 @@
     max-width: 300px;
   }
 
+  &--gallery {
+    max-width: 172px;
+
+    @media (min-width: $min-tablet) {
+      max-width: 358px;
+    }
+  }
 }
 
 .main-page__section {
@@ -29,9 +40,18 @@
 
 
 .main-page__section-title {
+  margin-top: 0;
+  margin-bottom: 0;
   color: $font-color-titles;
 
   @media (min-width: $min-desktop) {}
+
+  &--catalog {
+    max-width: 280px;
+    font-size: 14px;
+    font-weight: $font-regular;
+    line-height: 30px;
+  }
 }
 
 .main-page__footer {

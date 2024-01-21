@@ -1,0 +1,14 @@
+.developers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 130px;
+  font-size: 14px;
+  line-height: 18px;
+  color: inherit;
+
+  @media (min-width: $min-desktop) {
+    min-width: 155px;
+    font-size: 18px;
+  }
+}

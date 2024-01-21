@@ -1,0 +1,15 @@
+.likes {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.likes__button {
+  margin-right: 18px;
+}
+
+.likes__total {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $font-color-red;
+}

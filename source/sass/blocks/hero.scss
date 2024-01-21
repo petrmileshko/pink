@@ -36,4 +36,11 @@
   @media (min-width: $min-tablet) {
     padding-top: 110px;
   }
+
+  &--gallery {
+    display: flex;
+    justify-content: center;
+    padding-top: calc(66px + 36px);
+    padding-bottom: 84px;
+  }
 }

@@ -1,0 +1,12 @@
+.posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.posts__item {
+  margin-bottom: 20px;
+
+  @media (min-width: $min-tablet) {
+    margin-bottom: 54px;
+  }
+}
