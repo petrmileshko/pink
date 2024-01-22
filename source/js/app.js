@@ -33,15 +33,17 @@ function parentContainer(container, modifier) {
 } // Вспомогательные функции
 
 // Бургер
-function menuMobile(menu, control) {
+function menuMobile(container, menu, control) {
+  const containerElement = document.querySelector(container.element);
   const menuElement = document.querySelector(menu.element);
   const controlElement = document.querySelector(control.element);
 
   return function () {
-    if (menuElement !== null && controlElement !== null) {
+    if (containerElement !== null && menuElement !== null && controlElement !== null) {
 
       controlElement.addEventListener('click', (e) => {
         e.preventDefault();
+        containerElement.classList.toggle(container.activation);
         menuElement.classList.toggle(menu.activation);
         controlElement.classList.toggle(control.activation);
       });
@@ -55,7 +57,12 @@ function menuMobile(menu, control) {
   }
 }
 
-const initMobileMenu = menuMobile({
+const initMobileMenu = menuMobile(
+  {
+    element: '.page-header',
+    activation: 'page-header--opened'
+  },
+  {
   element: '.site-menu',
   activation: 'site-menu--opened'
 }, {

@@ -37,7 +37,9 @@
   }
 }
 
-.form__container {}
+.form__group-wrapper {
+  background-color: $bg-color-secondary;
+}
 
 .form__group {
   display: flex;
@@ -115,4 +117,61 @@
   &:active {}
 
   &:disabled {}
+}
+
+.form__range {
+
+  &--custom {
+    appearance: none;
+
+    display: block;
+    background-color: transparent;
+
+    &::-webkit-slider-runnable-track {
+      height: 2px;
+      background-color: $font-color;
+    }
+
+    &::-moz-range-track {
+      height: 2px;
+      background-color: $font-color;
+    }
+
+    &::-moz-range-thumb {
+      width: 14px;
+      height: 14px;
+      box-sizing: border-box;
+
+      background-color: #ffffff;
+      border: 2px solid $font-color-red;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:hover {
+      }
+
+      &:active {
+      }
+    }
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      width: 14px;
+      height: 14px;
+      box-sizing: border-box;
+      margin-top: -7px;
+      background-color: #ffffff;
+      border: 2px solid $font-color-red;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:hover {
+      }
+
+      &:active {
+      }
+    }
+  }
+
+
 }

@@ -1,3 +1,80 @@
 .control {
+  display: flex;
   color: $font-color-titles;
+}
+
+
+.control__input {
+  width: 100%;
+  height: 30px;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.control__marker {
+  display: grid;
+  grid-template-columns: 37px 1fr;
+  align-items: center;
+  column-gap: 22px;
+  cursor: pointer;
+
+  &::before {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 35px;
+    height: 35px;
+    border: 2px solid $input-border-color;
+    content: "";
+  }
+
+  &::after {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 14px;
+    height: 14px;
+    margin: auto;
+    content: "";
+  }
+
+  .control--radio &::before {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+  }
+
+  .control--radio .control__input:checked + &::after {
+    background-color: $font-color-red;
+    border-radius: 50%;
+  }
+
+  .control--checkbox .control__input:checked + &::after {
+    width: 22px;
+    height: 16px;
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &:hover::before {
+    border-color: $input-border-hover;
+  }
+
+  .control__input:focus + &::before {
+    outline: 2px solid #000000;
+    outline-offset: -2px;
+  }
+
+  &:active::before {
+    border-color: $font-color-red;
+  }
+
+  .control__input:disabled + & {
+    opacity: 0.3;
+  }
+
+  .control__input:disabled + &::before {
+    border-color: $input-border-hover;
+  }
 }

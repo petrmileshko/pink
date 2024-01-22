@@ -13,6 +13,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 41px;
+
+  @media (min-width: $min-tablet) {
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $min-tablet) {
+    padding-bottom: 20px;
+  }
 }
 
 .contacts__heading {

@@ -29,11 +29,43 @@
   }
 }
 
+.site-menu__item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+
+  @media (max-width: $max-desktop) {
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 1px;
+    }
+
+    &::before {
+      top: 1px;
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    &::after {
+      background-color: #000000;
+    }
+
+    &:last-of-type {
+      box-shadow: 0 1px 0 #000000;
+    }
+  }
+}
+
 .site-menu__link {
   position: relative;
   display: block;
   width: 100%;
   padding: 25px 0;
+  text-align: center;
 
   color: $font-color-inverted;
 
@@ -47,6 +79,7 @@
 
   @media (min-width: $min-desktop) {
     padding: 21px 0 19px 0;
+    text-align: initial;
 
     &--active::after {
       position: absolute;
