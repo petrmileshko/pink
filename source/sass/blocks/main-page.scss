@@ -11,7 +11,7 @@
     min-height: 853px;
   }
 
-  &--gallery {
+  &--inner {
     min-height: initial;
   }
 }
@@ -32,6 +32,18 @@
       max-width: 358px;
     }
   }
+
+  &--application {
+    max-width: 228px;
+
+    @media (min-width: $min-tablet) {
+      max-width: 610px;
+    }
+
+    @media (min-width: $min-desktop) {
+      max-width: 750px;
+    }
+  }
 }
 
 .main-page__section {
@@ -45,6 +57,13 @@
   color: $font-color-titles;
 
   &--catalog {
+    max-width: 280px;
+    font-size: 14px;
+    font-weight: $font-regular;
+    line-height: 30px;
+  }
+
+  &--application {
     max-width: 280px;
     font-size: 14px;
     font-weight: $font-regular;

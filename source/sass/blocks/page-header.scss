@@ -4,21 +4,12 @@
 }
 
 .page-header__navigation {
-  background-color: inherit;
-
-
-  @media (min-width: $min-tablet) {
-    padding: 7px 0 22px 0;
-  }
+  background-color: transparent;
 
   @media (min-width: $min-desktop) {
     display: flex;
     justify-content: space-between;
-    width: calc(100% - 130px*2);
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 25px 0 25px 0;
+    padding: 27px 0 11px 0;
   }
 }
 
@@ -26,20 +17,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(100% - 20px*2);
-  margin-left: auto;
-  margin-right: auto;
   padding: 20px 0 21px 0;
 
   @media (min-width: $min-tablet) {
-    width: calc(100% - 20px*2);
-    max-width: 660px;
+    padding: 27px 0 43px 0;
   }
 
   @media (min-width: $min-desktop) {
-    width: auto;
     padding: 0;
-    margin: 0;
   }
 }
 

@@ -1,5 +1,6 @@
 //Кастомная стилизация ссылок
 .link {
+  display: block;
  text-decoration: none;
   &:hover {}
 

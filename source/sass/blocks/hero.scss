@@ -37,10 +37,18 @@
     padding-top: 110px;
   }
 
-  &--gallery {
+  &--inner {
     display: flex;
     justify-content: center;
     padding-top: calc(66px + 36px);
     padding-bottom: 84px;
+
+    @media (min-width: $min-tablet) {
+      padding-top: calc(110px + 81px);
+    }
+
+    @media (min-width: $min-desktop) {
+      padding-top: calc(110px + 74px);
+    }
   }
 }
