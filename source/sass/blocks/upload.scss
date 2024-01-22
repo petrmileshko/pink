@@ -5,3 +5,20 @@
     margin-bottom: 52px;
   }
 }
+
+.upload__form {
+  padding: 20px 0 41px 0;
+  background-color: $bg-color-secondary;
+}
+
+.upload__image {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  border: none;
+}
+
+.upload__effects {
+  padding: 0;
+  border: none;
+}
