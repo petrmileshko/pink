@@ -1,25 +1,54 @@
 .plan {
+  border-spacing: 0;
   border-collapse: collapse;
   font-size: 14px;
   font-weight: $font-regular;
   line-height: 30px;
   text-transform: uppercase;
+
+  @media (max-width: $max-mobile) {
+    display: block;
+    overflow: hidden;
+  }
 }
 
 .plan__types {
   color: $font-color-inverted;
+
+  @media (max-width: $max-mobile) {
+    display: block;
+    overflow: hidden;
+  }
 }
 
 .plan__type {
+  max-width: 280px;
+  padding: 19px 95px;
   text-align: center;
   background-color: $bg-thead-plan;
+
+  @media (min-width: $min-tablet) {
+    max-width: 152px;
+    padding: 19px 38px;
+  }
+
+  @media (min-width: $min-desktop) {
+    max-width: 233px;
+    padding: 23px 66px;
+  }
 }
 
 .plan__options-heads {
+  display: none;
   background-color: #ffffff;
+
+  @media (min-width: $min-tablet) {
+    display: initial;
+  }
 }
 
 .plan__type-name {
+  display: block;
   font-size: 16px;
   font-weight: $font-bold;
 
@@ -29,6 +58,7 @@
 }
 
 .plan__type-price {
+  display: block;
   font-size: 18px;
   font-weight: $font-light;
 
@@ -42,8 +72,47 @@
 }
 
 .plan__feature-name {
+  display: none;
   font-weight: inherit;
+
+  @media (min-width: $min-tablet) {
+    display: initial;
+  }
+
   @media (min-width: $min-desktop) {
     font-size: 18px;
+  }
+}
+
+.plan__feature {
+
+  &::before {
+    display: inline-block;
+    font: inherit;
+    color: inherit;
+    content: attr(data-feature);
+  }
+
+  @media (min-width: $min-tablet) {
+    &::before {
+      content: "";
+    }
+  }
+
+  &::after {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/no.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+  }
+
+  &--included::after {
+    display: inline-block;
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/yes.svg");
   }
 }
