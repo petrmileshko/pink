@@ -1,5 +1,39 @@
 .form {}
 
+.form__button {
+  display: block;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: $font-bold;
+  line-height: 30px;
+  color: $font-color-inverted;
+  background-color: $button-color-primary;
+  border-radius: 1px;
+  border: none;
+
+  &--upload {
+    min-width: 280px;
+    padding: 15px 0;
+    line-height: 19px;
+    color: $font-color-red;
+    background-color: $button-upload-color;
+    border: 3px solid $font-color-red;
+    border-radius: 30px;
+  }
+
+  &--reset {
+    opacity: 0.1;
+    min-width: 280px;
+    padding: 15px 0;
+    line-height: 19px;
+    color: $font-color-titles;
+    background-color: $button-cancel-color;
+    border: 3px solid $font-color-titles;
+    border-radius: 30px;
+  }
+}
+
 .form__container {}
 
 .form__group {}
