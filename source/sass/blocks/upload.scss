@@ -33,3 +33,73 @@
   margin: 0;
   list-style-type: none;
 }
+
+.upload__effects-label {
+  display: flex;
+
+  &::before {
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    content: "";
+  }
+
+  &--crop::before {
+    width: 44px;
+    height: 44px;
+    mask-image: url("../img/crop.svg");
+  }
+
+  &--fill::before {
+    width: 48px;
+    height: 43px;
+    mask-image: url("../img/fill.svg");
+  }
+
+  &--contrast::before {
+    width: 32px;
+    height: 32px;
+    mask-image: url("../img/contrast.svg");
+  }
+
+  @media (max-width: $max-mobile) {
+    &::before {
+      opacity: 0.3;
+      background-color: $font-color;
+    }
+
+    &--active::before {
+      opacity: 1;
+      background-color: $font-color-red;
+    }
+  }
+
+  @media (min-width: $min-tablet) and (max-width: $max-desktop) {
+    &::before {
+      opacity: 1;
+      background-color: $font-color-red;
+    }
+
+    &--crop::before {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--fill::before {
+      width: 23px;
+      height: 22px;
+    }
+
+    &--contrast::before {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  @media (min-width: $min-desktop) {
+    &::before {
+      opacity: 1;
+      background-color: $font-color-red;
+    }
+  }
+
+}

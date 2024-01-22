@@ -1,10 +1,21 @@
 .likes {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .likes__button {
+  display: block;
+  width: 13px;
+  height: 12px;
   margin-right: 18px;
+  color: $font-color-red;
+  border: none;
+  background-color: $bg-color-primary;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
 }
 
 .likes__total {

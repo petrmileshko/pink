@@ -20,7 +20,7 @@ $bg-color-primary: #ffffff;
 $bg-color-secondary: #f2f2f2;
 $bg-color-header: rgba(0, 0, 0, 0.3);
 $bg-color-footer: #ffffff;
-$bg-color-hero: #1D2631;
+$bg-color-hero: #1d2631;
 $bg-thead-plan: #283645;
 $bg-map-marker: #d22856;
 
@@ -59,4 +59,5 @@ $menu-active: rgba(210, 40, 86, 0.3);
 //Экраны
 $min-tablet: 660px;
 $min-desktop: 1200px;
+$max-desktop: ($min-desktop - 1);
 $max-mobile: ($min-tablet - 1);
