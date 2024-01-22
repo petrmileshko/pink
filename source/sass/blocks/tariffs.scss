@@ -30,9 +30,12 @@
 }
 
 .tariffs__wrapper {
-  margin: 0 auto;
-  width: 100vw;
-  overflow: hidden;
+
+  @media (max-width: $max-mobile) {
+    margin: 0 auto;
+    width: 100vw;
+    overflow: hidden;
+  }
 
   @media (min-width: $min-tablet) {
     width: calc(100% - 20px*2);
@@ -46,9 +49,9 @@
 }
 
 .tariffs__plans {
-  width: auto;
-  @media (min-width: $min-tablet) {
-    width: initial;
+
+  @media (max-width: $max-mobile) {
+    width: auto;
   }
 }
 

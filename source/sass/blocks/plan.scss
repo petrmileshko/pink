@@ -1,5 +1,5 @@
 .plan {
-  border-spacing: 0;
+  margin: 0 auto;
   border-collapse: collapse;
   font-size: 14px;
   font-weight: $font-regular;
@@ -7,18 +7,17 @@
   text-transform: uppercase;
 
   @media (max-width: $max-mobile) {
-    display: block;
+    width: auto;
+    transition: all .1s;
+    background-color: #fff;
+    background-clip: content-box;
     overflow: hidden;
   }
+
 }
 
 .plan__types {
   color: $font-color-inverted;
-
-  @media (max-width: $max-mobile) {
-    display: block;
-    overflow: hidden;
-  }
 }
 
 .plan__type {
