@@ -56,14 +56,7 @@
   margin-bottom: 0;
   color: $font-color-titles;
 
-  &--catalog {
-    max-width: 280px;
-    font-size: 14px;
-    font-weight: $font-regular;
-    line-height: 30px;
-  }
-
-  &--application {
+  &--inner {
     max-width: 280px;
     font-size: 14px;
     font-weight: $font-regular;
@@ -72,10 +65,12 @@
 
   @media (min-width: $min-tablet) {
 
-    &--catalog {
-      max-width: 425px;
+    &--inner {
+      max-width: 620px;
+      font-size: 18px;
     }
   }
+
 }
 
 .main-page__footer {

@@ -4,6 +4,19 @@
   font-weight: $font-regular;
   line-height: 24px;
   color: $font-color;
+
+
+  @media (min-width: $min-tablet) {
+    & .title {
+      max-width: 500px;
+    }
+  }
+
+  @media (min-width: $min-desktop) {
+    & .title {
+      max-width: 620px;
+    }
+  }
 }
 
 .catalog__panorama {

@@ -1,6 +1,10 @@
 .post {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $min-tablet) {
+    width: 300px;
+  }
 }
 
 .post__image {

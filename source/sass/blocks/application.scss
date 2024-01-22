@@ -1,0 +1,36 @@
+.application {
+  padding-top: 54px;
+
+  & .title {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $min-tablet) {
+    & .title {
+      max-width: 490px;
+      margin-bottom: 82px;
+    }
+  }
+
+  @media (min-width: $min-desktop) {
+    & .title {
+      max-width: 760px;
+      margin-bottom: 70px;
+    }
+  }
+}
+
+.application__form {
+  padding-bottom: 26px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $font-color;
+
+  @media (min-width: $min-tablet) {
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-bottom: 0;
+  }
+}

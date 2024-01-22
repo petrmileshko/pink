@@ -72,16 +72,16 @@
 
       <ul class="page-header__menu site-menu">
         <li class="site-menu__item">
-          <a class="site-menu__link" href="./">Главная</a>
+          <a class="site-menu__link link" href="./">Главная</a>
         </li>
         <li class="site-menu__item">
-          <a class="site-menu__link" href="./gallery.html">Фотографии</a>
+          <a class="site-menu__link link" href="./gallery.html">Фотографии</a>
         </li>
         <li class="site-menu__item">
           <span class="site-menu__link site-menu__link--active">Конкурс</span>
         </li>
         <li class="site-menu__item">
-          <a class="site-menu__link" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="site-menu__link link" href="https://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -90,20 +90,21 @@
   <main class="page__main main-page">
     <header class="main-page__header main-page__header--inner hero">
       <div class="hero__wrapper hero__wrapper--inner block-center">
-        <h1 class="main-page__title main-page__title--application title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="main-page__title main-page__title--application title">Конкурс на самое безбашенное путешествие с Пинк
+        </h1>
       </div>
     </header>
 
     <section class="main-page__section application">
       <h2 class="visually-hidden">Отправка фотографий</h2>
 
-      <p class="main-page__section-title main-page__section-title--application title block-center">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный
-        приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту!</p>
+      <p class="main-page__section-title main-page__section-title--inner title block-center">Поделитесь своей историей и
+        получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
 
       <form class="application__form form" action="https://echo.htmlacademy.ru/" method="post"
         enctype="multipart/form-data" autocomplete="off">
 
-        <fieldset class="form__group block-center">
+        <fieldset class="form__group form__group--user block-center">
           <legend class="visually-hidden">Персональные данные</legend>
           <label class="form__label">
             ФАМИЛИЯ:
@@ -186,7 +187,7 @@
         </fieldset>
 
         <p class="form__group block-center">
-          <button class="form__submit button" type="submit">Отправить форму</button>
+          <button class="form__button" type="submit">Отправить форму</button>
           <span class="form__footnote">* — обязательные поля</span>
         </p>
       </form>

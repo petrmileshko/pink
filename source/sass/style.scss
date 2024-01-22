@@ -20,6 +20,7 @@
 @import "blocks/title.scss";
 @import "blocks/socials.scss";
 @import "blocks/slider.scss";
+@import "blocks/control.scss";
 
 /* Стили для Главная страница */
 @import "blocks/main-page.scss";
@@ -32,6 +33,8 @@
 @import "blocks/contacts.scss";
 @import "blocks/map.scss";
 @import "blocks/developers.scss";
+
+/* Стили для Страница каталога */
 @import "blocks/catalog.scss";
 @import "blocks/panorama.scss";
 @import "blocks/meta.scss";
@@ -39,5 +42,5 @@
 @import "blocks/posts.scss";
 @import "blocks/post.scss";
 @import "blocks/upload.scss";
-/* Стили для Страница каталога */
-/* Стили для Страница формы заказов */
+/* Стили для Страница формы конкурса */
+@import "blocks/application.scss";
