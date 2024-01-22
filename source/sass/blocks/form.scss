@@ -38,7 +38,9 @@
 }
 
 .form__group-wrapper {
-  background-color: $bg-color-secondary;
+  @media (max-width: $max-mobile) {
+    background-color: $bg-color-secondary;
+  }
 }
 
 .form__group {
