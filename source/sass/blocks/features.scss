@@ -60,6 +60,7 @@
 
   @media (min-width: $min-tablet) {
     align-items: flex-start;
+    min-height: 432px;
     padding-left: calc(268px + 42px);
   }
 

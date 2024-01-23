@@ -8,8 +8,6 @@
   line-height: 30px;
   text-align: center;
 
-
-
   @media (min-width: $min-desktop) {
     &::before {
       display: block;
@@ -32,7 +30,7 @@
   padding-bottom: 44px;
 
   @media (min-width: $min-tablet) {
-    padding-bottom: 49px;
+    padding-bottom: 19px;
   }
 
   @media (min-width: $min-desktop) {
