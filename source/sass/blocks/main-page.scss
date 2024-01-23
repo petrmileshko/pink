@@ -18,11 +18,12 @@
 
 .main-page__title {
   max-width: 280px;
-  margin: 0;
+  margin: 0 auto 34px auto;
   color: $font-color-inverted;
 
   @media (min-width: $min-tablet) {
     max-width: 300px;
+    margin-bottom: 0;
   }
 
   &--gallery {

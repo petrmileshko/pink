@@ -3,13 +3,12 @@
   flex-wrap: wrap;
   min-width: 172px;
   padding: 0;
-  margin: 0;
   list-style-type: none;
 }
 
 .socials__item {
   &:not(:last-of-type) {
-    margin-right: 10px;
+    margin-right: 14px;
   }
 }
 

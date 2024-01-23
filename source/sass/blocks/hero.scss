@@ -4,7 +4,7 @@
 
   background-image: url("../img/backgrounds/hero-mobile.webp");
   background-repeat: no-repeat;
-  background-size: auto 462px;
+  background-size: auto 474px;
   background-position: center top;
 
   @media (min-resolution: 2dppx) {
@@ -30,7 +30,7 @@
 }
 
 .hero__wrapper {
-  padding-top: 66px;
+  padding-top: calc(66px + 29px);
 
   @media (min-width: $min-tablet) {
     padding-top: 110px;
@@ -50,4 +50,12 @@
       padding-top: calc(110px + 74px);
     }
   }
+}
+
+.hero__images {
+  margin: 0 0 28px 0;
+}
+
+.hero__image {
+  display: block;
 }

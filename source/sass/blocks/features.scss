@@ -24,7 +24,7 @@
 .features__text {
   max-width: 280px;
   margin: 0 auto;
-
+  margin-bottom: 36px;
 
 
   @media (max-width: ($min-tablet - 1)) {
@@ -66,6 +66,11 @@
   flex-direction: column;
   align-items: center;
 
+
+  &:not(.features__item--friends) {
+    margin-bottom: 43px;
+  }
+
   &--research {
     display: none;
   }
@@ -78,6 +83,7 @@
   &--friends::after {
     width: 157px;
     height: 277px;
+    margin-top: 48px;
     background-image: url("../img/backgrounds/features/mobile/friends.webp");
     background-size: 157px auto;
     content: "";
@@ -165,7 +171,7 @@
 }
 
 .features__slogan {
-  margin: 0;
+  margin: 0 0 24px 0;
   font-size: 18px;
   font-weight: $font-bold;
   line-height: 24px;

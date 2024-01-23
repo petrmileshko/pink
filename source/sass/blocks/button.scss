@@ -1,7 +1,7 @@
 .button {
   display: block;
   color: inherit;
-  background-color: none;
+  background: none;
   border: none;
   text-decoration: none;
   cursor: pointer;
@@ -13,6 +13,13 @@
   &:active {}
 
   &:disabled {}
+
+  &--hero {
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 29px;
+    border: 3px solid #ffffff;
+  }
 
   @media (min-width: $min-tablet) {}
 
