@@ -92,6 +92,22 @@
     color: inherit;
   }
 
+  &--email {
+    padding-right: 59px;
+    background-image: url("../img/mail-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 59px 59px;
+  }
+
+  &--phone {
+    padding-right: 59px;
+    background-image: url("../img/phone-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 59px 59px;
+  }
+
   &:hover {}
 
   &:focus {}
@@ -149,11 +165,9 @@
       border-radius: 50%;
       cursor: pointer;
 
-      &:hover {
-      }
+      &:hover {}
 
-      &:active {
-      }
+      &:active {}
     }
 
     &::-webkit-slider-thumb {
@@ -167,11 +181,9 @@
       border-radius: 50%;
       cursor: pointer;
 
-      &:hover {
-      }
+      &:hover {}
 
-      &:active {
-      }
+      &:active {}
     }
   }
 
