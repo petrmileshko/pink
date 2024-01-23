@@ -12,6 +12,8 @@
   }
 
   @media (min-width: $min-tablet) {
+    display: flex;
+    justify-content: center;
     background-image: url("../img/backgrounds/hero-tablet.webp");
     background-size: auto 729px;
 
@@ -21,7 +23,9 @@
   }
 
   @media (min-width: $min-desktop) {
+    justify-content: flex-end;
     background-image: url("../img/backgrounds/hero-desktop.webp");
+    background-size: auto 853px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/backgrounds/hero-desktop@2x.webp");
@@ -33,7 +37,23 @@
   padding-top: calc(66px + 29px);
 
   @media (min-width: $min-tablet) {
-    padding-top: 110px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 195px 232px 120px;
+    padding-top: calc(110px + 74px);
+    max-width: 660px;
+  }
+
+  @media (min-width: $min-desktop) {
+    grid-template-rows: 241px 274px 130px;
+    padding-top: calc(110px + 98px);
+    width: 1066px;
+    max-width: initial;
+  }
+
+  @media (min-width: 1250px) {
+    width: 89vw;
+    max-width: 1565px;
   }
 
   &--inner {
@@ -41,6 +61,8 @@
     justify-content: center;
     padding-top: calc(66px + 36px);
     padding-bottom: 84px;
+    width: initial;
+    max-width: initial;
 
     @media (min-width: $min-tablet) {
       padding-top: calc(110px + 81px);
@@ -54,8 +76,54 @@
 
 .hero__images {
   margin: 0 0 28px 0;
+
+  @media (min-width: 376px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: $min-tablet) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+    align-self: start;
+    justify-self: start;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  @media (min-width: 1250px) {
+    justify-self: center;
+  }
 }
 
 .hero__image {
   display: block;
+  width: 320px;
+  height: auto;
+  object-fit: cover;
+
+  @media (min-width: $min-tablet) {
+    width: 660px;
+  }
+
+  @media (min-width: $min-tablet) {
+    width: 1050px;
+  }
+}
+
+.hero__downloads {
+  @media (min-width: $min-tablet) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  @media (min-width: $min-desktop) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: auto;
+    max-width: initial;
+    margin: 0;
+  }
 }

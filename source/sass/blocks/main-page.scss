@@ -26,6 +26,21 @@
     margin-bottom: 0;
   }
 
+  &--hero {
+    @media (min-width: $min-tablet) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    @media (min-width: $min-tablet) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      max-width: initial;
+      width: auto;
+      margin: 0;
+    }
+  }
+
   &--gallery {
     max-width: 172px;
 
