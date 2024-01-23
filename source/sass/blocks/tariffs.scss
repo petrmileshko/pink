@@ -38,8 +38,8 @@
   }
 
   @media (min-width: $min-tablet) {
-    width: calc(100% - 20px*2);
-    max-width: 660px;
+    display: flex;
+    justify-content: center;
   }
 
   @media (min-width: $min-desktop) {

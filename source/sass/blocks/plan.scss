@@ -74,18 +74,20 @@
   font-weight: inherit;
 
   @media (min-width: $min-tablet) {
-    display: initial;
+    display: flex;
+    width: 153px;
+    height: 45px;
+    padding-left: 15px;
+    align-items: center;
     border: 1px solid $table-border-color;
+    border-right: none;
   }
 
   @media (min-width: $min-desktop) {
-    display: flex;
-    align-items: center;
     padding-left: 22px;
     width: 233px;
     height: 59px;
     font-size: 18px;
-    text-align: center;
   }
 }
 
@@ -101,6 +103,10 @@
   }
 
   @media (min-width: $min-tablet) {
+    width: 153px;
+    height: 45px;
+    text-align: center;
+
     &::before {
       content: "";
     }
@@ -117,6 +123,7 @@
     display: inline-block;
     width: 27px;
     height: 27px;
+    vertical-align: middle;
     background-image: url("../img/no.svg");
     background-repeat: no-repeat;
     background-size: contain;
