@@ -75,14 +75,23 @@
 
   @media (min-width: $min-tablet) {
     display: initial;
+    border: 1px solid $table-border-color;
   }
 
   @media (min-width: $min-desktop) {
+    display: flex;
+    align-items: center;
+    padding-left: 22px;
+    width: 233px;
+    height: 59px;
     font-size: 18px;
+    text-align: center;
   }
 }
 
 .plan__feature {
+
+  border: 2px solid $table-border-color;
 
   &::before {
     display: inline-block;
@@ -95,6 +104,13 @@
     &::before {
       content: "";
     }
+  }
+
+  @media (min-width: $min-desktop) {
+    width: 233px;
+    height: 59px;
+    font-size: 18px;
+    text-align: center;
   }
 
   &::after {

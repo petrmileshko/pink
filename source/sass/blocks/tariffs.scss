@@ -43,8 +43,11 @@
   }
 
   @media (min-width: $min-desktop) {
+    display: flex;
+    justify-content: center;
     width: calc(100% - 130px*2);
     max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -54,6 +57,10 @@
 
   @media (max-width: $max-mobile) {
     width: auto;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin: 0;
   }
 }
 

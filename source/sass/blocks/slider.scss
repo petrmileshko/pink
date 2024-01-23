@@ -7,8 +7,7 @@
 
   @media (min-width: $min-desktop) {
     display: grid;
-    grid-template-columns: 18px 1fr 18px;
-    align-items: center;
+    grid-template-columns: 126px 1fr 126px;
   }
 }
 
@@ -28,8 +27,8 @@
 
 .slider__button {
   display: none;
-  width: 18px;
-  height: 16px;
+  width: 22px;
+  height: 41px;
   padding: 0;
   background-color: transparent;
   border: none;
@@ -45,8 +44,8 @@
 
   &::before {
     display: block;
-    width: 18px;
-    height: 16px;
+    width: 22px;
+    height: 41px;
     color: inherit;
     background-color: inherit;
     background-image: url("../img/arrow.svg");
@@ -63,11 +62,14 @@
   &--prev {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
+    margin-top: 30px;
   }
 
   &--next {
     grid-column: 3 / 4;
     grid-row: 1 / -1;
+    justify-self: end;
+    margin-top: 30px;
   }
 
   &:hover {

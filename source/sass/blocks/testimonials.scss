@@ -34,7 +34,7 @@
   }
 
   @media (min-width: $min-desktop) {
-    padding-bottom: 41px;
+    padding-bottom: 0;
   }
 }
 
@@ -46,6 +46,13 @@
 
   &:not(:last-of-type) {
     margin-bottom: 30px;
+  }
+
+   @media (min-width: $min-desktop) {
+    &.slider__item[data-slider="active"] {
+      margin-bottom: 0;
+     }
+
   }
 }
 

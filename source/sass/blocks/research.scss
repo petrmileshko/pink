@@ -6,11 +6,11 @@
     grid-template-columns: 238px 1fr;
     grid-template-rows: 107px 106px 63px;
     padding: 54px 0 109px 0;
-    background-color: #fff;
+    background-color: $bg-color-primary;
 
     &::after {
       grid-column: 1 / 2;
-      grid-row: 1 / 3;
+      grid-row: 1 / 4;
       width: 238px;
       height: 276px;
       background-size: auto;
@@ -20,13 +20,18 @@
   }
 
   @media (min-width: $min-desktop) {
+    grid-template-columns: 369px 1fr;
+    grid-template-rows: 121px 111px 113px;
+    padding: 17px 0 67px 0;
+    background-color: $bg-color-secondary;
 
     &::after {
+      grid-column: 1 / 2;
+      grid-row: 1 / 4;
       width: 298px;
       height: 345px;
       background-size: auto;
       background-image: url("../img/backgrounds/features/research-desktop.svg");
-      background-size: 186px auto;
       content: "";
     }
   }
@@ -49,6 +54,8 @@
   }
 
   @media (min-width: $min-desktop) {
+    max-width: 535px;
+    margin: 40px 0 0 72px;
     font-size: 30px;
     line-height: 30px;
   }
@@ -68,6 +75,7 @@
   }
 
   @media (min-width: $min-desktop) {
+    max-width: 535px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -82,6 +90,13 @@
   @media (min-width: $min-tablet) {
     grid-column: 2 / 3;
     margin: 24px 0 0 72px;
+    line-height: 1;
+  }
+
+  @media (min-width: $min-tablet) {
+    grid-column: 2 / 3;
+    margin: 24px 0 0 72px;
+    font-size: 18px;
     line-height: 1;
   }
 }

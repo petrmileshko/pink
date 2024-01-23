@@ -26,6 +26,12 @@
   }
 }
 
+.features__container {
+  @media (min-width: $min-desktop) {
+    background-color: $bg-color-secondary;
+  }
+}
+
 .features__text {
   max-width: 280px;
   margin: 0 auto;
