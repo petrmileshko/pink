@@ -1,45 +1,45 @@
 .application {
-  padding-top: 54px;
+	padding-top: 54px;
 
-  & .title {
-    margin-bottom: 55px;
-  }
+	& .title {
+		margin-bottom: 55px;
+	}
 
-  @media (min-width: $min-tablet) {
-    & .title {
-      max-width: 490px;
-      margin-bottom: 82px;
-    }
-  }
+	@media (min-width: $min-tablet) {
+		& .title {
+			max-width: 490px;
+			margin-bottom: 82px;
+		}
+	}
 
-  @media (min-width: $min-desktop) {
-    & .title {
-      max-width: 760px;
-      margin-bottom: 84px;
-    }
-  }
+	@media (min-width: $min-desktop) {
+		& .title {
+			max-width: 760px;
+			margin-bottom: 84px;
+		}
+	}
 }
 
 .application__form {
-  padding-bottom: 26px;
-  font-size: 18px;
-  line-height: 30px;
-  color: $font-color;
+	padding-bottom: 26px;
+	font-size: 18px;
+	line-height: 30px;
+	color: $font-color;
 
-  @media (min-width: $min-tablet) {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px;
-  }
+	@media (min-width: $min-tablet) {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 50px;
+	}
 
-  @media (min-width: $min-desktop) {
-    display: grid;
-    grid-template-columns: 433px 1fr;
-    padding-bottom: 0;
-    column-gap: 74px;
-    row-gap: 50px;
-    width: calc(100% - 260px);
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+	@media (min-width: $min-desktop) {
+		display: grid;
+		grid-template-columns: 433px 1fr;
+		padding-bottom: 0;
+		column-gap: 74px;
+		row-gap: 50px;
+		width: calc(100% - 260px);
+		max-width: 940px;
+		margin: 0 auto;
+	}
 }
