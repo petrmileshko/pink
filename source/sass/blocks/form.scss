@@ -63,6 +63,11 @@
 
   &--submit {
     margin-bottom: 44px;
+
+    @media (min-width: $min-tablet) {
+      min-width: 296px;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -70,6 +75,17 @@
   @media (max-width: $max-mobile) {
     background-color: $bg-color-secondary;
   }
+
+  @media (min-width: $min-tablet) and (max-width: $max-tablet) {
+    &--pink {
+      order: 2;
+    }
+
+    &--journeys {
+      order: 4;
+    }
+  }
+
 }
 
 .form__group {
@@ -86,7 +102,7 @@
   }
 
   @media (min-width: $min-tablet) {
-    margin-bottom: 65px;
+    margin-bottom: 70px;
     padding: 54px 60px;
     border-radius: 1px;
     border: 2px solid $input-border-color;
@@ -96,6 +112,33 @@
       padding: 0;
     }
   }
+
+  @media (min-width: $min-tablet) and (max-width: $max-tablet) {
+    &--person {
+      order: 1;
+    }
+
+    &--mobile {
+      order: 3;
+      padding: 27px 60px 37px 60px;
+    }
+
+    &--emotions {
+      order: 5;
+      padding: 28px 60px 54px 60px;
+    }
+
+    &--buttons {
+      order: 6;
+      margin-bottom: 0;
+      padding: 0;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border: none;
+    }
+  }
+
 }
 
 .form__group-legend {
@@ -118,6 +161,14 @@
 
   &--pink {
     padding-bottom: 31px;
+  }
+
+  @media (min-width: $min-tablet) {
+    padding: 14px 25px;
+
+    &--mobile {
+      display: initial;
+    }
   }
 }
 
@@ -144,6 +195,39 @@
     &:not(:last-of-type) {
       margin-bottom: 29px;
     }
+
+    @media (min-width: $min-tablet) {
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+
+      &:not(:last-of-type) {
+        margin-bottom: 56px;
+      }
+
+      & .form__input {
+        flex-grow: 1;
+        height: 59px;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  &--phone {
+    justify-content: space-between;
+    min-height: 86px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 29px;
+    }
+
+    @media (min-width: $min-tablet) {
+      min-height: 91px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 41px;
+      }
+    }
   }
 
 }
@@ -165,6 +249,12 @@
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 59px 59px;
+
+    @media (min-width: $min-tablet) {
+      min-height: 59px;
+      order: -1;
+      padding: 0 59px 0 20px;
+    }
   }
 
   &--phone {
@@ -173,6 +263,17 @@
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 59px 59px;
+
+    @media (min-width: $min-tablet) {
+      min-height: 59px;
+      order: -1;
+      padding: 0 59px 0 20px;
+    }
+  }
+
+  @media (min-width: $min-tablet) {
+    font-size: 18px;
+    line-height: 30px;
   }
 
   &:hover {}
@@ -257,6 +358,9 @@
 
 .form__footnote {
   align-self: center;
+
+  font-size: 14px;
+  line-height: 30px;
 
   & span {
     color: $font-color-red;

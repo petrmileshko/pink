@@ -62,5 +62,5 @@ $table-border-color: #e5e5e5;
 //Экраны
 $min-tablet: 660px;
 $min-desktop: 1200px;
-$max-desktop: ($min-desktop - 1);
+$max-tablet: ($min-desktop - 1);
 $max-mobile: ($min-tablet - 1);

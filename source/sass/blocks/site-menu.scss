@@ -34,7 +34,7 @@
   display: flex;
   align-items: flex-start;
 
-  @media (max-width: $max-desktop) {
+  @media (max-width: $max-tablet) {
 
     &::before,
     &::after {
