@@ -20,19 +20,90 @@
 }
 
 .plan__type {
-  max-width: 280px;
-  padding: 19px 95px;
+  min-width: 275px;
+  max-width: 276px;
+  padding: 16px 94.68px 17px 94px;
   text-align: center;
   background-color: $bg-thead-plan;
 
+  &:not(:last-of-type) {
+    border-right: 2px solid $font-color-inverted;
+  }
+
+  &--hit::after {
+    content: "";
+    position: absolute;
+    height: 0;
+    transform: rotate(-45deg);
+    border: 24px solid transparent;
+    border-bottom-color: $font-color-red;
+    z-index: 1;
+
+    @media (max-width: $max-mobile) {
+      width: 104px;
+      left: -34px;
+      top: -7px;
+    }
+
+    @media (min-width: $min-tablet) {
+      width: 81px;
+      left: -29px;
+      top: -12px;
+    }
+
+    @media (min-width: $min-desktop) {
+      width: 107px;
+      left: -33px;
+      top: -3px;
+    }
+  }
+
+  &--hit::before {
+    position: absolute;
+    color: $font-color-inverted;
+    font-weight: 400;
+    transform: rotate(-45deg);
+    z-index: 2;
+    content: attr(data-label);
+
+    @media (max-width: $max-mobile) {
+      left: 12px;
+      top: 9px;
+    }
+
+    @media (min-width: $min-tablet) {
+      left: 6px;
+      top: 5px;
+    }
+
+    @media (min-width: $min-desktop) {
+      left: 15px;
+      top: 13px;
+    }
+  }
+
   @media (min-width: $min-tablet) {
-    max-width: 152px;
-    padding: 19px 38px;
+    min-width: 152px;
+    padding: 7px 38px;
   }
 
   @media (min-width: $min-desktop) {
-    max-width: 233px;
-    padding: 23px 66px;
+    min-width: 233px;
+    padding: 16px 66px 17px;
+  }
+
+  &--hit {
+    position: relative;
+
+    @media (min-width: $min-tablet) {
+      min-width: 153px;
+      padding: 7px 30px 7px 34px;
+    }
+
+    @media (min-width: $min-desktop) {
+      min-width: 234px;
+      padding: 16px 66px 17px;
+    }
   }
 }
 
@@ -92,28 +163,31 @@
 }
 
 .plan__feature {
-
+  height: 59px;
+  padding-left: 20px;
+  text-align: left;
   border: 2px solid $table-border-color;
 
   &::before {
     display: inline-block;
+    width: 210px;
     font: inherit;
     color: inherit;
     content: attr(data-feature);
   }
 
   @media (min-width: $min-tablet) {
-    width: 153px;
+    padding-left: 0;
     height: 45px;
     text-align: center;
 
     &::before {
+      width: auto;
       content: "";
     }
   }
 
   @media (min-width: $min-desktop) {
-    width: 233px;
     height: 59px;
     font-size: 18px;
     text-align: center;
@@ -123,6 +197,7 @@
     display: inline-block;
     width: 27px;
     height: 27px;
+    margin-left: auto;
     vertical-align: middle;
     background-image: url("../img/no.svg");
     background-repeat: no-repeat;

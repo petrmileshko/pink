@@ -2,7 +2,6 @@
   position: relative;
   padding: 101px 0 46px;
   background-color: $bg-color-secondary;
-  overflow: hidden;
 
   &::before {
     position: absolute;
@@ -14,6 +13,10 @@
     background: linear-gradient(to right bottom, #ffffff 50%, #f2f2f2 50%);
     content: "";
     z-index: 1;
+  }
+
+  @media (max-width: $max-mobile) {
+    overflow: hidden;
   }
 
   @media (min-width: $min-tablet) {
@@ -34,6 +37,7 @@
   @media (max-width: $max-mobile) {
     margin: 0 auto;
     width: 100vw;
+    max-width: 320px;
     overflow: hidden;
   }
 
@@ -56,6 +60,8 @@
   margin-bottom: 43px;
 
   @media (max-width: $max-mobile) {
+    position: relative;
+   // left: calc(-1 * (254px) );
     width: auto;
   }
 
