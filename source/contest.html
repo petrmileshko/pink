@@ -99,22 +99,22 @@
       <h2 class="visually-hidden">Отправка фотографий</h2>
 
       <p class="main-page__section-title main-page__section-title--inner title block-center">Поделитесь своей историей и
-        получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span> Пожалуйста, заполните форму ниже:</span></p>
 
       <form class="application__form form" action="https://echo.htmlacademy.ru/" method="post"
         enctype="multipart/form-data" autocomplete="off">
 
-        <fieldset class="form__group form__group--user block-center">
+        <fieldset class="form__group form__group--person block-center">
           <legend class="visually-hidden">Персональные данные</legend>
-          <label class="form__label">
+          <label class="form__label form__label--person">
             ФАМИЛИЯ:
             <input class="form__input" type="text" name="your-surname" placeholder="Укажите фамилию *" required>
           </label>
-          <label class="form__label">
+          <label class="form__label form__label--person">
             ИМЯ:
             <input class="form__input" type="text" name="your-name" placeholder="Введите ваше имя *" required>
           </label>
-          <label class="form__label">
+          <label class="form__label form__label--person">
             ОТЧЕСТВО:
             <input class="form__input" type="text" name="your-patronymic" placeholder="Ну и отчество тоже">
           </label>
@@ -150,13 +150,13 @@
           </fieldset>
         </div>
 
-        <fieldset class="form__group block-center">
+        <fieldset class="form__group form__group--mobile block-center">
           <legend class="form__group-legend form__group-legend--mobile">контактная информация</legend>
-          <label class="form__label">
+          <label class="form__label form__label--person">
             НОМЕР ТЕЛЕФОНА
             <input class="form__input form__input--phone" type="tel" name="your-phone" placeholder="Номер, пожалуйста">
           </label>
-          <label class="form__label">
+          <label class="form__label form__label--person">
             АДРЕС ПОЧТЫ
             <input class="form__input form__input--email" type="email" name="your-email" placeholder="Введите почту *" required>
           </label>
@@ -164,7 +164,7 @@
 
         <div class="form__group-wrapper">
           <fieldset class="form__group block-center">
-            <legend class="form__group-legend">С&nbsp;каким приложением путешествовали?</legend>
+            <legend class="form__group-legend form__group-legend--pink">С&nbsp;каким приложением путешествовали?</legend>
             <label class="form__label control control--radio">
               <input class="control__input" type="radio" name="type" value="ios" checked>
               <span class="control__marker">Pink для iOS</span>
@@ -181,14 +181,14 @@
         </div>
 
         <fieldset class="form__group block-center">
-          <legend class="form__group-legend">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+          <legend class="form__group-legend form__group-legend--emotions">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
           <textarea class="form__textarea" name="comments" rows="6"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
 
         <p class="form__group block-center">
-          <button class="form__button" type="submit">Отправить форму</button>
-          <span class="form__footnote">* — обязательные поля</span>
+          <button class="form__button form__button--submit" type="submit">Отправить форму</button>
+          <span class="form__footnote"><span>*</span> — обязательные поля</span>
         </p>
       </form>
     </section>

@@ -59,7 +59,10 @@
     @media (min-width: $min-desktop) {
       min-width: 183px;
     }
+  }
 
+  &--submit {
+    margin-bottom: 44px;
   }
 }
 
@@ -72,10 +75,15 @@
 .form__group {
   display: flex;
   flex-direction: column;
-  padding: 42px 0 44px 0;
+  padding: 0;
+  padding-bottom: 44px;
   margin: 0 auto;
   border: none;
 
+
+  &--mobile {
+    padding-top: 42px;
+  }
 
   @media (min-width: $min-tablet) {
     margin-bottom: 65px;
@@ -83,7 +91,7 @@
     border-radius: 1px;
     border: 2px solid $input-border-color;
 
-    &--user {
+    &--person {
       border: none;
       padding: 0;
     }
@@ -91,11 +99,26 @@
 }
 
 .form__group-legend {
+  padding: 0;
+  padding-top: 42px;
+  padding-bottom: 37px;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: $font-color-red;
+
+  &--mobile {
+    display: none;
+  }
+
+  &--emotions {
+    padding-bottom: 10px;
+  }
+
+  &--pink {
+    padding-bottom: 31px;
+  }
 }
 
 .form__label {
@@ -105,6 +128,24 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $font-color-red;
+
+  &:not(:last-of-type) {
+    margin-bottom: 47px;
+  }
+
+  &:not(:last-of-type).control--radio {
+    margin-bottom: 38px;
+  }
+
+  &--person {
+    justify-content: space-between;
+    min-height: 86px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 29px;
+    }
+  }
+
 }
 
 .form__input {
@@ -212,6 +253,12 @@
       &:active {}
     }
   }
+}
 
+.form__footnote {
+  align-self: center;
 
+  & span {
+    color: $font-color-red;
+  }
 }

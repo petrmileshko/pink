@@ -60,18 +60,18 @@
     display: flex;
     justify-content: center;
     padding-top: calc(66px + 36px);
-    padding-bottom: 78px;
+    min-height: 237px;
     width: initial;
     max-width: initial;
 
     @media (min-width: $min-tablet) {
       padding-top: calc(110px + 81px);
-      padding-bottom: 153px;
+      min-height: 440px;
     }
 
     @media (min-width: $min-desktop) {
       padding-top: calc(110px + 74px);
-      padding-bottom: 74px;
+      min-height: 394px;
     }
   }
 }
