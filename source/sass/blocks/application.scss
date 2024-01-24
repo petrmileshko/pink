@@ -15,7 +15,7 @@
   @media (min-width: $min-desktop) {
     & .title {
       max-width: 760px;
-      margin-bottom: 70px;
+      margin-bottom: 84px;
     }
   }
 }
@@ -33,6 +33,13 @@
   }
 
   @media (min-width: $min-desktop) {
+    display: grid;
+    grid-template-columns: 433px 1fr;
     padding-bottom: 0;
+    column-gap: 74px;
+    row-gap: 50px;
+    width: calc(100% - 260px);
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }

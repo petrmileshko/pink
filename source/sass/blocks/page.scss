@@ -2,8 +2,6 @@
 .page {
   min-width: 320px;
   height: 100%;
-
-  @media (min-width: $min-tablet) {}
 }
 
 //Элемент страницы body
@@ -28,4 +26,12 @@
 .page__footer {
   padding: 40px 0 40px 0;
   color: $bg-color-footer;
+
+  @media (min-width: $min-tablet) {
+    padding: 36px 0 40px 0;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding: 70px 0 75px 0;
+  }
 }

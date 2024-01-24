@@ -76,7 +76,7 @@
     background-color: $bg-color-secondary;
   }
 
-  @media (min-width: $min-tablet) and (max-width: $max-tablet) {
+  @media (min-width: $min-tablet) {
     &--pink {
       order: 2;
     }
@@ -86,13 +86,16 @@
     }
   }
 
+  @media (min-width: $min-desktop) {
+    &--pink {}
+  }
 }
 
 .form__group {
   display: flex;
   flex-direction: column;
   padding: 0;
-  padding-bottom: 44px;
+  padding-bottom: 26px;
   margin: 0 auto;
   border: none;
 
@@ -113,19 +116,19 @@
     }
   }
 
-  @media (min-width: $min-tablet) and (max-width: $max-tablet) {
+  @media (min-width: $min-tablet) {
     &--person {
       order: 1;
     }
 
     &--mobile {
       order: 3;
-      padding: 27px 60px 37px 60px;
+      padding: 27px 60px 37px;
     }
 
     &--emotions {
       order: 5;
-      padding: 28px 60px 54px 60px;
+      padding: 28px 60px 54px;
     }
 
     &--buttons {
@@ -136,6 +139,57 @@
       justify-content: space-between;
       align-items: center;
       border: none;
+    }
+  }
+
+  @media (min-width: $min-desktop) {
+
+    &--journeys {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 47px;
+      width: 940px;
+      margin: 0;
+      padding: 15px 60px 24px;
+    }
+
+    &--mobile {
+      grid-column: 1 / -1;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 940px;
+      margin: 0;
+      padding: 5px 62px 14px;
+    }
+
+    &--emotions {
+      grid-column: 1 / -1;
+      width: 940px;
+      margin: 0;
+    }
+
+    &--buttons {
+      grid-column: 1 / -1;
+      width: 940px;
+      margin: 0;
+    }
+
+    &--person {
+      height: 297px;
+      width: 100%;
+      max-width: initial;
+      margin: 0;
+    }
+
+    &--pink {
+      position: relative;
+      top: -8px;
+      width: 431px;
+      min-height: 298px;
+      max-width: initial;
+      margin: 0;
+      padding: 0;
     }
   }
 
@@ -170,6 +224,15 @@
       display: initial;
     }
   }
+
+  @media (min-width: $min-desktop) {
+    padding: 14px 31px;
+
+    &--pink {
+      width: 368px;
+      padding: 0 25px;
+    }
+  }
 }
 
 .form__label {
@@ -186,6 +249,17 @@
 
   &:not(:last-of-type).control--radio {
     margin-bottom: 38px;
+  }
+
+  @media (min-width: $min-desktop) {
+    &.control--radio {
+      margin-left: 74px;
+      margin-top: 39px;
+    }
+
+    &:not(:last-of-type).control--radio {
+      margin-bottom: 0;
+    }
   }
 
   &--person {
@@ -211,6 +285,10 @@
         margin-left: 20px;
       }
     }
+
+    @media (min-width: $min-desktop) {
+      min-height: 59px;
+    }
   }
 
   &--phone {
@@ -227,6 +305,18 @@
       &:not(:last-of-type) {
         margin-bottom: 41px;
       }
+    }
+
+    @media (min-width: $min-desktop) {
+      &:not(:last-of-type) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media (min-width: $min-desktop) {
+    .form__group-wrapper--journeys &:not(:last-of-type) {
+      margin-bottom: 0;
     }
   }
 
@@ -255,6 +345,10 @@
       order: -1;
       padding: 0 59px 0 20px;
     }
+
+    @media (min-width: $min-desktop) {
+      min-width: 371px;
+    }
   }
 
   &--phone {
@@ -268,6 +362,10 @@
       min-height: 59px;
       order: -1;
       padding: 0 59px 0 20px;
+    }
+
+    @media (min-width: $min-desktop) {
+      min-width: 371px;
     }
   }
 
