@@ -1,6 +1,11 @@
 .form {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $min-tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .form__button {
@@ -24,6 +29,10 @@
     background-color: $button-upload-color;
     border: 3px solid $font-color-red;
     border-radius: 30px;
+
+    @media (min-width: $min-tablet) {
+      margin-bottom: 24px;
+    }
   }
 
   &--reset {

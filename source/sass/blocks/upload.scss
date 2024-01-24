@@ -4,11 +4,27 @@
   & .title {
     margin-bottom: 52px;
   }
+
+  @media (min-width: $min-tablet) {
+    padding-top: 70px;
+
+    & .title {
+      margin-bottom: 78px;
+    }
+
+    & .form__range {
+      width: 202px;
+    }
+  }
 }
 
 .upload__form {
   padding: 20px 0 41px 0;
   background-color: $bg-color-secondary;
+
+  @media (min-width: $min-tablet) {
+    padding: 57px 0 54px 0;
+  }
 }
 
 .upload__image {
@@ -16,6 +32,14 @@
   justify-content: center;
   padding: 0;
   border: none;
+
+  @media (min-width: $min-tablet) {
+    justify-self: end;
+    width: 300px;
+    height: 400px;
+    margin: 0;
+    margin-right: 10px;
+  }
 }
 
 .upload__effects {
@@ -46,6 +70,21 @@
     padding-bottom: 34px;
     margin-bottom: 38px;
     border-bottom: 1px solid rgb(40, 54, 69, 0.1);
+  }
+
+  @media (min-width: $min-tablet) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 67px;
+  }
+}
+
+.upload__effects-item {
+  padding: 23px 0 27px 0;
+  border-bottom: 2px solid rgb(40, 54, 69, 0.1);
+
+  &:first-of-type {
+    padding-top: 9px;
   }
 }
 
@@ -102,6 +141,8 @@
   }
 
   @media (min-width: $min-tablet) and (max-width: $max-desktop) {
+    justify-content: space-between;
+
     &::before {
       opacity: 1;
       background-color: $font-color-red;

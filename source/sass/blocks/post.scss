@@ -18,11 +18,13 @@
 .post__data {
   display: flex;
   flex-direction: column;
-  padding: 18px 17px;
+  min-height: 121px;
+  padding: 17px 17px;
   background-color: $bg-color-secondary;
 
   @media (min-width: $min-tablet) {
-    padding: 30px;
+    min-height: 155px;
+    padding: 20px 30px 29px 30px;
   }
 }
 
@@ -32,13 +34,13 @@
 
 .post__text {
   margin: 0;
-  margin-bottom: 12px;
-
-  @media (min-width: $min-tablet) {
-    margin-bottom: 27px;
-  }
 }
 
 .post__statistics {
   margin: 0;
+  margin-top: 14px;
+
+  @media (min-width: $min-tablet) {
+    margin-top: auto;
+  }
 }
