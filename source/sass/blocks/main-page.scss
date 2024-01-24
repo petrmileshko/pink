@@ -43,6 +43,7 @@
 
   &--gallery {
     max-width: 172px;
+    margin: 0 auto;
 
     @media (min-width: $min-tablet) {
       max-width: 358px;
@@ -74,6 +75,7 @@
 
   &--inner {
     max-width: 280px;
+    margin-bottom: 60px;
     font-size: 14px;
     font-weight: $font-regular;
     line-height: 30px;

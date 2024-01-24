@@ -20,7 +20,8 @@
 .panorama__data {
   display: flex;
   flex-direction: column;
-  padding: 25px 17px;
+  padding: 18px 17px;
+  padding-right: 10px;
   background-color: $bg-color-secondary;
 
   @media (min-width: $min-tablet) {
@@ -34,7 +35,7 @@
 
 .panorama__text {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 12px;
 
   @media (min-width: $min-tablet) {
     margin-bottom: 0;
