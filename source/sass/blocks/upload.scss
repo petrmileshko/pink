@@ -16,6 +16,18 @@
       width: 202px;
     }
   }
+
+  @media (min-width: $min-desktop) {
+    padding-top: 67px;
+
+    & .title {
+      margin-bottom: 75px;
+    }
+
+    & .form__range {
+      width: 288px;
+    }
+  }
 }
 
 .upload__form {
@@ -24,6 +36,13 @@
 
   @media (min-width: $min-tablet) {
     padding: 57px 0 54px 0;
+  }
+
+  @media (min-width: $min-desktop) {
+    width: calc(100% - 130px*2);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 57px 90px 57px 80px;
   }
 }
 
@@ -40,6 +59,10 @@
     margin: 0;
     margin-right: 10px;
   }
+
+  @media (min-width: $min-tablet) {
+    margin-right: 0;
+  }
 }
 
 .upload__effects {
@@ -52,6 +75,14 @@
   @media (min-width: $min-tablet) {
     display: block;
     padding-left: 36px;
+  }
+
+  @media (min-width: $min-desktop) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 410px;
+    padding-left: 0;
   }
 }
 
@@ -83,14 +114,31 @@
     width: 273px;
     margin-bottom: 67px;
   }
+
+  @media (min-width: $min-desktop) {
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    margin-bottom: 67px;
+  }
 }
 
 .upload__effects-item {
-  padding: 23px 0 27px 0;
-  border-bottom: 2px solid rgb(40, 54, 69, 0.1);
 
-  &:first-of-type {
-    padding-top: 9px;
+  @media (min-width: $min-tablet) {
+    padding: 23px 0 27px 0;
+    border-bottom: 2px solid rgb(40, 54, 69, 0.1);
+
+    &:first-of-type {
+      padding-top: 9px;
+    }
+  }
+
+  @media (min-width: $min-desktop) {
+    display: flex;
+    align-items: center;
+    min-height: 72px;
+    padding: 0;
   }
 }
 
@@ -171,6 +219,9 @@
   }
 
   @media (min-width: $min-desktop) {
+    min-width: 410px;
+    justify-content: space-between;
+
     &::before {
       opacity: 1;
       background-color: $font-color-red;
