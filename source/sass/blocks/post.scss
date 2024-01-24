@@ -5,6 +5,10 @@
   @media (min-width: $min-tablet) {
     width: 300px;
   }
+
+  @media (min-width: $min-desktop) {
+    width: 100%;
+  }
 }
 
 .post__image {

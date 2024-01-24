@@ -60,8 +60,9 @@
     margin-right: 10px;
   }
 
-  @media (min-width: $min-tablet) {
+  @media (min-width: $min-desktop) {
     margin-right: 0;
+    justify-self: start;
   }
 }
 
