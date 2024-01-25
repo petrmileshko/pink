@@ -35,6 +35,14 @@
 
 .page-header__logo {
   margin: 0;
+
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(48%) saturate(4325%) hue-rotate(328deg) brightness(86%) contrast(91%);
+  }
+
+  &:active {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(116deg) brightness(103%) contrast(105%) opacity(30%);
+  }
 }
 
 .page-header__toggler {
@@ -47,8 +55,38 @@
   background: none;
   border: none;
 
+  cursor: pointer;
+
   @media (min-width: $min-desktop) {
     display: none;
+  }
+
+  &:hover {
+    .burger:not(.burger--opened) {
+      background-color: $menu-hover;
+    }
+
+    .burger::before {
+      background-color: $menu-hover;
+    }
+
+    .burger::after {
+      background-color: $menu-hover;
+    }
+  }
+
+  &:active {
+    .burger:not(.burger--opened) {
+      opacity: 0.3;
+    }
+
+    .burger::before {
+      opacity: 0.3;
+    }
+
+    .burger::after {
+      opacity: 0.3;
+    }
   }
 }
 

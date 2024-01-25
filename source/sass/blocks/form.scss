@@ -23,6 +23,7 @@
   background-color: $button-color-primary;
   border-radius: 1px;
   border: none;
+  cursor: pointer;
 
   &--upload {
     min-width: 280px;
@@ -44,6 +45,14 @@
       margin-right: 44px;
     }
 
+    &:hover {
+      color: $font-color-inverted;
+      background-color: $font-color-red;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   &--reset {
@@ -59,6 +68,16 @@
     @media (min-width: $min-desktop) {
       min-width: 183px;
     }
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(40, 54, 69, 0.3);
+      border-color: rgba(40, 54, 69, 0.3);
+    }
   }
 
   &--submit {
@@ -67,6 +86,20 @@
     @media (min-width: $min-tablet) {
       min-width: 296px;
       margin-bottom: 0;
+    }
+
+    &:hover {
+      background: $button-color-secondary;
+    }
+
+    &:active {
+      color: rgb(255, 255, 255, 0.3);
+    }
+
+    &:disabled {
+      border-color: #E5E5E5;
+      background-color: #E5E5E5;
+      pointer-events: none;
     }
   }
 }
@@ -242,6 +275,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $font-color-red;
+  cursor: pointer;
 
   &:not(:last-of-type) {
     margin-bottom: 47px;
@@ -333,6 +367,18 @@
     color: inherit;
   }
 
+  &:hover {
+    border-color: $input-border-hover;
+  }
+
+  &:focus:not(:active) {
+    border-color: initial;
+  }
+
+  &:active {
+    border-color: $input-border-active;
+  }
+
   &--email {
     padding-right: 59px;
     background-image: url("../img/mail-icon.svg");
@@ -374,13 +420,11 @@
     line-height: 30px;
   }
 
-  &:hover {}
-
-  &:focus {}
-
-  &:active {}
-
-  &:disabled {}
+  &:disabled {
+    border-color: #E5E5E5;
+    background-color: #E5E5E5;
+    pointer-events: none;
+  }
 }
 
 .form__textarea {
@@ -399,13 +443,23 @@
     color: inherit;
   }
 
-  &:hover {}
+  &:hover {
+    border-color: $input-border-hover;
+  }
 
-  &:focus {}
+  &:focus:not(:active) {
+    border-color: initial;
+  }
 
-  &:active {}
+  &:active {
+    border-color: $input-border-active;
+  }
 
-  &:disabled {}
+  &:disabled {
+    border-color: #E5E5E5;
+    background-color: #E5E5E5;
+    pointer-events: none;
+  }
 }
 
 .form__range {
@@ -436,9 +490,9 @@
       border-radius: 50%;
       cursor: pointer;
 
-      &:hover {}
-
-      &:active {}
+      &:active {
+        background-color: $font-color-red;
+      }
     }
 
     &::-webkit-slider-thumb {
@@ -454,7 +508,9 @@
 
       &:hover {}
 
-      &:active {}
+      &:active {
+        background-color: $font-color-red;
+      }
     }
   }
 }

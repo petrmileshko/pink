@@ -95,6 +95,17 @@
   color: $font-color-red;
   font-size: 24px;
   font-weight: $font-light;
+
+  &.link {
+    &:hover {
+      color: $font-color;
+      text-decoration: underline;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .contacts__map {

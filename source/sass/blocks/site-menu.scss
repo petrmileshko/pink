@@ -66,8 +66,8 @@
   width: 100%;
   padding: 15px 0;
   text-align: center;
-
   color: $font-color-inverted;
+  transition: 0.4s ease all;
 
   &:hover:not(.site-menu__link--active) {
     color: $menu-hover;

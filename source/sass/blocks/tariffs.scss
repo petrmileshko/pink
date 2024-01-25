@@ -61,7 +61,7 @@
 
   @media (max-width: $max-mobile) {
     position: relative;
-   // left: calc(-1 * (254px) );
+    // left: calc(-1 * (254px) );
     width: auto;
   }
 
@@ -110,5 +110,13 @@
   &[data-toggler="active"] {
     background-color: #ffffff;
     outline: 3px solid #283645;
+  }
+
+  &:hover:not(&[data-toggler="active"]) {
+    opacity: 0.6;
+  }
+
+  &:active:not(&[data-toggler="active"]) {
+    opacity: 0.1;
   }
 }

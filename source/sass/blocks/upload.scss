@@ -71,6 +71,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0;
+  margin: 0;
   border: none;
 
   @media (min-width: $min-tablet) {
@@ -145,6 +146,7 @@
 
 .upload__effects-label {
   display: flex;
+  cursor: pointer;
 
   &::before {
     mask-size: cover;
@@ -229,4 +231,9 @@
     }
   }
 
+  &:hover {
+    &::before {
+      opacity: 0.5;
+    }
+  }
 }

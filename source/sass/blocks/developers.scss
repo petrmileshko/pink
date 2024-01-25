@@ -12,3 +12,15 @@
     font-size: 18px;
   }
 }
+
+.developers__image {
+  color: $font-color-red;
+
+  &:hover {
+    color: #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

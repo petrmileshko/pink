@@ -14,6 +14,14 @@
 .page-footer__logo {
   margin-bottom: 40px;
 
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(48%) saturate(4325%) hue-rotate(328deg) brightness(86%) contrast(91%);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $min-tablet) {
     margin-bottom: 0;
   }

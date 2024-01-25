@@ -122,4 +122,12 @@
     background-color: #ffffff;
     outline: 3px solid #283645;
   }
+
+  &:hover:not(&[data-toggler="active"]) {
+    opacity: 0.6;
+  }
+
+  &:active:not(&[data-toggler="active"]) {
+    opacity: 0.1;
+  }
 }
