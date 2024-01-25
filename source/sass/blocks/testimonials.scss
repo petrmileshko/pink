@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0 60px 0;
+  padding: 38px 0 40px 0;
   font-size: 14px;
   font-weight: $font-regular;
   line-height: 30px;
@@ -27,7 +27,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 44px;
 
   @media (min-width: $min-tablet) {
     padding-bottom: 19px;
@@ -87,6 +86,7 @@
 
 .testimonials__text {
   margin: 0;
+  margin-top: 13px;
 
   @media (min-width: $min-tablet) {
     order: 1;

@@ -22,7 +22,7 @@
 .plan__type {
   min-width: 275px;
   max-width: 276px;
-  padding: 16px 94.68px 17px 94px;
+  padding: 13px 94.68px 27px 94px;
   text-align: center;
   background-color: $bg-thead-plan;
 
@@ -41,8 +41,8 @@
 
     @media (max-width: $max-mobile) {
       width: 104px;
-      left: -34px;
-      top: -7px;
+      left: -35px;
+      top: -3px;
     }
 
     @media (min-width: $min-tablet) {
@@ -67,8 +67,8 @@
     content: attr(data-label);
 
     @media (max-width: $max-mobile) {
-      left: 12px;
-      top: 9px;
+      left: 11px;
+      top: 17px;
     }
 
     @media (min-width: $min-tablet) {
@@ -129,6 +129,7 @@
 .plan__type-price {
   display: block;
   font-size: 18px;
+  line-height: 29px;
   font-weight: $font-light;
 
   @media (min-width: $min-desktop) {

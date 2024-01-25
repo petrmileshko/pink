@@ -1,5 +1,5 @@
 .features {
-  padding-top: 46px;
+  padding-top: 41px;
 }
 
 .features__wrapper {
@@ -47,14 +47,7 @@
 .features__text {
   max-width: 280px;
   margin: 0 auto;
-  margin-bottom: 36px;
-
-
-  @media (max-width: ($min-tablet - 1)) {
-    & br {
-      display: none;
-    }
-  }
+  margin-bottom: 29px;
 
   @media (min-width: $min-tablet) {
     max-width: none;
@@ -98,7 +91,7 @@
 
   @media (max-width: ($min-tablet - 1)) {
     &:not(:last-of-type) {
-      margin-bottom: 43px;
+      margin-bottom: 32px;
     }
   }
 
@@ -211,6 +204,7 @@
 
 .features__slogan {
   margin: 0;
+  margin-bottom: 9px;
   font-size: 18px;
   font-weight: $font-bold;
   line-height: 24px;

@@ -18,7 +18,7 @@
 
 .main-page__title {
   max-width: 280px;
-  margin: 0 auto 34px auto;
+  margin: 0 auto 25px auto;
   color: $font-color-inverted;
 
   @media (min-width: $min-tablet) {
@@ -97,7 +97,7 @@
   }
 
   .main-page__footer {
-    padding-top: 50px;
+    padding-top: 40px;
 
     @media (min-width: $min-tablet) {
       padding-top: 55px;
