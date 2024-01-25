@@ -75,6 +75,20 @@
     }
   }
 
+  &:focus:not(:active) {
+    .burger:not(.burger--opened) {
+      background-color: $button-burger-color;
+    }
+
+    .burger::before {
+      background-color: $button-burger-color;
+    }
+
+    .burger::after {
+      background-color: $button-burger-color;
+    }
+  }
+
   &:active {
     .burger:not(.burger--opened) {
       opacity: 0.3;
