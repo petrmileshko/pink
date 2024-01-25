@@ -384,8 +384,13 @@
 }
 
 .form__textarea {
-  padding: 22px 25px 22px 20px;
-  font-size: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 13px 0 0 13px;
+  font-size: 18px;
+  font-weight: $font-regular;
+  line-height: 30px;
   color: $font-color-titles;
   border-radius: 1px;
   border: 2px solid $input-border-color;

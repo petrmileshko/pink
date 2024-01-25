@@ -230,7 +230,6 @@
 }
 
 .features__description {
-  order: 3;
   margin: 0;
   font-size: 14px;
   line-height: 24px;
@@ -242,6 +241,7 @@
   }
 
   @media (min-width: $min-desktop) {
+    order: 3;
     font-size: 18px;
     line-height: 30px;
     text-align: center;
