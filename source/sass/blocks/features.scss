@@ -1,5 +1,9 @@
 .features {
   padding-top: 41px;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 50px;
+  }
 }
 
 .features__wrapper {
@@ -21,10 +25,10 @@
   }
 
   @media (min-width: $min-tablet) {
-    padding-top: 0;
-    padding-bottom: 49px;
-
+    padding: 91px 0 0 0;
+    background-image: linear-gradient(to bottom, $bg-color-primary 5%, $bg-color-secondary 95%);
     &::before {
+      top: 35px;
       height: 54px;
     }
   }
@@ -51,7 +55,13 @@
 
   @media (min-width: $min-tablet) {
     max-width: none;
+    margin-bottom: 6px;
     padding: 0 16px;
+
+    &--tablet {
+      padding: 0 22px;
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: $min-desktop) {
@@ -72,7 +82,8 @@
   @media (min-width: $min-tablet) {
     align-items: flex-start;
     min-height: 432px;
-    padding-left: calc(268px + 42px);
+    padding-top: 23px;
+    padding-left: 310px;
   }
 
   @media (min-width: $min-desktop) {
@@ -120,7 +131,7 @@
 
     &--friends::after {
       position: absolute;
-      bottom: -44px;
+      bottom: 0;
       left: 0;
       width: 268px;
       height: 481px;
@@ -131,15 +142,15 @@
     }
 
     &--mood {
-      margin-top: 75px;
+      margin-top: 0;
     }
 
     &--pink {
-      margin-top: 46px;
+      margin-top: 37px;
     }
 
     &--friends {
-      margin-top: 47px;
+      margin-top: 37px;
     }
 
     @media (min-resolution: 2dppx) {

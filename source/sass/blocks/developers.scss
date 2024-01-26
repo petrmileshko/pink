@@ -7,6 +7,10 @@
   line-height: 18px;
   color: $font-color-titles;
 
+  @media (min-width: $min-tablet) {
+    margin-top: 8px;
+  }
+
   @media (min-width: $min-desktop) {
     min-width: 155px;
     font-size: 18px;

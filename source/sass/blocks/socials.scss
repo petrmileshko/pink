@@ -6,9 +6,21 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: $min-tablet) {
+    justify-content: flex-start;
+    align-self: flex-end;
+    min-width: 192px;
+  }
+
 }
 
 .socials__item {
+  @media (min-width: $min-tablet) {
+    &:not(:last-of-type) {
+      margin-right: 11px;
+    }
+  }
 }
 
 .socials__link {

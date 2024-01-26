@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 238px 1fr;
     grid-template-rows: 107px 106px 63px;
-    padding: 54px 0 109px 0;
+    padding: 54px 0 51px 0;
     background-color: $bg-color-primary;
 
     &::after {
@@ -46,7 +46,6 @@
 
   @media (min-width: $min-tablet) {
     grid-column: 2 / 3;
-    max-width: 168px;
     margin: 40px 0 0 72px;
     font-size: 30px;
     line-height: 36px;
@@ -70,7 +69,7 @@
   @media (min-width: $min-tablet) {
     grid-column: 2 / 3;
     max-width: 310px;
-    margin: 24px 0 0 72px;
+    margin: 17px 0 0 72px;
     text-align: left;
   }
 
@@ -93,7 +92,7 @@
     line-height: 1;
   }
 
-  @media (min-width: $min-tablet) {
+  @media (min-width: $min-desktop) {
     grid-column: 2 / 3;
     margin: 24px 0 0 72px;
     font-size: 18px;

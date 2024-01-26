@@ -8,6 +8,7 @@
   @media (min-width: $min-tablet) {
     flex-direction: row;
     justify-content: space-between;
+    min-height: 130px;
   }
 
   @media (min-width: $min-desktop) {}
