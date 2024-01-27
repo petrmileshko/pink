@@ -87,8 +87,8 @@
 
     &:not(:last-of-type) {
       padding: 0;
-      margin: 0;
-      margin-top: 40px;
+      margin: 40px 0 0 48px;
+      justify-self: start;
     }
 
     &--phone {
@@ -101,12 +101,16 @@
       grid-column: 2 / 3;
       grid-row: 2/3;
       align-self: start;
+      justify-self: start;
+      margin: 40px 0 0 32px;
     }
 
     &--mail {
       grid-column: 3 / 4;
       grid-row: 2/3;
       align-self: start;
+      justify-self: start;
+      margin: 40px 0 0 43px;
     }
   }
 }
@@ -129,7 +133,7 @@
   }
 
   @media (min-width: $min-desktop) {
-    margin-top: 18px;
+    margin-top: 21px;
   }
 }
 
