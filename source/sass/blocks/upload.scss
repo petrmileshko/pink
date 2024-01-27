@@ -1,9 +1,5 @@
 .upload {
-  padding-top: 49px;
-
-  & .title {
-    margin-bottom: 52px;
-  }
+  padding-top: 20px;
 
   @media (min-width: $min-tablet) {
     padding-top: 70px;
@@ -97,8 +93,9 @@
 
   @media (max-width: $max-mobile) {
     position: relative;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: flex-start;
     align-items: center;
     width: 100vw;
     max-width: 320px;
@@ -126,6 +123,7 @@
 }
 
 .upload__effects-item {
+  margin-left: 10px;
 
   @media (min-width: $min-tablet) {
     padding: 23px 0 27px 0;
