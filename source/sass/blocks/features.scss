@@ -4,6 +4,10 @@
   @media (min-width: $min-tablet) {
     padding-top: 50px;
   }
+
+  @media (min-width: $min-desktop) {
+    padding-top: 62px;
+  }
 }
 
 .features__wrapper {
@@ -27,6 +31,7 @@
   @media (min-width: $min-tablet) {
     padding: 91px 0 0 0;
     background-image: linear-gradient(to bottom, $bg-color-primary 5%, $bg-color-secondary 95%);
+
     &::before {
       top: 35px;
       height: 54px;
@@ -34,9 +39,11 @@
   }
 
   @media (min-width: $min-desktop) {
-    padding-bottom: 59px;
+    padding: 53px 0 59px 0;
+    background-image: linear-gradient(to bottom, $bg-color-primary 5%, $bg-color-secondary 95%);
 
     &::before {
+      top: 53px;
       height: 100px;
     }
   }
@@ -67,6 +74,11 @@
   @media (min-width: $min-desktop) {
     max-width: none;
     padding: 0 80px;
+    margin-bottom: 0;
+
+    &--tablet {
+      padding: 0 108px;
+    }
   }
 }
 
@@ -250,6 +262,7 @@
     font-size: 18px;
     line-height: 30px;
     text-align: center;
-    margin-top: 32px;
+    margin-top: 14px;
+    padding: 0 31px;
   }
 }

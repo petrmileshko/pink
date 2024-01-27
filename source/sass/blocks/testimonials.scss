@@ -13,11 +13,13 @@
   }
 
   @media (min-width: $min-desktop) {
+    padding: 76px 0 31px 0;
+
     &::before {
       display: block;
       width: 79px;
       height: 63px;
-      margin-bottom: 58px;
+      margin-bottom: 47px;
 
       background-image: url("../img/quotes.svg");
       background-repeat: no-repeat;
@@ -92,6 +94,7 @@
 
   @media (min-width: $min-desktop) {
     font-size: 18px;
+    margin-top: 5px;
   }
 }
 
@@ -102,5 +105,9 @@
   @media (min-width: $min-tablet) {
     order: 1;
     font-size: 18px;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin-top: 0;
   }
 }

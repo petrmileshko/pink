@@ -12,6 +12,7 @@
 
   @media (min-width: $min-desktop) {
     justify-content: flex-start;
+    margin: 0;
   }
 }
 
@@ -47,7 +48,12 @@
   list-style-type: none;
 
   @media (min-width: $min-desktop) {
-    margin-bottom: 58px;
+    display: grid;
+    grid-template-columns: 83px 80px 1fr;
+    max-width: initial;
+    min-width: 218px;
+    width: auto;
+    margin-bottom: 51px;
   }
 }
 
@@ -58,6 +64,12 @@
 
   &:not(:last-of-type) {
     margin-right: 35px;
+  }
+
+  @media (min-width: $min-desktop) {
+    &:not(:last-of-type) {
+      margin-right: 0;
+    }
   }
 }
 

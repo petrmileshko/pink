@@ -28,7 +28,12 @@
   }
 
   @media (min-width: $min-desktop) {
-    padding: 157px 0 96px;
+    padding: 160px 0 94px;
+
+    &::before {
+      height: 100px;
+      top: 0;
+    }
   }
 }
 

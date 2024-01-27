@@ -11,7 +11,9 @@
     min-height: 130px;
   }
 
-  @media (min-width: $min-desktop) {}
+  @media (min-width: $min-desktop) {
+    justify-content: start;
+  }
 }
 
 .page-footer__logo {
@@ -30,13 +32,15 @@
 }
 
 .page-footer__socials {
-  margin: 0 0 40px 0;
+  margin: 0;
 
-  @media (min-width: $min-tablet) {
-    margin: 0;
+  @media (min-width: $min-desktop) {
+    margin: 12px 0 0 239px;
   }
 }
 
-.page-footer__developer {
-  @media (min-width: $min-tablet) {}
+.page-footer__developers {
+  @media (min-width: $min-desktop) {
+    margin-left: auto;
+  }
 }
