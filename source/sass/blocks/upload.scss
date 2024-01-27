@@ -10,10 +10,10 @@
   }
 
   @media (min-width: $min-desktop) {
-    padding-top: 67px;
+    padding-top: 58px;
 
     & .title {
-      margin-bottom: 75px;
+      margin-bottom: 68px;
     }
 
     & .form__range {
@@ -34,6 +34,7 @@
     width: calc(100% - 130px*2);
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 28px;
     padding: 57px 90px 57px 80px;
   }
 }
@@ -111,10 +112,12 @@
   }
 
   @media (min-width: $min-desktop) {
+    position: relative;
+    top: -17px;
     display: flex;
     flex-direction: column;
     width: 410px;
-    margin-bottom: 67px;
+    margin-bottom: 126px;
   }
 }
 
@@ -221,7 +224,7 @@
   }
 
   @media (min-width: $min-desktop) {
-    min-width: 410px;
+    min-width: 380px;
     justify-content: space-between;
 
     &::before {
