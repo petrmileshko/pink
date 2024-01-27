@@ -13,14 +13,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 16px;
+  padding-bottom: 17px;
 
   @media (min-width: $min-tablet) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 96px 98px 135px;
     justify-content: center;
-    padding-bottom: 26px;
+    padding-bottom: 27px;
   }
 
   @media (min-width: $min-desktop) {
@@ -54,30 +54,46 @@
   align-items: center;
   margin: 0 0 20px 0;
 
+  &--address {
+    font-style: normal;
+  }
+
   @media (min-width: $min-tablet) {
 
     &--phone {
       grid-column: 1 / 2;
       grid-row: 2 / 3;
-      align-self: end;
-      margin: 0;
-      margin-right: 11px;
+      align-self: start;
+      justify-self: start;
+      margin: 40px 0 0 47px;
 
     }
 
     &--address {
       grid-column: 1 / -1;
       grid-row: 3 / 4;
-      align-self: end;
-      margin: 0;
+      align-self: start;
+      margin: 45px 0 0 0;
+
+      @media (min-width: $min-tablet) {
+        .contacts__details {
+          padding-top: 5px;
+        }
+      }
+
+      @media (min-width: $min-desktop) {
+        .contacts__details {
+          padding-top: 0;
+        }
+      }
     }
 
     &--mail {
       grid-column: 2 / 3;
       grid-row: 2 / 3;
-      align-self: end;
-      margin: 0;
-      margin-left: 12px;
+      align-self: start;
+      justify-self: start;
+      margin: 40px 0 0 41px;
     }
   }
 
@@ -129,6 +145,14 @@
 
     &:active {
       opacity: 0.3;
+    }
+
+    @media (min-width: $min-tablet) {
+      padding-top: 5px;
+    }
+
+    @media (min-width: $min-desktop) {
+      padding-top: 0;
     }
   }
 

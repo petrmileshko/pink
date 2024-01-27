@@ -126,7 +126,7 @@
   &--friends::after {
     width: 157px;
     height: 277px;
-    margin-top: 48px;
+    margin-top: 43px;
     background-image: url("../img/backgrounds/features/mobile/friends.webp");
     background-size: 157px auto;
     content: "";
@@ -248,6 +248,7 @@
 
 .features__description {
   margin: 0;
+  padding-top: 1px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
