@@ -27,7 +27,7 @@
   background-color: $bg-color-secondary;
 
   @media (min-width: $min-tablet) {
-    padding: 57px 0 54px 0;
+    padding: 57px 0 50px 0;
   }
 
   @media (min-width: $min-desktop) {
@@ -107,7 +107,7 @@
     display: flex;
     flex-direction: column;
     width: 258px;
-    margin-bottom: 66px;
+    margin-bottom: 69px;
   }
 
   @media (min-width: $min-desktop) {
@@ -123,11 +123,11 @@
 
   @media (min-width: $min-tablet) {
     margin-left: 2px;
-    padding: 22px 0 27px 0;
+    padding: 27px 0 23px;
     border-bottom: 2px solid rgb(40, 54, 69, 0.1);
 
     &:first-of-type {
-      padding-top: 9px;
+      padding-top: 7px;
     }
 
     &:last-of-type {
