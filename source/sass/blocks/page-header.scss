@@ -57,6 +57,11 @@
 
   cursor: pointer;
 
+  @media (min-width: $min-tablet) {
+    margin-top: 13px;
+  }
+
+
   @media (min-width: $min-desktop) {
     display: none;
   }

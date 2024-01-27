@@ -36,7 +36,10 @@
     border-radius: 30px;
 
     @media (min-width: $min-tablet) {
-      margin-bottom: 24px;
+      min-width: 260px;
+      margin-bottom: 29px;
+      margin-top: 0;
+      padding: 13px 0;
     }
 
     @media (min-width: $min-desktop) {
@@ -64,6 +67,11 @@
     background-color: $button-cancel-color;
     border: 3px solid $font-color-titles;
     border-radius: 30px;
+
+    @media (min-width: $min-tablet) {
+      min-width: 260px;
+      padding: 13px 0;
+    }
 
     @media (min-width: $min-desktop) {
       min-width: 183px;

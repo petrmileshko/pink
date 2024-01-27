@@ -7,8 +7,11 @@
 
 
   @media (min-width: $min-tablet) {
+    padding-top: 92px;
+
     & .title {
       max-width: 500px;
+      margin-bottom: 76px;
     }
   }
 

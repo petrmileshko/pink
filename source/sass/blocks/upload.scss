@@ -2,11 +2,7 @@
   padding-top: 20px;
 
   @media (min-width: $min-tablet) {
-    padding-top: 70px;
-
-    & .title {
-      margin-bottom: 78px;
-    }
+    padding-top: 62px;
 
     & .form__range {
       width: 202px;
@@ -110,8 +106,8 @@
   @media (min-width: $min-tablet) {
     display: flex;
     flex-direction: column;
-    width: 273px;
-    margin-bottom: 67px;
+    width: 258px;
+    margin-bottom: 66px;
   }
 
   @media (min-width: $min-desktop) {
@@ -126,11 +122,16 @@
   margin-left: 10px;
 
   @media (min-width: $min-tablet) {
-    padding: 23px 0 27px 0;
+    margin-left: 2px;
+    padding: 22px 0 27px 0;
     border-bottom: 2px solid rgb(40, 54, 69, 0.1);
 
     &:first-of-type {
       padding-top: 9px;
+    }
+
+    &:last-of-type {
+      margin-left: 6px;
     }
   }
 

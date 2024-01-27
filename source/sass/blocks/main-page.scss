@@ -47,6 +47,8 @@
 
     @media (min-width: $min-tablet) {
       max-width: 358px;
+      font-size: 50px;
+      line-height: normal;
     }
   }
 
@@ -99,6 +101,12 @@
 
     &--inner {
       max-width: 620px;
+      font-size: 18px;
+    }
+
+    &--inner-upload {
+      max-width: 425px;
+      margin-bottom: 74px;
       font-size: 18px;
     }
   }
