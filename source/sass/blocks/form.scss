@@ -89,7 +89,9 @@
   }
 
   &--submit {
-    margin-bottom: 44px;
+    margin-bottom: 35px;
+    padding: 23px 0 22px 0;
+    text-transform: uppercase;
 
     @media (min-width: $min-tablet) {
       min-width: 296px;
@@ -143,6 +145,14 @@
 
   &--mobile {
     padding-top: 38px;
+  }
+
+  &--emotions {
+    padding: 0 0 50px;
+  }
+
+  &--buttons {
+    padding: 0 0 16px;
   }
 
   @media (min-width: $min-tablet) {
@@ -249,11 +259,11 @@
   }
 
   &--emotions {
-    padding-bottom: 10px;
+    padding-bottom: 16px;
   }
 
   &--pink {
-    padding-bottom: 31px;
+    padding-bottom: 36px;
   }
 
   @media (min-width: $min-tablet) {
@@ -287,10 +297,6 @@
     margin-bottom: 47px;
   }
 
-  &:not(:last-of-type).control--radio {
-    margin-bottom: 38px;
-  }
-
   span:not(.control__marker) {
     margin-left: 24px;
     margin-bottom: 12px;
@@ -298,21 +304,6 @@
 
   &.control {
     font-size: 18px;
-  }
-
-  &:not(:last-of-type).control--checkbox {
-    margin-bottom: 44px;
-  }
-
-  @media (min-width: $min-desktop) {
-    &.control--radio {
-      margin-left: 74px;
-      margin-top: 39px;
-    }
-
-    &:not(:last-of-type).control--radio {
-      margin-bottom: 0;
-    }
   }
 
   &--person {
@@ -449,7 +440,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 13px 0 0 13px;
+  padding: 15px 0 0 22px;
   font-size: 18px;
   font-weight: $font-regular;
   line-height: 30px;
@@ -535,9 +526,9 @@
 
 .form__footnote {
   align-self: center;
-
   font-size: 14px;
   line-height: 30px;
+  text-transform: uppercase;
 
   & span {
     color: $font-color-red;

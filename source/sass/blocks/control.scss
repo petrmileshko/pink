@@ -1,6 +1,25 @@
 .control {
   display: flex;
   color: $font-color-titles;
+
+  &:not(:last-of-type).control--radio {
+    margin-bottom: 36px;
+  }
+
+  &:not(:last-of-type).control--checkbox {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $min-desktop) {
+    &.control--radio {
+      margin-left: 74px;
+      margin-top: 39px;
+    }
+
+    &:not(:last-of-type).control--radio {
+      margin-bottom: 0;
+    }
+  }
 }
 
 
@@ -15,11 +34,15 @@
 
 .control__marker {
   display: grid;
-  grid-template-columns: 37px 1fr;
+  grid-template-columns: 38px 1fr;
   align-items: center;
   column-gap: 22px;
   text-transform: none;
   cursor: pointer;
+
+  .control--radio & {
+    column-gap: 31px;
+  }
 
   &::before {
     grid-column: 1 / 2;
@@ -40,17 +63,17 @@
   }
 
   .control--radio &::before {
-    width: 37px;
-    height: 37px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
   }
 
-  .control--radio .control__input:checked + &::after {
+  .control--radio .control__input:checked+&::after {
     background-color: $font-color-red;
     border-radius: 50%;
   }
 
-  .control--checkbox .control__input:checked + &::after {
+  .control--checkbox .control__input:checked+&::after {
     width: 22px;
     height: 16px;
     background-image: url("../img/tick.svg");
@@ -63,7 +86,7 @@
     border-color: $input-border-hover;
   }
 
-  .control__input:focus + &::before {
+  .control__input:focus+&::before {
     outline: 2px solid #000000;
     outline-offset: -2px;
   }
@@ -72,11 +95,11 @@
     border-color: $font-color-red;
   }
 
-  .control__input:disabled + & {
+  .control__input:disabled+& {
     opacity: 0.3;
   }
 
-  .control__input:disabled + &::before {
+  .control__input:disabled+&::before {
     border-color: $input-border-hover;
   }
 }
