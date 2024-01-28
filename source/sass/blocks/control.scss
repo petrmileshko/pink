@@ -42,6 +42,16 @@
 
   .control--radio & {
     column-gap: 31px;
+
+    @media (min-width: $min-tablet) {
+      column-gap: 21px;
+    }
+  }
+
+  .control--checkbox & {
+    @media (min-width: $min-tablet) {
+      column-gap: 21px;
+    }
   }
 
   &::before {

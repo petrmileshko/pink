@@ -78,6 +78,8 @@
   }
 
   &--application {
+    display: flex;
+    justify-content: center;
     padding-top: 97px;
     min-height: 237px;
     width: initial;
@@ -86,7 +88,7 @@
     @media (min-width: $min-tablet) {
       padding-top: calc(110px + 81px);
       min-height: 440px;
-      padding-top: 178px;
+      padding-top: 177px;
     }
 
     @media (min-width: $min-desktop) {

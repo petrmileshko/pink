@@ -94,7 +94,7 @@
     text-transform: uppercase;
 
     @media (min-width: $min-tablet) {
-      min-width: 296px;
+      min-width: 300px;
       margin-bottom: 0;
     }
 
@@ -163,7 +163,13 @@
 
     &--person {
       border: none;
+      margin-bottom: 35px;
       padding: 0;
+    }
+
+    &--pink {
+      margin-bottom: 42px;
+      padding: 30px 60px 57px 60px;
     }
   }
 
@@ -174,12 +180,14 @@
 
     &--mobile {
       order: 3;
-      padding: 27px 60px 37px;
+      padding: 23px 60px 36px;
+      margin-bottom: 45px;
     }
 
     &--emotions {
       order: 5;
-      padding: 28px 60px 54px;
+      padding: 22px 60px 49px 57px;
+      margin-bottom: 68px;
     }
 
     &--buttons {
@@ -191,6 +199,12 @@
       align-items: center;
       border: none;
     }
+
+    &--journeys {
+      margin-bottom: 42px;
+      padding: 29px 60px 50px;
+    }
+
   }
 
   @media (min-width: $min-desktop) {
@@ -320,13 +334,19 @@
       align-items: center;
 
       &:not(:last-of-type) {
-        margin-bottom: 56px;
+        margin-bottom: 29px;
       }
 
       & .form__input {
         flex-grow: 1;
-        height: 59px;
+        height: 64px;
         margin-left: 20px;
+        padding: 14px 19px;
+      }
+
+      span:not(.control__marker) {
+        margin-left: 0;
+        margin-top: 17px;
       }
     }
 
@@ -344,10 +364,16 @@
     }
 
     @media (min-width: $min-tablet) {
-      min-height: 91px;
+      min-height: 96px;
 
       &:not(:last-of-type) {
-        margin-bottom: 41px;
+        margin-bottom: 35px;
+      }
+
+      span:not(.control__marker) {
+        margin-left: 17px;
+        margin-top: 1px;
+        margin-bottom: 0;
       }
     }
 
@@ -392,7 +418,7 @@
 
   &--email {
     @media (min-width: $min-tablet) {
-      min-height: 59px;
+      min-height: 63px;
       order: -1;
       padding: 0 59px 0 20px;
       padding-right: 59px;
@@ -409,7 +435,7 @@
 
   &--phone {
     @media (min-width: $min-tablet) {
-      min-height: 59px;
+      min-height: 63px;
       order: -1;
       padding: 0 59px 0 20px;
       padding-right: 59px;
@@ -440,6 +466,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 200px;
   padding: 15px 0 0 22px;
   font-size: 18px;
   font-weight: $font-regular;
@@ -450,6 +477,10 @@
 
   &::placeholder {
     color: inherit;
+  }
+
+  @media (min-width: $min-tablet) {
+    min-height: 195px;
   }
 
   &:hover {
