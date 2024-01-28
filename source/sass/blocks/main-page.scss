@@ -54,6 +54,7 @@
 
   &--application {
     max-width: 228px;
+    line-height: 32px;
 
     @media (min-width: $min-tablet) {
       max-width: 510px;

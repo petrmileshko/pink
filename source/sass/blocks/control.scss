@@ -18,13 +18,14 @@
   grid-template-columns: 37px 1fr;
   align-items: center;
   column-gap: 22px;
+  text-transform: none;
   cursor: pointer;
 
   &::before {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    width: 35px;
-    height: 35px;
+    width: 38px;
+    height: 38px;
     border: 2px solid $input-border-color;
     content: "";
   }

@@ -1,8 +1,9 @@
 .application {
-	padding-top: 54px;
+	padding-top: 45px;
 
 	& .title {
-		margin-bottom: 55px;
+    max-width: 282px;
+		margin-bottom: 40px;
 	}
 
 	@media (min-width: $min-tablet) {
