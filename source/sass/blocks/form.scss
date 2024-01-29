@@ -115,6 +115,10 @@
 }
 
 .form__group-wrapper {
+  margin: 0;
+  padding: 0;
+  border: none;
+
   @media (max-width: $max-mobile) {
     background-color: $bg-color-secondary;
   }
@@ -126,13 +130,31 @@
 
     &--journeys {
       order: 4;
-      min-height: fit-content;
+      min-height: 228px;
       min-width: fit-content;
+      border-radius: 1px;
+      border: 2px solid #E5E5E5;
     }
   }
 
   @media (min-width: $min-desktop) {
-    &--pink {}
+    &--pink {
+      position: relative;
+      top: -10px;
+      min-height: 308px;
+      border-radius: 1px;
+      border: 2px solid #E5E5E5;
+    }
+
+    &--journeys {
+      order: 4;
+      min-height: 228px;
+      width: 940px;
+      min-width: initial;
+      padding: 39px 0 56px 59px;
+      border-radius: 1px;
+      border: 2px solid #E5E5E5;
+    }
   }
 }
 
@@ -160,8 +182,6 @@
   @media (min-width: $min-tablet) {
     margin-bottom: 70px;
     padding: 54px 60px;
-    border-radius: 1px;
-    border: 2px solid $input-border-color;
 
     &--person {
       border: none;
@@ -188,7 +208,7 @@
 
     &--emotions {
       order: 5;
-      padding: 22px 60px 49px 57px;
+      padding: 20px 60px 49px;
       margin-bottom: 68px;
     }
 
@@ -214,15 +234,15 @@
     &--journeys {
       grid-column: 1 / -1;
       display: grid;
-      grid-template-columns: 314px 295px 1fr;
+      grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
       grid-auto-flow: column;
       justify-content: end;
       row-gap: 44px;
-      width: 940px;
-      min-height: 250px;
+      column-gap: 38px;
+      width: auto;
       margin: 0;
-      padding: 37px 0 7px 60px;
+      padding: 0;
     }
 
     &--mobile {
@@ -231,7 +251,7 @@
       justify-content: space-between;
       width: 940px;
       margin: 0;
-      padding: 34px 60px 19px;
+      padding: 31px 61px 19px;
     }
 
     &--emotions {
@@ -244,7 +264,7 @@
     &--buttons {
       grid-column: 1 / -1;
       width: 940px;
-      margin: 16px 0 0;
+      margin: 18px 0 0;
     }
 
     &--person {
@@ -255,10 +275,7 @@
     }
 
     &--pink {
-      position: relative;
-      top: -8px;
       width: 431px;
-      min-height: 304px;
       max-width: initial;
       margin: 0;
       padding: 0;
@@ -288,7 +305,7 @@
   }
 
   @media (min-width: $min-tablet) {
-    padding: 14px 25px;
+    padding: 15px 25px;
 
     &--mobile {
       display: initial;

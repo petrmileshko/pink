@@ -17,8 +17,8 @@
     }
 
     &.control--radio {
-      margin-left: 72px;
-      margin-top: 39px;
+      margin-left: 74px;
+      margin-top: 41px;
     }
 
     &:not(:last-of-type).control--checkbox {
@@ -39,7 +39,7 @@
 
 .control__marker {
   display: grid;
-  grid-template-columns: 38px 1fr;
+  grid-template-columns: 36px 1fr;
   align-items: center;
   column-gap: 22px;
   text-transform: none;
@@ -112,9 +112,13 @@
 
   .control__input:disabled+& {
     opacity: 0.3;
+    cursor: none;
+    pointer-events: none;
   }
 
   .control__input:disabled+&::before {
-    border-color: $input-border-hover;
+    opacity: 0.3;
+    cursor: none;
+    pointer-events: none;
   }
 }
