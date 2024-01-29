@@ -126,6 +126,8 @@
 
     &--journeys {
       order: 4;
+      min-height: fit-content;
+      min-width: fit-content;
     }
   }
 
@@ -213,10 +215,12 @@
       grid-column: 1 / -1;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 47px;
+      grid-template-rows: repeat(2,1fr);
+      grid-auto-flow: column;
       width: 940px;
+      min-height: 250px;
       margin: 0;
-      padding: 15px 60px 24px;
+      padding: 37px 0 7px 0;
     }
 
     &--mobile {
@@ -225,7 +229,7 @@
       justify-content: space-between;
       width: 940px;
       margin: 0;
-      padding: 5px 62px 14px;
+      padding: 34px 60px 19px 60px;
     }
 
     &--emotions {
@@ -251,7 +255,7 @@
       position: relative;
       top: -8px;
       width: 431px;
-      min-height: 298px;
+      min-height: 304px;
       max-width: initial;
       margin: 0;
       padding: 0;
@@ -289,11 +293,15 @@
   }
 
   @media (min-width: $min-desktop) {
-    padding: 14px 31px;
+    padding: 0px 31px;
 
     &--pink {
       width: 368px;
       padding: 0 25px;
+    }
+
+    &--journeys {
+      padding: 10px 33px 5px;
     }
   }
 }
@@ -352,6 +360,11 @@
 
     @media (min-width: $min-desktop) {
       min-height: 59px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 53px;
+      }
+
     }
   }
 

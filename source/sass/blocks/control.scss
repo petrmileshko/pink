@@ -11,12 +11,17 @@
   }
 
   @media (min-width: $min-desktop) {
+
+    &:not(:last-of-type).control--radio {
+      margin-bottom: 0;
+    }
+
     &.control--radio {
-      margin-left: 74px;
+      margin-left: 72px;
       margin-top: 39px;
     }
 
-    &:not(:last-of-type).control--radio {
+    &:not(:last-of-type).control--checkbox {
       margin-bottom: 0;
     }
   }
