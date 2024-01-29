@@ -152,7 +152,7 @@
         <fieldset class="form__group-wrapper form__group-wrapper--journeys">
           <legend class="form__group-legend form__group-legend--journeys">Ваши безбашенные достижения
             в&nbsp;путешествии</legend>
-          <div class="form__group form__group--journeys block-center">
+          <div class="form__group form__group--journeys block-center" style="grid-template-rows: repeat(2, 1fr);">
             <label class="form__label control control--checkbox">
               <input class="control__input" type="checkbox" name="your-achievements" value="shark" checked>
               <span class="control__marker">Сделал селфи с акулой</span>
@@ -222,6 +222,14 @@
           <button class="form__button form__button--submit" type="submit">Отправить форму</button>
           <span class="form__footnote"><span>*</span> — обязательные <span>для заполнения</span> поля</span>
         </p>
+        <div class="modal modal--opened">
+            <p class="modal__wrapper block-center">
+              <span class="modal__heading">Что-то пошло не так!</span>
+              <span class="modal__message">Проверьте поля, выделенные красным,
+                скорее всего вы забыли их заполнить</span>
+                <button class="modal__button" type="button">ОК</button>
+            </p>
+        </div>
       </form>
     </section>
   </main>
