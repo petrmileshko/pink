@@ -214,15 +214,15 @@
     &--journeys {
       grid-column: 1 / -1;
       display: grid;
-      grid-template-columns:374px 295px 1fr;
-      grid-template-rows: repeat(2,1fr);
+      grid-template-columns: 314px 295px 1fr;
+      grid-template-rows: repeat(2, 1fr);
       grid-auto-flow: column;
       justify-content: end;
       row-gap: 44px;
       width: 940px;
       min-height: 250px;
       margin: 0;
-      padding: 37px 0 7px 0;
+      padding: 37px 0 7px 60px;
     }
 
     &--mobile {
@@ -231,19 +231,20 @@
       justify-content: space-between;
       width: 940px;
       margin: 0;
-      padding: 34px 60px 19px 60px;
+      padding: 34px 60px 19px;
     }
 
     &--emotions {
       grid-column: 1 / -1;
       width: 940px;
       margin: 0;
+      padding: 26px 60px 43px;
     }
 
     &--buttons {
       grid-column: 1 / -1;
       width: 940px;
-      margin: 0;
+      margin: 16px 0 0;
     }
 
     &--person {
@@ -303,7 +304,13 @@
     }
 
     &--journeys {
-      padding: 10px 33px 5px;
+      position: relative;
+      left: -30px;
+      padding: 10px 62px 5px;
+    }
+
+    &--emotions {
+      padding: 6px 36px;
     }
   }
 }
@@ -498,6 +505,10 @@
     min-height: 195px;
   }
 
+  @media (min-width: $min-desktop) {
+    min-height: 128px;
+  }
+
   &:hover {
     border-color: $input-border-hover;
   }
@@ -576,7 +587,17 @@
   line-height: 30px;
   text-transform: uppercase;
 
-  & span {
+  & span:first-of-type {
     color: $font-color-red;
+  }
+
+  & span:last-child {
+    display: none;
+  }
+
+  @media (min-width: $min-desktop) {
+    & span:last-child {
+      display: initial;
+    }
   }
 }
