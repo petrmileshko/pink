@@ -214,9 +214,11 @@
     &--journeys {
       grid-column: 1 / -1;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns:374px 295px 1fr;
       grid-template-rows: repeat(2,1fr);
       grid-auto-flow: column;
+      justify-content: end;
+      row-gap: 44px;
       width: 940px;
       min-height: 250px;
       margin: 0;
