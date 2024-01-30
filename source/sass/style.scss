@@ -2,30 +2,30 @@
 @import "global/variables.scss";
 @import "global/mixins.scss";
 @import "global/fonts.scss";
-//@import "global/global.scss";
+@import "global/global.scss";
 
 // Компоненты БЭМ
 // базовые глобальные
-//@import "blocks/visually-hidden.scss";
-//@import "blocks/block-center.scss";
-//@import "blocks/page.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/block-center.scss";
+@import "blocks/page.scss";
 @import "blocks/page-footer.scss";
-//@import "blocks/page-header.scss";
-//@import "blocks/burger.scss";
-//@import "blocks/site-menu.scss";
-//@import "blocks/button.scss";
-//@import "blocks/link.scss";
-//@import "blocks/logo.scss";
+@import "blocks/page-header.scss";
+@import "blocks/burger.scss";
+@import "blocks/site-menu.scss";
+@import "blocks/button.scss";
+@import "blocks/link.scss";
+@import "blocks/logo.scss";
 @import "blocks/form.scss";
-//@import "blocks/title.scss";
+@import "blocks/title.scss";
 @import "blocks/socials.scss";
 @import "blocks/slider.scss";
 @import "blocks/control.scss";
 @import "blocks/modal.scss";
 
 /* Стили для Главная страница */
-//@import "blocks/main-page.scss";
-//@import "blocks/hero.scss";
+@import "blocks/main-page.scss";
+@import "blocks/hero.scss";
 @import "blocks/downloads.scss";
 @import "blocks/features.scss";
 @import "blocks/research.scss";
