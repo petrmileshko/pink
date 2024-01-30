@@ -57,12 +57,10 @@ function menuMobile(container, menu, control) {
   }
 }
 
-const initMobileMenu = menuMobile(
-  {
-    element: '.page-header',
-    activation: 'page-header--opened'
-  },
-  {
+const initMobileMenu = menuMobile({
+  element: '.page-header',
+  activation: 'page-header--opened'
+}, {
   element: '.site-menu',
   activation: 'site-menu--opened'
 }, {
@@ -78,18 +76,40 @@ function runSlides(container) {
 
   const moveBack = container.querySelector('.slider__button--prev');
   const moveForward = container.querySelector('.slider__button--next');
+  const sliderIndicators = container.querySelector('.slider__indicators');
   const slides = container.querySelectorAll('.slider__item');
   let totalSlides;
-  if (moveBack !== null && moveForward !== null && slides.length) {
+
+  if (moveBack !== null && moveForward !== null && slides.length && sliderIndicators !== null) {
     totalSlides = slides.length;
+
     moveBack.addEventListener('click', e => {
       e.preventDefault();
       showPrevious();
     });
 
+    moveBack.addEventListener('keyDown', e => {
+      e.preventDefault();
+      if (e.keyDown === 'Enter') {
+        showNext();
+      }
+    });
+
     moveForward.addEventListener('click', e => {
       e.preventDefault();
       showNext();
+    });
+
+    moveForward.addEventListener('keyDown', e => {
+      e.preventDefault();
+      if (e.keyDown === 'Enter') {
+        showNext();
+      }
+    });
+
+    sliderIndicators.addEventListener('click', e => {
+      e.preventDefault();
+      toggleSlide(e.target, sliderIndicators);
     });
   }
 
@@ -107,6 +127,23 @@ function runSlides(container) {
     newIndex = (slideIndex > 0) ? slideIndex - 1 : (totalSlides - 1);
     slides[newIndex].dataset.slider = 'active';
     slideIndex = newIndex;
+  }
+
+  function toggleSlide(item, container) {
+    let newIndex;
+
+    if (item.dataset.toggler !== 'active') {
+      let toggler = container.querySelector('[data-toggler="active"]');
+
+      newIndex = parseInt(item.dataset.toggle) - 1;
+      slides[slideIndex].dataset.slider = '';
+      slides[newIndex].dataset.slider = 'active';
+      slideIndex = newIndex;
+      if (toggler !== null) {
+        toggler.dataset.toggler = ''
+      }
+      item.dataset.toggler = 'active';
+    }
   }
 }
 

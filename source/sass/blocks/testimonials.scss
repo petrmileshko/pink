@@ -46,24 +46,21 @@
 .testimonials__item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   margin: 0;
-
-  &:not(:last-of-type) {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 30px;
 
   @media (min-width: $min-tablet) {
     &.slider__item[data-slider="active"] {
       margin-bottom: 18px;
-     }
-
+    }
   }
 
-   @media (min-width: $min-desktop) {
+  @media (min-width: $min-desktop) {
     &.slider__item[data-slider="active"] {
       margin-bottom: 0;
-     }
+    }
 
   }
 }
