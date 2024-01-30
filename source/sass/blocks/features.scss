@@ -30,7 +30,7 @@
 
   @media (min-width: $min-tablet) {
     padding: 91px 0 0 0;
-    background-image: linear-gradient(to bottom, $bg-color-primary 5%, $bg-color-secondary 95%);
+    background-image: linear-gradient(to bottom, $bg-color-primary, $bg-color-primary 7%, $bg-color-secondary 7%, $bg-color-secondary 93%);
 
     &::before {
       top: 35px;
@@ -40,7 +40,7 @@
 
   @media (min-width: $min-desktop) {
     padding: 53px 0 59px 0;
-    background-image: linear-gradient(to bottom, $bg-color-primary 5%, $bg-color-secondary 95%);
+    background-image: linear-gradient(to bottom, $bg-color-primary, $bg-color-primary 8%, $bg-color-secondary 8%, $bg-color-secondary 93%);
 
     &::before {
       top: 53px;
