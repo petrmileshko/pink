@@ -39,12 +39,13 @@
   @media (min-width: $min-tablet) {
     display: grid;
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 195px 232px 120px;
+    grid-template-rows: 195px 235px 116px;
     padding-top: calc(110px + 74px);
     max-width: 660px;
   }
 
   @media (min-width: $min-desktop) {
+    grid-template-columns: 295px 1fr;
     grid-template-rows: 241px 274px 130px;
     padding-top: calc(110px + 98px);
     width: 1066px;
@@ -59,7 +60,7 @@
   &--inner {
     display: flex;
     justify-content: center;
-    padding-top: calc(66px + 36px);
+    padding-top: 99px;
     min-height: 237px;
     width: initial;
     max-width: initial;
@@ -67,10 +68,31 @@
     @media (min-width: $min-tablet) {
       padding-top: calc(110px + 81px);
       min-height: 440px;
+      padding-top: 178px;
     }
 
     @media (min-width: $min-desktop) {
-      padding-top: calc(110px + 74px);
+      padding-top: 168px;
+      min-height: 394px;
+    }
+  }
+
+  &--application {
+    display: flex;
+    justify-content: center;
+    padding-top: 97px;
+    min-height: 237px;
+    width: initial;
+    max-width: initial;
+
+    @media (min-width: $min-tablet) {
+      padding-top: calc(110px + 81px);
+      min-height: 440px;
+      padding-top: 177px;
+    }
+
+    @media (min-width: $min-desktop) {
+      padding-top: 168px;
       min-height: 394px;
     }
   }
@@ -78,6 +100,7 @@
 
 .hero__images {
   margin: 0 0 32px 0;
+
 
   @media (min-width: 376px) {
     display: flex;
@@ -93,6 +116,10 @@
     align-items: flex-start;
     justify-content: flex-start;
     margin: 0;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin-left: 12px;
   }
 
   @media (min-width: 1250px) {

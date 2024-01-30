@@ -78,14 +78,14 @@
   }
 
   @media (min-width: $min-desktop) {
-    padding: 21px 0 19px 0;
+    padding: 26px 0 14px 0;
     text-align: initial;
 
     &--active::after {
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 0;
+      bottom: 8px;
       height: 2px;
       background-color: $font-color-inverted;
       content: "";

@@ -4,11 +4,38 @@
   justify-content: space-between;
   min-width: 175px;
   padding: 0;
-  margin: 0;
   list-style-type: none;
+
+  @media (min-width: $min-tablet) {
+    justify-content: flex-start;
+    align-self: flex-end;
+    min-width: 192px;
+  }
+
+  @media (min-width: $min-desktop) {
+    justify-content: space-between;
+    min-width: 166px;
+  }
 }
 
 .socials__item {
+  @media (min-width: $min-tablet) {
+    &:not(:last-of-type) {
+      margin-right: 11px;
+    }
+  }
+
+  @media (min-width: $min-desktop) {
+    margin: 0;
+
+    &:not(:last-of-type) {
+      margin: 0 1px 0 0;
+    }
+
+    &:first-of-type {
+      margin-right: 1px;
+    }
+  }
 }
 
 .socials__link {
@@ -26,5 +53,10 @@
 
   &:active {
     opacity: 0.1;
+  }
+
+  @media (min-width: $min-desktop) {
+    width: 51px;
+    height: 51px;
   }
 }

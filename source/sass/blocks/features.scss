@@ -1,5 +1,13 @@
 .features {
   padding-top: 41px;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 50px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-top: 62px;
+  }
 }
 
 .features__wrapper {
@@ -21,18 +29,21 @@
   }
 
   @media (min-width: $min-tablet) {
-    padding-top: 0;
-    padding-bottom: 49px;
+    padding: 91px 0 0 0;
+    background-image: linear-gradient(to bottom, $bg-color-primary, $bg-color-primary 7%, $bg-color-secondary 7%, $bg-color-secondary 93%);
 
     &::before {
+      top: 35px;
       height: 54px;
     }
   }
 
   @media (min-width: $min-desktop) {
-    padding-bottom: 59px;
+    padding: 53px 0 59px 0;
+    background-image: linear-gradient(to bottom, $bg-color-primary, $bg-color-primary 8%, $bg-color-secondary 8%, $bg-color-secondary 93%);
 
     &::before {
+      top: 53px;
       height: 100px;
     }
   }
@@ -51,12 +62,23 @@
 
   @media (min-width: $min-tablet) {
     max-width: none;
+    margin-bottom: 6px;
     padding: 0 16px;
+
+    &--tablet {
+      padding: 0 22px;
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: $min-desktop) {
     max-width: none;
     padding: 0 80px;
+    margin-bottom: 0;
+
+    &--tablet {
+      padding: 0 108px;
+    }
   }
 }
 
@@ -72,7 +94,8 @@
   @media (min-width: $min-tablet) {
     align-items: flex-start;
     min-height: 432px;
-    padding-left: calc(268px + 42px);
+    padding-top: 23px;
+    padding-left: 310px;
   }
 
   @media (min-width: $min-desktop) {
@@ -103,7 +126,7 @@
   &--friends::after {
     width: 157px;
     height: 277px;
-    margin-top: 48px;
+    margin-top: 43px;
     background-image: url("../img/backgrounds/features/mobile/friends.webp");
     background-size: 157px auto;
     content: "";
@@ -120,7 +143,7 @@
 
     &--friends::after {
       position: absolute;
-      bottom: -44px;
+      bottom: 0;
       left: 0;
       width: 268px;
       height: 481px;
@@ -131,15 +154,15 @@
     }
 
     &--mood {
-      margin-top: 75px;
+      margin-top: 0;
     }
 
     &--pink {
-      margin-top: 46px;
+      margin-top: 37px;
     }
 
     &--friends {
-      margin-top: 47px;
+      margin-top: 37px;
     }
 
     @media (min-resolution: 2dppx) {
@@ -225,6 +248,7 @@
 
 .features__description {
   margin: 0;
+  padding-top: 1px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -239,6 +263,7 @@
     font-size: 18px;
     line-height: 30px;
     text-align: center;
-    margin-top: 32px;
+    margin-top: 14px;
+    padding: 0 31px;
   }
 }

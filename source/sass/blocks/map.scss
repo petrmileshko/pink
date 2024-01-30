@@ -83,8 +83,21 @@
 }
 
 .map__interactive {
+  display: block;
+  width: 100%;
+  height: 200px;
+  background: none;
+  border: none;
 
   &--nojs {
     display: none;
+  }
+
+  @media (min-width: $min-tablet) {
+    height: 374px;
+  }
+
+  @media (min-width: $min-desktop) {
+    height: 502px;
   }
 }

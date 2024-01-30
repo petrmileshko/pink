@@ -1,16 +1,8 @@
 .upload {
-  padding-top: 49px;
-
-  & .title {
-    margin-bottom: 52px;
-  }
+  padding-top: 20px;
 
   @media (min-width: $min-tablet) {
-    padding-top: 70px;
-
-    & .title {
-      margin-bottom: 78px;
-    }
+    padding-top: 62px;
 
     & .form__range {
       width: 202px;
@@ -18,10 +10,10 @@
   }
 
   @media (min-width: $min-desktop) {
-    padding-top: 67px;
+    padding-top: 58px;
 
     & .title {
-      margin-bottom: 75px;
+      margin-bottom: 68px;
     }
 
     & .form__range {
@@ -35,13 +27,14 @@
   background-color: $bg-color-secondary;
 
   @media (min-width: $min-tablet) {
-    padding: 57px 0 54px 0;
+    padding: 57px 0 50px 0;
   }
 
   @media (min-width: $min-desktop) {
     width: calc(100% - 130px*2);
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 28px;
     padding: 57px 90px 57px 80px;
   }
 }
@@ -97,8 +90,9 @@
 
   @media (max-width: $max-mobile) {
     position: relative;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: flex-start;
     align-items: center;
     width: 100vw;
     max-width: 320px;
@@ -113,26 +107,34 @@
   @media (min-width: $min-tablet) {
     display: flex;
     flex-direction: column;
-    width: 273px;
-    margin-bottom: 67px;
+    width: 258px;
+    margin-bottom: 69px;
   }
 
   @media (min-width: $min-desktop) {
+    position: relative;
+    top: -17px;
     display: flex;
     flex-direction: column;
     width: 410px;
-    margin-bottom: 67px;
+    margin-bottom: 126px;
   }
 }
 
 .upload__effects-item {
+  margin-left: 10px;
 
   @media (min-width: $min-tablet) {
-    padding: 23px 0 27px 0;
+    margin-left: 2px;
+    padding: 27px 0 23px;
     border-bottom: 2px solid rgb(40, 54, 69, 0.1);
 
     &:first-of-type {
-      padding-top: 9px;
+      padding-top: 7px;
+    }
+
+    &:last-of-type {
+      margin-left: 6px;
     }
   }
 
@@ -222,7 +224,7 @@
   }
 
   @media (min-width: $min-desktop) {
-    min-width: 410px;
+    min-width: 380px;
     justify-content: space-between;
 
     &::before {

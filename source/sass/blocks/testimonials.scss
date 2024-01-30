@@ -2,18 +2,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 38px 0 40px 0;
+  padding: 38px 0 43px 0;
   font-size: 14px;
   font-weight: $font-regular;
   line-height: 30px;
   text-align: center;
 
+  @media (min-width: $min-tablet) {
+    padding-bottom: 15px;
+  }
+
   @media (min-width: $min-desktop) {
+    padding: 76px 0 31px 0;
+
     &::before {
       display: block;
       width: 79px;
       height: 63px;
-      margin-bottom: 58px;
+      margin-bottom: 47px;
 
       background-image: url("../img/quotes.svg");
       background-repeat: no-repeat;
@@ -40,17 +46,21 @@
 .testimonials__item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   margin: 0;
+  margin-bottom: 30px;
 
-  &:not(:last-of-type) {
-    margin-bottom: 30px;
+  @media (min-width: $min-tablet) {
+    &.slider__item[data-slider="active"] {
+      margin-bottom: 18px;
+    }
   }
 
-   @media (min-width: $min-desktop) {
+  @media (min-width: $min-desktop) {
     &.slider__item[data-slider="active"] {
       margin-bottom: 0;
-     }
+    }
 
   }
 }
@@ -61,7 +71,7 @@
 
   @media (min-width: $min-tablet) {
     order: 2;
-    margin-top: 50px;
+    margin-top: 34px;
     font-size: 20px;
   }
 
@@ -81,6 +91,7 @@
 
   @media (min-width: $min-desktop) {
     font-size: 18px;
+    margin-top: 5px;
   }
 }
 
@@ -91,5 +102,9 @@
   @media (min-width: $min-tablet) {
     order: 1;
     font-size: 18px;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin-top: 0;
   }
 }

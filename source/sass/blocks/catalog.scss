@@ -1,5 +1,5 @@
 .catalog {
-  padding-top: 54px;
+  padding-top: 46px;
   font-size: 14px;
   font-weight: $font-regular;
   line-height: 24px;
@@ -7,14 +7,18 @@
 
 
   @media (min-width: $min-tablet) {
+    padding-top: 92px;
+
     & .title {
       max-width: 500px;
+      margin-bottom: 76px;
     }
   }
 
   @media (min-width: $min-desktop) {
     & .title {
       max-width: 620px;
+      margin-bottom: 87px;
     }
   }
 }

@@ -5,6 +5,10 @@
 
 .meta__author {
   margin-right: 3px;
+
+  @media (min-width: $min-desktop) {
+    margin-right: 5px;
+  }
 }
 
 .meta__time {

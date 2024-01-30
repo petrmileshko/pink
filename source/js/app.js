@@ -26,8 +26,9 @@ function parentContainer(container, modifier) {
           }
         });
       });
+      return element;
     }
-    return element;
+    return null;
   }
 
 } // Вспомогательные функции
@@ -57,12 +58,10 @@ function menuMobile(container, menu, control) {
   }
 }
 
-const initMobileMenu = menuMobile(
-  {
-    element: '.page-header',
-    activation: 'page-header--opened'
-  },
-  {
+const initMobileMenu = menuMobile({
+  element: '.page-header',
+  activation: 'page-header--opened'
+}, {
   element: '.site-menu',
   activation: 'site-menu--opened'
 }, {
@@ -78,18 +77,40 @@ function runSlides(container) {
 
   const moveBack = container.querySelector('.slider__button--prev');
   const moveForward = container.querySelector('.slider__button--next');
+  const sliderIndicators = container.querySelector('.slider__indicators');
   const slides = container.querySelectorAll('.slider__item');
   let totalSlides;
-  if (moveBack !== null && moveForward !== null && slides.length) {
+
+  if (moveBack !== null && moveForward !== null && slides.length && sliderIndicators !== null) {
     totalSlides = slides.length;
+
     moveBack.addEventListener('click', e => {
       e.preventDefault();
       showPrevious();
     });
 
+    moveBack.addEventListener('keyDown', e => {
+      e.preventDefault();
+      if (e.keyDown === 'Enter') {
+        showNext();
+      }
+    });
+
     moveForward.addEventListener('click', e => {
       e.preventDefault();
       showNext();
+    });
+
+    moveForward.addEventListener('keyDown', e => {
+      e.preventDefault();
+      if (e.keyDown === 'Enter') {
+        showNext();
+      }
+    });
+
+    sliderIndicators.addEventListener('click', e => {
+      e.preventDefault();
+      toggleSlide(e.target, sliderIndicators);
     });
   }
 
@@ -108,15 +129,65 @@ function runSlides(container) {
     slides[newIndex].dataset.slider = 'active';
     slideIndex = newIndex;
   }
+
+  function toggleSlide(item, container) {
+    let newIndex;
+    let toggler = container.querySelector('[data-toggler="active"]');
+
+    if (item.dataset.toggler !== 'active' && toggler !== null) {
+
+      newIndex = parseInt(item.dataset.toggle) - 1;
+      slides[slideIndex].dataset.slider = '';
+      slides[newIndex].dataset.slider = 'active';
+      slideIndex = newIndex;
+      if (toggler !== null) {
+        toggler.dataset.toggler = ''
+      }
+      item.dataset.toggler = 'active';
+    }
+  }
 }
 
 const initTestimonialsSlider = parentContainer('.slider', '--nojs'); // первый параметр класс родительского контейнера, второй модификатор который надо удалить у дочерних
-
-const sliderTestimonials = initTestimonialsSlider();
 let slideIndex = 0;
+const sliderTestimonials = initTestimonialsSlider();
+if (sliderTestimonials !== null) {
+  runSlides(sliderTestimonials);
+}
 
-runSlides(sliderTestimonials);
 
 
 const initTariffsSlider = parentContainer('.tariffs', '--nojs');
-const sliderTariffs = initTariffsSlider();
+initTariffsSlider();
+
+
+const headerMobile = parentContainer('.page__header', '--nojs');
+headerMobile();
+
+const mapIframe = parentContainer('.map', '--nojs');
+mapIframe();
+
+
+// Маска для телефона
+function initPhoneMasks(selector, options) {
+  let phoneInputs = document.querySelectorAll(selector);
+
+  if (phoneInputs.length) {
+    return function () {
+      phoneInputs.forEach((item) => {
+        IMask(item, options);
+      });
+    }
+  } else {
+    return false;
+  }
+}
+
+const phoneFiledsInit = initPhoneMasks('[name="your-phone"]', {
+  mask: '+{7}(000) 000-00-00',
+  lazy: true
+});
+
+if (phoneFiledsInit !== false) {
+  phoneFiledsInit();
+}

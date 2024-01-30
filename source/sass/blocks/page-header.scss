@@ -1,7 +1,5 @@
 //Блок шапки сайта
 .page-header {
-  background-color: $bg-color-header;
-
   &--opened {
     background-color: $bg-color-opened;
     box-shadow: 0px 1px 0px 0px #000;
@@ -57,6 +55,15 @@
 
   cursor: pointer;
 
+  &--nojs {
+    display: none;
+  }
+
+  @media (min-width: $min-tablet) {
+    margin-top: 13px;
+  }
+
+
   @media (min-width: $min-desktop) {
     display: none;
   }
@@ -107,8 +114,18 @@
 .page-header__menu {
   display: none;
 
-  @media (min-width: $min-desktop) {
+  &--nojs {
+    position: relative;
+    left: calc(50% - 50vw);
     display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  @media (min-width: $min-desktop) {
+    position: static;
+    display: flex;
+    flex-direction: row;
     width: 100%;
   }
 }

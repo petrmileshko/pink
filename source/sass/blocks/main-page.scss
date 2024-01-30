@@ -30,14 +30,14 @@
     @media (min-width: $min-tablet) {
       grid-column: 1 / 2;
       grid-row: 1 / 2;
-    }
-
-    @media (min-width: $min-tablet) {
-      grid-column: 1 / 2;
-      grid-row: 1 / 2;
       max-width: initial;
       width: auto;
       margin: 0;
+      padding: 21px 9px 0 52px;
+    }
+
+    @media (min-width: $min-desktop) {
+      padding: 0;
     }
   }
 
@@ -47,14 +47,19 @@
 
     @media (min-width: $min-tablet) {
       max-width: 358px;
+      font-size: 50px;
+      line-height: normal;
     }
   }
 
   &--application {
     max-width: 228px;
+    line-height: 32px;
 
     @media (min-width: $min-tablet) {
-      max-width: 510px;
+      max-width: 610px;
+      font-size: 50px;
+      line-height: normal;
     }
 
     @media (min-width: $min-desktop) {
@@ -74,36 +79,50 @@
   color: $font-color-titles;
 
   &--inner {
-    max-width: 280px;
-    margin-bottom: 60px;
+    max-width: 251px;
+    margin-bottom: 48px;
+    font-size: 14px;
+    font-weight: $font-regular;
+    line-height: 30px;
+  }
+
+  &--inner-upload {
+    max-width: 258px;
+    margin-bottom: 43px;
     font-size: 14px;
     font-weight: $font-regular;
     line-height: 30px;
   }
 
   @media (max-width: $max-mobile) {
-      &--inner span {
-        display: none;
-      }
-    }
-
-    @media (min-width: $min-tablet) {
-
-      &--inner {
-        max-width: 620px;
-        font-size: 18px;
-      }
+    &--inner span {
+      display: none;
     }
   }
 
-  .main-page__footer {
-    padding-top: 40px;
+  @media (min-width: $min-tablet) {
 
-    @media (min-width: $min-tablet) {
-      padding-top: 55px;
+    &--inner {
+      max-width: 620px;
+      font-size: 18px;
     }
 
-    @media (min-width: $min-desktop) {
-      padding-top: 74px;
+    &--inner-upload {
+      max-width: 425px;
+      margin-bottom: 74px;
+      font-size: 18px;
     }
   }
+}
+
+.main-page__footer {
+  padding-top: 40px;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 50px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-top: 61px;
+  }
+}

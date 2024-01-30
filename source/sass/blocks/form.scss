@@ -36,7 +36,10 @@
     border-radius: 30px;
 
     @media (min-width: $min-tablet) {
+      min-width: 260px;
       margin-bottom: 24px;
+      margin-top: 0;
+      padding: 15px 0;
     }
 
     @media (min-width: $min-desktop) {
@@ -65,6 +68,11 @@
     border: 3px solid $font-color-titles;
     border-radius: 30px;
 
+    @media (min-width: $min-tablet) {
+      min-width: 260px;
+      padding: 15px 0;
+    }
+
     @media (min-width: $min-desktop) {
       min-width: 183px;
     }
@@ -81,10 +89,12 @@
   }
 
   &--submit {
-    margin-bottom: 44px;
+    margin-bottom: 35px;
+    padding: 23px 0 22px 0;
+    text-transform: uppercase;
 
     @media (min-width: $min-tablet) {
-      min-width: 296px;
+      min-width: 300px;
       margin-bottom: 0;
     }
 
@@ -105,6 +115,10 @@
 }
 
 .form__group-wrapper {
+  margin: 0;
+  padding: 0;
+  border: none;
+
   @media (max-width: $max-mobile) {
     background-color: $bg-color-secondary;
   }
@@ -112,15 +126,44 @@
   @media (min-width: $min-tablet) {
     &--pink {
       order: 2;
+      width: calc(100% - 20px*2);
+      max-width: 660px;
+      margin: 0 auto;
+      border-radius: 1px;
+      border: 2px solid #E5E5E5;
     }
 
     &--journeys {
       order: 4;
+      width: calc(100% - 20px*2);
+      max-width: 660px;
+      margin: 0 auto;
+      min-height: 228px;
+      min-width: initial;
+      border-radius: 1px;
+      border: 2px solid #E5E5E5;
     }
   }
 
   @media (min-width: $min-desktop) {
-    &--pink {}
+    &--pink {
+      position: relative;
+      top: -10px;
+      min-height: 308px;
+      border-radius: 1px;
+      border: 2px solid #E5E5E5;
+    }
+
+    &--journeys {
+      order: 4;
+      width: calc(100% - 130px*2);
+      max-width: 1200px;
+      min-height: 228px;
+      min-width: 940px;
+      padding: 39px 0 56px 59px;
+      border-radius: 1px;
+      border: 2px solid #E5E5E5;
+    }
   }
 }
 
@@ -128,24 +171,38 @@
   display: flex;
   flex-direction: column;
   padding: 0;
-  padding-bottom: 26px;
+  padding-bottom: 43px;
   margin: 0 auto;
   border: none;
 
 
   &--mobile {
-    padding-top: 42px;
+    padding-top: 38px;
+  }
+
+  &--emotions {
+    padding: 0 0 50px;
+  }
+
+  &--buttons {
+    padding: 0 0 16px;
   }
 
   @media (min-width: $min-tablet) {
     margin-bottom: 70px;
     padding: 54px 60px;
-    border-radius: 1px;
-    border: 2px solid $input-border-color;
 
     &--person {
       border: none;
+      margin-bottom: 35px;
       padding: 0;
+    }
+
+    &--pink {
+      width: 100%;
+      max-width: initial;
+      margin-bottom: 42px;
+      padding: 30px 60px 57px 60px;
     }
   }
 
@@ -156,12 +213,18 @@
 
     &--mobile {
       order: 3;
-      padding: 27px 60px 37px;
+      padding: 23px 60px 36px;
+      margin-bottom: 45px;
+      border-radius: 1px;
+      border: 2px solid #E5E5E5;
     }
 
     &--emotions {
       order: 5;
-      padding: 28px 60px 54px;
+      padding: 20px 60px 49px;
+      margin-bottom: 68px;
+      border-radius: 1px;
+      border: 2px solid #E5E5E5;
     }
 
     &--buttons {
@@ -173,6 +236,14 @@
       align-items: center;
       border: none;
     }
+
+    &--journeys {
+      width: 100%;
+      max-width: initial;
+      margin-bottom: 42px;
+      padding: 29px 60px 50px;
+    }
+
   }
 
   @media (min-width: $min-desktop) {
@@ -181,10 +252,14 @@
       grid-column: 1 / -1;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 47px;
-      width: 940px;
+      grid-template-rows: repeat(2, 1fr);
+      grid-auto-flow: column;
+      justify-content: end;
+      row-gap: 44px;
+      column-gap: 38px;
+      width: auto;
       margin: 0;
-      padding: 15px 60px 24px;
+      padding: 0;
     }
 
     &--mobile {
@@ -193,19 +268,20 @@
       justify-content: space-between;
       width: 940px;
       margin: 0;
-      padding: 5px 62px 14px;
+      padding: 31px 61px 19px;
     }
 
     &--emotions {
       grid-column: 1 / -1;
       width: 940px;
       margin: 0;
+      padding: 26px 60px 43px;
     }
 
     &--buttons {
       grid-column: 1 / -1;
       width: 940px;
-      margin: 0;
+      margin: 18px 0 0;
     }
 
     &--person {
@@ -216,10 +292,7 @@
     }
 
     &--pink {
-      position: relative;
-      top: -8px;
       width: 431px;
-      min-height: 298px;
       max-width: initial;
       margin: 0;
       padding: 0;
@@ -229,9 +302,7 @@
 }
 
 .form__group-legend {
-  padding: 0;
-  padding-top: 42px;
-  padding-bottom: 37px;
+  padding: 38px 46px;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -243,15 +314,27 @@
   }
 
   &--emotions {
-    padding-bottom: 10px;
+    padding-bottom: 16px;
   }
 
   &--pink {
-    padding-bottom: 31px;
+    padding-bottom: 36px;
+  }
+
+  &--journeys {
+    @media (max-width: $max-mobile) {
+      background-color: $bg-color-secondary;
+    }
+  }
+
+  &--pink {
+    @media (max-width: $max-mobile) {
+      background-color: $bg-color-secondary;
+    }
   }
 
   @media (min-width: $min-tablet) {
-    padding: 14px 25px;
+    padding: 15px 25px;
 
     &--mobile {
       display: initial;
@@ -259,11 +342,21 @@
   }
 
   @media (min-width: $min-desktop) {
-    padding: 14px 31px;
+    padding: 0px 31px;
 
     &--pink {
       width: 368px;
       padding: 0 25px;
+    }
+
+    &--journeys {
+      position: relative;
+      left: -30px;
+      padding: 10px 62px 5px;
+    }
+
+    &--emotions {
+      padding: 6px 36px;
     }
   }
 }
@@ -281,19 +374,13 @@
     margin-bottom: 47px;
   }
 
-  &:not(:last-of-type).control--radio {
-    margin-bottom: 38px;
+  span:not(.control__marker) {
+    margin-left: 24px;
+    margin-bottom: 12px;
   }
 
-  @media (min-width: $min-desktop) {
-    &.control--radio {
-      margin-left: 74px;
-      margin-top: 39px;
-    }
-
-    &:not(:last-of-type).control--radio {
-      margin-bottom: 0;
-    }
+  &.control {
+    font-size: 18px;
   }
 
   &--person {
@@ -301,7 +388,7 @@
     min-height: 86px;
 
     &:not(:last-of-type) {
-      margin-bottom: 29px;
+      margin-bottom: 23px;
     }
 
     @media (min-width: $min-tablet) {
@@ -310,18 +397,29 @@
       align-items: center;
 
       &:not(:last-of-type) {
-        margin-bottom: 56px;
+        margin-bottom: 29px;
       }
 
       & .form__input {
         flex-grow: 1;
-        height: 59px;
+        height: 64px;
         margin-left: 20px;
+        padding: 14px 19px;
+      }
+
+      span:not(.control__marker) {
+        margin-left: 0;
+        margin-top: 17px;
       }
     }
 
     @media (min-width: $min-desktop) {
       min-height: 59px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 53px;
+      }
+
     }
   }
 
@@ -330,14 +428,20 @@
     min-height: 86px;
 
     &:not(:last-of-type) {
-      margin-bottom: 29px;
+      margin-bottom: 23px;
     }
 
     @media (min-width: $min-tablet) {
-      min-height: 91px;
+      min-height: 96px;
 
       &:not(:last-of-type) {
-        margin-bottom: 41px;
+        margin-bottom: 35px;
+      }
+
+      span:not(.control__marker) {
+        margin-left: 17px;
+        margin-top: 1px;
+        margin-bottom: 0;
       }
     }
 
@@ -357,8 +461,9 @@
 }
 
 .form__input {
-  font-size: inherit;
-  padding: 20px 0 20px 23px;
+  padding: 14px 22px;
+  font-size: 18px;
+  line-height: 30px;
   color: $font-color-titles;
   border-radius: 1px;
   border: 2px solid $input-border-color;
@@ -380,16 +485,15 @@
   }
 
   &--email {
-    padding-right: 59px;
-    background-image: url("../img/mail-icon.svg");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 59px 59px;
-
     @media (min-width: $min-tablet) {
-      min-height: 59px;
+      min-height: 63px;
       order: -1;
       padding: 0 59px 0 20px;
+      padding-right: 59px;
+      background-image: url("../img/mail-icon.svg");
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: 59px 59px;
     }
 
     @media (min-width: $min-desktop) {
@@ -398,16 +502,15 @@
   }
 
   &--phone {
-    padding-right: 59px;
-    background-image: url("../img/phone-icon.svg");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 59px 59px;
-
     @media (min-width: $min-tablet) {
-      min-height: 59px;
+      min-height: 63px;
       order: -1;
       padding: 0 59px 0 20px;
+      padding-right: 59px;
+      background-image: url("../img/phone-icon.svg");
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: 59px 59px;
     }
 
     @media (min-width: $min-desktop) {
@@ -431,7 +534,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 13px 0 0 13px;
+  min-height: 200px;
+  padding: 15px 0 0 22px;
   font-size: 18px;
   font-weight: $font-regular;
   line-height: 30px;
@@ -441,6 +545,14 @@
 
   &::placeholder {
     color: inherit;
+  }
+
+  @media (min-width: $min-tablet) {
+    min-height: 195px;
+  }
+
+  @media (min-width: $min-desktop) {
+    min-height: 128px;
   }
 
   &:hover {
@@ -517,11 +629,21 @@
 
 .form__footnote {
   align-self: center;
-
   font-size: 14px;
   line-height: 30px;
+  text-transform: uppercase;
 
-  & span {
+  & span:first-of-type {
     color: $font-color-red;
+  }
+
+  & span:last-child {
+    display: none;
+  }
+
+  @media (min-width: $min-desktop) {
+    & span:last-child {
+      display: initial;
+    }
   }
 }
