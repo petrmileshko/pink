@@ -129,6 +129,24 @@
       margin: 40px 0 0 43px;
     }
   }
+
+  @media (min-width: ($min-desktop + 10px)) {
+    &--phone {
+      grid-column: 1 / 2;
+      grid-row: 2/3;
+      align-self: center;
+      justify-self: center;
+    }
+
+    &--address {
+      justify-self: center;
+      margin: 40px 0 0 32px;
+    }
+
+    &--mail {
+      justify-self: center;
+    }
+  }
 }
 
 .contacts__details {
