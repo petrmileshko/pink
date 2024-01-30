@@ -1,7 +1,7 @@
 // Глобальные
 @import "global/variables.scss";
 @import "global/mixins.scss";
-@import "global/fonts.scss";
+//@import "global/fonts.scss";
 @import "global/global.scss";
 
 // Компоненты БЭМ
@@ -9,40 +9,41 @@
 @import "blocks/visually-hidden.scss";
 @import "blocks/block-center.scss";
 @import "blocks/page.scss";
-@import "blocks/page-footer.scss";
+//@import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
 @import "blocks/burger.scss";
 @import "blocks/site-menu.scss";
 @import "blocks/button.scss";
 @import "blocks/link.scss";
 @import "blocks/logo.scss";
-@import "blocks/form.scss";
+//@import "blocks/form.scss";
 @import "blocks/title.scss";
-@import "blocks/socials.scss";
-@import "blocks/slider.scss";
-@import "blocks/control.scss";
-@import "blocks/modal.scss";
+//@import "blocks/socials.scss";
+//@import "blocks/slider.scss";
+//@import "blocks/control.scss";
+//@import "blocks/modal.scss";
 
 /* Стили для Главная страница */
 @import "blocks/main-page.scss";
 @import "blocks/hero.scss";
-@import "blocks/downloads.scss";
-@import "blocks/features.scss";
-@import "blocks/research.scss";
-@import "blocks/testimonials.scss";
-@import "blocks/tariffs.scss";
-@import "blocks/plan.scss";
-@import "blocks/contacts.scss";
-@import "blocks/map.scss";
-@import "blocks/developers.scss";
+//@import "blocks/downloads.scss";
+//@import "blocks/features.scss";
+//@import "blocks/research.scss";
+//@import "blocks/testimonials.scss";
+//@import "blocks/tariffs.scss";
+//@import "blocks/plan.scss";
+//@import "blocks/contacts.scss";
+//@import "blocks/map.scss";
+//@import "blocks/developers.scss";
 
 /* Стили для Страница каталога */
-@import "blocks/catalog.scss";
-@import "blocks/panorama.scss";
-@import "blocks/meta.scss";
-@import "blocks/likes.scss";
-@import "blocks/posts.scss";
-@import "blocks/post.scss";
-@import "blocks/upload.scss";
+//@import "blocks/catalog.scss";
+//@import "blocks/panorama.scss";
+//@import "blocks/meta.scss";
+//@import "blocks/likes.scss";
+//@import "blocks/posts.scss";
+//@import "blocks/post.scss";
+//@import "blocks/upload.scss";
+
 /* Стили для Страница формы конкурса */
-@import "blocks/application.scss";
+//@import "blocks/application.scss";
