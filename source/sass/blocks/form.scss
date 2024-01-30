@@ -126,12 +126,20 @@
   @media (min-width: $min-tablet) {
     &--pink {
       order: 2;
+      width: calc(100% - 20px*2);
+      max-width: 660px;
+      margin: 0 auto;
+      border-radius: 1px;
+      border: 2px solid #E5E5E5;
     }
 
     &--journeys {
       order: 4;
+      width: calc(100% - 20px*2);
+      max-width: 660px;
+      margin: 0 auto;
       min-height: 228px;
-      min-width: fit-content;
+      min-width: initial;
       border-radius: 1px;
       border: 2px solid #E5E5E5;
     }
@@ -148,9 +156,10 @@
 
     &--journeys {
       order: 4;
+      width: calc(100% - 130px*2);
+      max-width: 1200px;
       min-height: 228px;
-      width: 940px;
-      min-width: initial;
+      min-width: 940px;
       padding: 39px 0 56px 59px;
       border-radius: 1px;
       border: 2px solid #E5E5E5;
@@ -190,6 +199,8 @@
     }
 
     &--pink {
+      width: 100%;
+      max-width: initial;
       margin-bottom: 42px;
       padding: 30px 60px 57px 60px;
     }
@@ -204,12 +215,16 @@
       order: 3;
       padding: 23px 60px 36px;
       margin-bottom: 45px;
+      border-radius: 1px;
+      border: 2px solid #E5E5E5;
     }
 
     &--emotions {
       order: 5;
       padding: 20px 60px 49px;
       margin-bottom: 68px;
+      border-radius: 1px;
+      border: 2px solid #E5E5E5;
     }
 
     &--buttons {
@@ -223,6 +238,8 @@
     }
 
     &--journeys {
+      width: 100%;
+      max-width: initial;
       margin-bottom: 42px;
       padding: 29px 60px 50px;
     }
@@ -302,6 +319,18 @@
 
   &--pink {
     padding-bottom: 36px;
+  }
+
+  &--journeys {
+    @media (max-width: $max-mobile) {
+      background-color: $bg-color-secondary;
+    }
+  }
+
+  &--pink {
+    @media (max-width: $max-mobile) {
+      background-color: $bg-color-secondary;
+    }
   }
 
   @media (min-width: $min-tablet) {

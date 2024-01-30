@@ -44,7 +44,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page__header page-header">
+  <header class="page__header page__header--nojs page-header">
     <nav class="page-header__navigation block-center">
       <div class="page-header__bar">
         <a class="page-header__logo logo" href="./">
@@ -54,14 +54,14 @@
             <img class="logo__image" src="./img/logo/header-mobile.svg" alt="">
           </picture>
         </a>
-        <button class="page-header__toggler" type="button">
+        <button class="page-header__toggler page-header__toggler--nojs" type="button">
           <span class="burger">
             <span class="visually-hidden">Открыть меню</span>
           </span>
         </button>
       </div>
 
-      <ul class="page-header__menu site-menu">
+      <ul class="page-header__menu page-header__menu--nojs site-menu">
         <li class="site-menu__item">
           <a class="site-menu__link link" href="./">Главная</a>
         </li>
@@ -140,7 +140,7 @@
               <source media="(min-width: 660px)"
                 srcset="./img/catalog/tablet/picture_1.jpg 1x, ./img/catalog/tablet/picture_1@2x.jpg 2x">
               <img class="post__image" src="./img/catalog/mobile/picture_1.jpg"
-                srcset="./img/catalog/mobile/picture_1@2x.jpg 2x" alt="">
+                srcset="./img/catalog/mobile/picture_1@2x.jpg 2x" alt="Фотоаппарат на штативе, сьемка белого автомобиля."  loading="lazy" decoding="async">
             </picture>
           </a>
           <div class="post__data">
@@ -171,7 +171,7 @@
               <source media="(min-width: 660px)"
                 srcset="./img/catalog/tablet/picture_2.jpg 1x, ./img/catalog/tablet/picture_2@2x.jpg 2x">
               <img class="post__image" src="./img/catalog/mobile/picture_2.jpg"
-                srcset="./img/catalog/mobile/picture_2@2x.jpg 2x" alt="">
+                srcset="./img/catalog/mobile/picture_2@2x.jpg 2x" alt="Ударные инструменты." loading="lazy" decoding="async">
             </picture>
           </a>
           <div class="post__data">
@@ -202,7 +202,7 @@
               <source media="(min-width: 660px)"
                 srcset="./img/catalog/tablet/picture_3.jpg 1x, ./img/catalog/tablet/picture_3@2x.jpg 2x">
               <img class="post__image" src="./img/catalog/mobile/picture_3.jpg"
-                srcset="./img/catalog/mobile/picture_3@2x.jpg 2x" alt="">
+                srcset="./img/catalog/mobile/picture_3@2x.jpg 2x" alt="Окна офиса." loading="lazy" decoding="async">
             </picture>
           </a>
           <div class="post__data">
@@ -233,7 +233,7 @@
               <source media="(min-width: 660px)"
                 srcset="./img/catalog/tablet/picture_4.jpg 1x, ./img/catalog/tablet/picture_4@2x.jpg 2x">
               <img class="post__image" src="./img/catalog/mobile/picture_4.jpg"
-                srcset="./img/catalog/mobile/picture_4@2x.jpg 2x" alt="">
+                srcset="./img/catalog/mobile/picture_4@2x.jpg 2x" alt="Рынок на бахче" loading="lazy" decoding="async">
             </picture>
           </a>
           <div class="post__data">
@@ -264,7 +264,7 @@
               <source media="(min-width: 660px)"
                 srcset="./img/catalog/tablet/picture_5.jpg 1x, ./img/catalog/tablet/picture_5@2x.jpg 2x">
               <img class="post__image" src="./img/catalog/mobile/picture_5.jpg"
-                srcset="./img/catalog/mobile/picture_5@2x.jpg 2x" alt="">
+                srcset="./img/catalog/mobile/picture_5@2x.jpg 2x" alt="Селфи ног со склона скалы." loading="lazy" decoding="async">
             </picture>
           </a>
           <div class="post__data">
@@ -295,7 +295,7 @@
               <source media="(min-width: 660px)"
                 srcset="./img/catalog/tablet/picture_6.jpg 1x, ./img/catalog/tablet/picture_6@2x.jpg 2x">
               <img class="post__image" src="./img/catalog/mobile/picture_6.jpg"
-                srcset="./img/catalog/mobile/picture_6@2x.jpg 2x" alt="">
+                srcset="./img/catalog/mobile/picture_6@2x.jpg 2x" alt="Крыло самолета над облаками." loading="lazy" decoding="async">
             </picture>
           </a>
           <div class="post__data">
@@ -332,7 +332,7 @@
               <source media="(min-width: 660px)"
                 srcset="./img/catalog/tablet/default-picture.jpg 1x, ./img/catalog/tablet/default-picture@2x.jpg 2x">
               <img class="upload__image" src="./img/catalog/mobile/default-picture.jpg"
-                srcset="./img/catalog/mobile/default-picture@2x.jpg 2x" alt="">
+                srcset="./img/catalog/mobile/default-picture@2x.jpg 2x" alt="Зимняя дорога в лесу." loading="lazy" decoding="async">
             </picture>
           </label>
           <input class="upload__image-input visually-hidden" type="file" id="upload-pic" name="filename"
@@ -411,8 +411,6 @@
     </a>
 
   </footer>
-
-  <!-- <script src="js/lazysizes.min.js" async></script> Для отложенной загрузки карты в iframe-->
   <script src="js/app.min.js"></script>
 </body>
 

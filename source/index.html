@@ -47,7 +47,7 @@
 </head>
 
 <body class="page__body" id="top">
-  <header class="page__header page-header">
+  <header class="page__header page__header--nojs page-header">
     <nav class="page-header__navigation block-center">
       <div class="page-header__bar">
         <span class="page-header__logo logo">
@@ -57,14 +57,14 @@
             <img class="logo__image" src="./img/logo/header-mobile.svg" alt="">
           </picture>
         </span>
-        <button class="page-header__toggler" type="button">
+        <button class="page-header__toggler page-header__toggler--nojs" type="button">
           <span class="burger">
             <span class="visually-hidden">Открыть меню</span>
           </span>
         </button>
       </div>
 
-      <ul class="page-header__menu site-menu">
+      <ul class="page-header__menu page-header__menu--nojs site-menu">
         <li class="site-menu__item">
           <span class="site-menu__link site-menu__link--active">Главная</span>
         </li>
@@ -106,7 +106,8 @@
         </figure>
 
         <div class="hero__downloads downloads block-center">
-          <a class="downloads__button button button--hero" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+          <a class="downloads__button button button--hero" href="https://www.apple.com/ru/ios/app-store/">Скачать
+            приложение</a>
           <ul class="downloads__list">
             <li class="downloads__item">
               <a class="downloads__link" href="https://www.apple.com/ru/ios/app-store/">
@@ -196,7 +197,7 @@
             <b class="testimonials__author">Наталья Белова</b>
             <p class="testimonials__author-details">15 лет, школьница</p>
             <p class="testimonials__text">Щебнистое плато, несмотря на&nbsp;то, что есть много бунгало для проживания,
-              начинает крестьянский кандым. На&nbsp;улицах и&nс&nbsp;многоцветными рисунками в&nbsp;ханэ,
+              начинает крестьянский кандым. На&nbsp;улицах и&nbsp;многоцветными рисунками в&nbsp;ханэ,
               зывает провоз кошек и&nbsp;собак.</p>
           </blockquote>
         </div>
@@ -339,15 +340,15 @@
             <source media="(min-width: 1200px)" srcset="./img/map/descktop.jpg 1x, ./img/map/descktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="./img/map/tablet.jpg 1x, ./img/map/tablet@2x.jpg 2x">
             <img class="map__image" src="./img/map/mobile.jpg" srcset="./img/map/mobile@2x.jpg 2x"
-              alt="Карта местоположения в формате jpg">
+              alt="Карта местоположения в формате jpg" loading="lazy" decoding="async">
           </picture>
           <figcaption class="map__marker">
             <span class="visually-hidden">Карта с меткой на адрес: г. Санкт-Петербург, ул. Большая Конюшенная,
               19/8</span>
           </figcaption>
         </figure>
-        <iframe class="map__interactive map__interactive--nojs" title="Местоположение офиса"
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab3c55d4b094121533920a7032d7930ffd94e588af5804c4e5c00a3bfe0378c56&amp;source=constructor"></iframe>
+        <iframe class="map__interactive map__interactive--nojs lazyload" title="Местоположение офиса"
+          data-src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab3c55d4b094121533920a7032d7930ffd94e588af5804c4e5c00a3bfe0378c56&amp;source=constructor"></iframe>
       </div>
 
     </footer>
@@ -398,7 +399,7 @@
 
   </footer>
 
-  <!-- <script src="js/lazysizes.min.js" async></script> Для отложенной загрузки карты в iframe-->
+  <script src="js/lib/lazysizes.min.js" async></script>
   <script src="js/app.min.js"></script>
 </body>
 

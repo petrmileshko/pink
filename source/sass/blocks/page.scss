@@ -21,6 +21,13 @@
   left: 0;
   right: 0;
   color: $font-color-inverted;
+  background-color: $bg-color-header;
+
+  &--nojs {
+    position: static;
+    background-color: $bg-color-opened;
+    box-shadow: 0px 1px 0px 0px #000;
+  }
 }
 
 .page__footer {

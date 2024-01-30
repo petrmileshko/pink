@@ -26,8 +26,9 @@ function parentContainer(container, modifier) {
           }
         });
       });
+      return element;
     }
-    return element;
+    return null;
   }
 
 } // Вспомогательные функции
@@ -131,9 +132,9 @@ function runSlides(container) {
 
   function toggleSlide(item, container) {
     let newIndex;
+    let toggler = container.querySelector('[data-toggler="active"]');
 
-    if (item.dataset.toggler !== 'active') {
-      let toggler = container.querySelector('[data-toggler="active"]');
+    if (item.dataset.toggler !== 'active' && toggler !== null) {
 
       newIndex = parseInt(item.dataset.toggle) - 1;
       slides[slideIndex].dataset.slider = '';
@@ -148,12 +149,45 @@ function runSlides(container) {
 }
 
 const initTestimonialsSlider = parentContainer('.slider', '--nojs'); // первый параметр класс родительского контейнера, второй модификатор который надо удалить у дочерних
-
-const sliderTestimonials = initTestimonialsSlider();
 let slideIndex = 0;
+const sliderTestimonials = initTestimonialsSlider();
+if (sliderTestimonials !== null) {
+  runSlides(sliderTestimonials);
+}
 
-runSlides(sliderTestimonials);
 
 
 const initTariffsSlider = parentContainer('.tariffs', '--nojs');
-const sliderTariffs = initTariffsSlider();
+initTariffsSlider();
+
+
+const headerMobile = parentContainer('.page__header', '--nojs');
+headerMobile();
+
+const mapIframe = parentContainer('.map', '--nojs');
+mapIframe();
+
+
+// Маска для телефона
+function initPhoneMasks(selector, options) {
+  let phoneInputs = document.querySelectorAll(selector);
+
+  if (phoneInputs.length) {
+    return function () {
+      phoneInputs.forEach((item) => {
+        IMask(item, options);
+      });
+    }
+  } else {
+    return false;
+  }
+}
+
+const phoneFiledsInit = initPhoneMasks('[name="your-phone"]', {
+  mask: '+{7}(000) 000-00-00',
+  lazy: true
+});
+
+if (phoneFiledsInit !== false) {
+  phoneFiledsInit();
+}
